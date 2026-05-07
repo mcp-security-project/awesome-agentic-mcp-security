@@ -37,7 +37,7 @@ Free or low-barrier structured learning for MCP fundamentals and security-aware 
 
 ## [GitHub repos and discovery](mcp_github_repos.md)
 
-Official SDKs, reference servers, registries, discovery hubs, scanners, and frameworks with brief rationale and security-oriented caveats per row.
+Official SDKs, reference servers, registries, discovery hubs, scanners, frameworks, and “awesome lists” (for example `Arindam200/awesome-ai-apps`) with brief rationale and security-oriented caveats per row.
 
 
 ## [Podcasts and webinars](mcp_podcasts_webinars.md)
@@ -62,6 +62,15 @@ Intentionally vulnerable MCP setups, goats, CTF-style labs, and PoCs with setup 
 ## [YouTube and video library](mcp_youtube_videos.md)
 
 Video primers and security-focused sessions with channel, speaker, date, duration, links, and suggested learning outcomes.
+
+## 🙏 Acknowledgments & Contributions
+
+### Contributors
+
+We'd like to thank the following contributors for their valuable input:
+
+- **[Rohit](https://github.com/rohitg00/awesome-devops-mcp-servers)** for sharing his mcp repo
+
 
 
 ## Code of Conduct
