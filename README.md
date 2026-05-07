@@ -66,9 +66,8 @@ Video primers and security-focused sessions with channel, speaker, date, duratio
 ### Contributors
 
 We'd like to thank the following contributors for their valuable input:
-
-- **Rohit G** for sharing his mcp repo
-- **Liran Tal** for sharing his mcp repo
+**Rohit G** for sharing the mcp repo
+ **Liran Tal** for sharing the mcp repo
 
 
 ## Code of Conduct
