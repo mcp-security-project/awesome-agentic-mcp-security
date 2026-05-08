@@ -1,6 +1,6 @@
-# Awesome MCP Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Agentic MCP Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Curated links on Model Context Protocol security: threats, research, tooling, labs, and learning resources.
+> Curated links on agentic AI and Model Context Protocol security: threats, research, tooling, labs, and learning resources.
 
 Each topic page is a standalone reference with tables, summaries, and outbound links.
 
