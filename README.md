@@ -2,6 +2,8 @@
 
 > Curated links on Model Context Protocol security: threats, research, tooling, labs, and learning resources.
 
+Maintained and curated by **Vandana Verma**.
+
 Each topic page is a standalone reference with tables, summaries, and outbound links.
 
 ## Contents
@@ -65,10 +67,10 @@ Video primers and security-focused sessions with channel, speaker, date, duratio
 
 ### Contributors
 
-We'd like to thank the following contributors for their valuable input:
+Thanks to the following folks for specific inputs and leads:
 
-- **Rohit G** for sharing his mcp repo
-- **Liran Tal** for sharing his mcp repo
+- **Rohit G** — for sharing MCP repository leads and pointers used to seed early discovery.
+- **Liran Tal** — for MCP best-practices guidance and for publishing `lirantal/awesome-mcp-best-practices`.
 
 
 ## Code of Conduct
