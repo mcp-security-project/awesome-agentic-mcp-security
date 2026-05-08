@@ -113,7 +113,10 @@ Audio and live sessions on MCP security and related agentic risk, with metadata 
 
 50+ scanners, monitors, policy and gateway controls, secrets and dependency checks, and related utilities with deployment notes and safety warnings where relevant. Organized by category: MCP scanners, runtime monitoring, policy engines, secrets and dependency scanners, red team tools, and blue team / SOC tools.
 
-See `mcp_security_tools.md` for MCP scanners, runtime monitoring/policy options, and hardening utilities (with deployment notes and safety warnings).
+See `mcp_security_tools.md` for 
+- MCP scanners, 
+- runtime monitoring/policy options, and 
+- hardening utilities (with deployment notes and safety warnings).
 
 ## MCP security servers and integrations
 
@@ -122,7 +125,13 @@ See `mcp_security_tools.md` for MCP scanners, runtime monitoring/policy options,
 60+ MCP servers that wrap AppSec and SAST tools, dependency and OSV data, reverse engineering and mobile stacks, threat intel APIs, cloud and identity platforms, SIEM platforms, and trust or reputation layers (including agent-market style integrations).
 
 **Categories:**
-Categories include AppSec/SAST/dependencies, reverse engineering/mobile, threat intelligence/OSINT, cloud/identity/zero-trust, SIEM/security analytics, and hosting/gateways/transport helpers.
+Categories include 
+- AppSec/SAST/dependencies, 
+- reverse engineering/mobile, 
+- threat intelligence/OSINT, 
+- cloud/identity/zero-trust, 
+- SIEM/security analytics, and 
+- hosting/gateways/transport helpers.
 
 ## CVEs and advisories
 
@@ -157,7 +166,8 @@ Video primers and security-focused sessions with channel, speaker, date, duratio
 ### Contributors
 
 We'd like to thank the following contributors for their valuable input:
-Rohit G (for sharing the mcp repo) and Liran Tal (for sharing the mcp repo).
+- Rohit G (for sharing the mcp repo) and 
+- Liran Tal (for sharing the mcp repo).
 
 
 ## Code of Conduct
