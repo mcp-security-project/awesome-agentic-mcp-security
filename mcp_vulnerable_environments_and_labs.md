@@ -44,7 +44,7 @@ Educational and research environments for MCP security testing. **Tables** summa
 | --- | --- | --- | --- |
 | [bad-mcp][link_github_com_canack_bad_mcp] | Protocol-level attacks, malicious server, tool/schema poisoning | Find hidden instructions; compare metadata pre/post approval; schema fields as instructions; client warnings on definition change | ![](https://badgen.net/github/last-commit/canack/bad-mcp) |
 | [MCP Poisoning PoC][link_github_com_gensecaihq_mcp_poisoning_poc] | PoC poisoning in agent workflows | Run basic demo; mutate descriptions; add metadata scanner before/after | ![](https://badgen.net/github/last-commit/gensecaihq/mcp-poisoning-poc) |
-| [Damn Vulnerable MCP Server (DVMCP)][link_github_com_harishsg993010_damn_vulnerable_mcp_server] | CTF: poisoning, rug pulls, shadowing, permissions | Find malicious instruction in tool def; exploit shadowing; fix with stable metadata + approvals | ![](https://badgen.net/github/last-commit/harishsg993010/damn-vulnerable-MCP-server) |
+| Damn Vulnerable MCP Server (DVMCP) (see “MCP Goat-style projects” above) | CTF: poisoning, rug pulls, shadowing, permissions | Find malicious instruction in tool def; exploit shadowing; fix with stable metadata + approvals | ![](https://badgen.net/github/last-commit/harishsg993010/damn-vulnerable-MCP-server) |
 | [MCP Shark Security Lab][link_github_com_mcp_shark_mcp_shark_security_lab] | Scanner / detection engineering | (See main table — toxic corpus, CI, YARA-style rules) | ![](https://badgen.net/github/last-commit/mcp-shark/mcp-shark-security-lab) |
 
 ---
