@@ -1,13 +1,9 @@
-# Awesome MCP Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-
-> Curated links on Model Context Protocol security: threats, research, tooling, labs, and learning resources.
-
-Maintained and curated by **Vandana Verma Sehgal**.
-
 # Awesome Agentic MCP Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Curated links on agentic AI and Model Context Protocol security: threats, research, tooling, labs, and learning resources.
 
+Maintained and curated by **Vandana Verma Sehgal**.
+Each topic page is a standalone reference with tables, summaries, and outbound links.
 This list treats MCP as a new security boundary and curates 400+ resources across blogs, papers, talks, scanners, integrations, labs, CVEs, and videos. Each topic page is a standalone reference with tables, summaries, and outbound links.
 
 ## Contents
