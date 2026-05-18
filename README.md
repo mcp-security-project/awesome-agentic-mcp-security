@@ -135,12 +135,12 @@ Categories include
 
 ## CVEs and advisories
 
-[Browse MCP CVE catalogs and indexes →](mcp_cve.md)
+[Browse MCP CVE catalogs →](mcp_cve.md)
 
-Community CVE indexes, CSA vulnerability databases, curated awesome lists, and related advisory resources for MCP servers, SDKs, clients, and tooling.
+Structured catalogs of published CVEs affecting MCP servers, clients, SDKs, and related tooling.
 
 **Notable:**
-See `mcp_cve.md` for dedicated catalogs ([mcp-cve-project](https://github.com/vermava/mcp-cve-project), [vulnerability-db](https://github.com/ModelContextProtocol-Security/vulnerability-db), [vulnerablemcp](https://github.com/vineethsai/vulnerablemcp)) and curated lists with CVE coverage.
+See `mcp_cve.md` for [mcp-cve-project](https://github.com/vermava/mcp-cve-project) and [vulnerablemcp](https://github.com/vineethsai/vulnerablemcp).
 
 ## Vulnerable environments and labs
 
