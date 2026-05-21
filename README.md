@@ -101,10 +101,10 @@ For official SDKs, reference servers, scanners, and discovery hubs, see the full
 Audio and live sessions on MCP security and related agentic risk, with metadata for discovery and executive-friendly context.
 
 **Selected:**
-- [Episode 115: Security in Model Context Protocol (MCP)](https://rss.com/podcasts/azsecpodcast/2109364/) - The Azure Security Podcast.
-- [Lessons from the Front-line: What Research Reveals about MCP Security](https://www.wiz.io/events/lessons-from-the-front-line-what-research-reveals-about-mcp-security) - Wiz.
-- [MCP and the Question of Authorization](https://www.sans.org/webcasts/mcp-question-authorization) - SANS.
-- [Authentication and Authorization Patterns for Agents and MCP](https://www.solo.io/resources/webinar/authentication-and-authorization-patterns-for-agents-and-mcp) - Solo.io.
+- [OWASP MCP Top 10: 2026 Security Framework and MCP Security Certification](https://podcasts.apple.com/us/podcast/owasp-mcp-top-10-2026-security-framework-and-mcp/id1813726062?i=1000766440785) - Practical DevSecOps.
+- [#249: The MCP Security Risks You Can't Afford to Ignore](https://techleadjournal.dev/episodes/249) - Tech Lead Journal / Ariel Shiftan (MCPTotal).
+- [Vibe Hacking: AI-Driven C2 Operations with MCP](https://www.sans.org/webcasts/vibe-hacking-ai-driven-c2-operations-mcp) - SANS.
+- [AI-Driven DevSecOps Part 1: Securing Coding Agents with MCP](https://www.sans.org/webcasts/ai-driven-devsecops-part-1) - SANS.
 - [Lessons for Security Leaders From the MCP AI Supply Chain Crisis](https://www.ox.security/webinar/lessons-for-security-leaders-from-anthropics-mcp-failure/) - OX Security.
 
 ## Security tooling
@@ -158,9 +158,9 @@ See `mcp_vulnerable_environments_and_labs.md` for vulnerable labs and PoCs, plus
 Video primers and security-focused sessions with channel, speaker, date, duration, links, and suggested learning outcomes. Organized into general primers, security videos, demo and PoC content, and CVE / exploit walkthroughs.
 
 **Selected:**
+- [The OWASP MCP Top 10 — Every Risk Ranked and Explained](https://www.youtube.com/watch?v=GRuff6FSo5A) - StackOps AI.
 - [Securing Model Context Protocol (MCP) with Vandana Verma (OWASP/Snyk)](https://www.youtube.com/watch?v=IKU153eICKk) - Long-form session on production MCP security.
 - [First Look - OWASP MCP Top 10 - 2025](https://www.youtube.com/watch?v=P2NHzQdwpWI) - Vandana Verma.
-- [Foundations of Secure MCP: Architecture and Threat Model](https://www.youtube.com/watch?v=dWumWR3JK3o) - Google Cloud Tech.
 - [MCP Security: Why Your AI Assistant Is an Insider Threat](https://www.youtube.com/watch?v=WCq7bylBbc8) - Liran Tal, Snyk.
 
 ### Contributors
