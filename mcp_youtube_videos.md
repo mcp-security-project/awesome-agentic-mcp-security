@@ -48,6 +48,9 @@ Include videos that help learners understand, build, break, defend, or govern MC
 | [MCP Security for Agentic AI Platforms: Attack Vectors & Best ...][link_youtube_com_watch_23]: **APIsec University**                                 | 2026-02-17                             | Covers MCP risks in broader agentic AI platforms, including hidden tool access and cross-context data leakage.                                                      |
 | [These Aren't the Tools You're Looking For: MCP Security Awakens][link_youtube_com_watch_24]: **AI Native Dev**                                       | 2025-11-27                             | Security talk-style title focused on malicious MCPs, poisoned tools, and indirect prompt injection against MCP-connected IDEs.                                      |
 | [MCP: Model Context Protocol or Malicious Control Path?][link_youtube_com_watch_25]: **HITCON**                                                      | 2025-09-29                             | Useful for helping security teams understand why MCP integrations must be treated as execution and data-access pathways, not harmless chat plugins.                 |
+| [The OWASP MCP Top 10 — Every Risk Ranked and Explained][link_youtube_com_watch_51]: **StackOps AI**                                                  | 2026-05-14                             | One-minute ranked walkthrough of all ten OWASP MCP Top 10 risks with brief mitigations—good quick refresher after the formal taxonomy.                              |
+| [AI Agents and MCP Security Risks - Risk Mitigation][link_youtube_com_watch_52]: **Black Hills Information Security** - Joff Thyer                     | 2025-12-17                             | Short clip on MCP risks: chroot/filesystem restrictions, logging, RBAC, and validating tool data sources before agent execution.                                    |
+| [Agent Identity for MCP: Prefactor's Approach to Secure, Auditable AI Agents][link_youtube_com_watch_53]: **Agentic AI Foundation** - Matt Doughty, Simon | 2025-09-19                             | Demo and deep dive on agent identity beyond OAuth: signed payloads, immutable audit logs, workload identity, and task-based access for MCP.                         |
 
 
 ---
@@ -82,6 +85,7 @@ Common “short list” curations often cluster **Arcade-style tool auth**, **A2
 
 | Title: Channel - Speaker / Host                                                                                                                                     | Date    | Summary                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Open Sourcing Vulnerable MCP Servers to learn Pentesting][link_youtube_com_watch_54]: **Appsecco**                                                    | 2025-12-16 | Teaser for open-source vulnerable MCP servers from BSides London (injection, auth bypass, prompt injection)—companion to the Sep 2025 masterclass. |
 | [Appsecco MasterClass Pentesting MCP Servers Model Context Protocol - Hands-On Demo & Attack Examples][link_youtube_com_watch_30]: **Appsecco**                    | 2025-09-16 | Hands-on security session for testing MCP servers. Useful for red-teamers and defenders who want practical attack examples in a training context. |
 | [Uncovering Vulnerabilities in Model Context Protocol (Part 2)][link_youtube_com_watch_31]: **Network Intelligence**                                                | 2025-10-17 | Deep dive into hacking MCP servers and thinking about guardrails. Include with lab-only safety framing.                                           |
 | [MCP Servers for Pen Testing: AI-Driven Vulnerability ...][link_youtube_com_watch_32]: **APIsec University** - Christian                                           | 2026-02-17 | Shows how MCP servers can extend security testing workflows, moving from CVE discovery toward automated analysis and exploit generation.          |
@@ -167,6 +171,10 @@ Common “short list” curations often cluster **Arcade-style tool auth**, **A2
 [link_youtube_com_watch_48]: https://www.youtube.com/watch?v=LYUDUOevtqk
 [link_youtube_com_watch_49]: https://www.youtube.com/watch?v=3DEqIquWCQ4
 [link_youtube_com_watch_50]: https://www.youtube.com/watch?v=LazYBEgfF1M
+[link_youtube_com_watch_51]: https://www.youtube.com/watch?v=GRuff6FSo5A
+[link_youtube_com_watch_52]: https://www.youtube.com/watch?v=tKvKgJWJ57A
+[link_youtube_com_watch_53]: https://www.youtube.com/watch?v=MqQCMYSpSE0
+[link_youtube_com_watch_54]: https://www.youtube.com/watch?v=G7hKl96qZTE
 [link_youtube_com_watch_5]: https://www.youtube.com/watch?v=kOhLoixrJXo
 [link_youtube_com_watch_6]: https://www.youtube.com/watch?v=0IhZdcjddo4
 [link_youtube_com_watch_7]: https://www.youtube.com/watch?v=G5KyIzV-254
