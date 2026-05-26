@@ -1,4 +1,4 @@
-# Awesome Agentic MCP Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Agentic MCP Security [Awesome](https://awesome.re)
 
 > Curated links on agentic AI and Model Context Protocol security: threats, research, tooling, labs, and learning resources.
 
@@ -29,18 +29,21 @@ This list treats MCP as a new security boundary and curates 400+ resources acros
 If you only have a few minutes, these are widely-cited starting points across the list.
 
 **Foundations**
+
 - [Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) - Official MCP specification.
 - [Security Best Practices](https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices) - Confused deputy, token passthrough, SSRF, session hijacking, and scope minimization.
 - [OWASP MCP Top 10](https://owasp.org/www-project-mcp-top-10/) - Community risk taxonomy for MCP-enabled systems.
 - [MCP Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html) - OWASP cheat sheet covering tool trust, validation, and supply-chain hygiene.
 
 **Foundational research and incidents**
+
 - [Tool Poisoning Attacks](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks) - Invariant Labs' early notification on malicious instructions hidden in tool descriptions.
 - [Jumping the line: How MCP servers can attack you before you ever use them](https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/) - Trail of Bits.
 - [MCP Servers: The New Security Nightmare](https://equixly.com/blog/mcp-security-nightmare) - Equixly's widely-cited empirical vulnerability rates in popular MCP servers.
 - [Building Secure MCP Servers: A Developer's Guide](https://snyk.io/articles/building-secure-mcp-servers/) - Snyk developer-focused guide.
 
 **Hands-on**
+
 - [Damn Vulnerable MCP Server (DVMCP)](https://github.com/harishsg993010/damn-vulnerable-MCP-server) - CTF-style lab for prompt injection, tool poisoning, rug pulls, and shadowing.
 - [MCP Inspector RCE (CVE-2025-49596)](https://github.com/modelcontextprotocol/inspector/security/advisories/GHSA-7f8r-222p-6f5g) - Critical advisory in MCP developer tooling.
 - [Snyk Agent Scan](https://github.com/snyk/agent-scan) - CLI scanner for prompt injection, tool poisoning, and toxic flows in agent and MCP configurations.
@@ -61,6 +64,7 @@ Data leakage, unauthorized actions, prompt injection chains, tool poisoning, sup
 70+ blogs, whitepapers, standards, and academic papers with short summaries for theme-based reading. Includes Microsoft, Anthropic, Invariant Labs, Trail of Bits, Snyk, Wiz, OX Security, JFrog, CyberArk, Equixly, Red Hat, Stack Overflow, OWASP, and Cloud Security Alliance. Plus a chronological "Dated incidents" subsection covering AgentFlayer, mcp-remote RCE (CVE-2025-6514), MCPoison, Asana cross-tenant exposure, Cato CTRL PoCs, ANSI deception, and other notable incidents.
 
 **Selected reading:**
+
 - [Toxic Flow Analysis](https://invariantlabs.ai/blog/toxic-flow-analysis) - Invariant Labs.
 - [Insecure credential storage plagues MCP](https://blog.trailofbits.com/2025/04/30/insecure-credential-storage-plagues-mcp/) - Trail of Bits.
 - [The Cursor Agentic Jira MCP Attack Explained with Toxic Flow Analysis](https://lirantal.com/blog/cursor-jira-mcp-toxic-flow) - Liran Tal.
@@ -82,6 +86,7 @@ CoSAI at RSAC 2026: Securing MCP: Mitigating New Threats in Agentic AI Deploymen
 Free or low-barrier structured learning for MCP fundamentals and security-aware integration, with notes on format, duration, and sequencing. Organized by skill level (beginner, intermediate, advanced) and split between MCP fundamentals, MCP security, and company-sponsored trainings.
 
 **Selected:**
+
 - [Official MCP Documentation: Getting Started](https://modelcontextprotocol.io/docs/getting-started/intro) - Model Context Protocol project.
 - [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners) - Microsoft's open-source curriculum across multiple languages.
 - [Model Context Protocol Course](https://huggingface.co/learn/mcp-course/unit0/introduction) - Hugging Face structured course.
@@ -101,6 +106,7 @@ For official SDKs, reference servers, scanners, and discovery hubs, see the full
 Audio and live sessions on MCP security and related agentic risk, with metadata for discovery and executive-friendly context.
 
 **Selected:**
+
 - [OWASP MCP Top 10: 2026 Security Framework and MCP Security Certification](https://podcasts.apple.com/us/podcast/owasp-mcp-top-10-2026-security-framework-and-mcp/id1813726062?i=1000766440785) - Practical DevSecOps.
 - [#249: The MCP Security Risks You Can't Afford to Ignore](https://techleadjournal.dev/episodes/249) - Tech Lead Journal / Ariel Shiftan (MCPTotal).
 - [Vibe Hacking: AI-Driven C2 Operations with MCP](https://www.sans.org/webcasts/vibe-hacking-ai-driven-c2-operations-mcp) - SANS.
@@ -114,6 +120,7 @@ Audio and live sessions on MCP security and related agentic risk, with metadata 
 50+ scanners, monitors, policy and gateway controls, secrets and dependency checks, and related utilities with deployment notes and safety warnings where relevant. Organized by category: MCP scanners, runtime monitoring, policy engines, secrets and dependency scanners, red team tools, and blue team / SOC tools.
 
 See `mcp_security_tools.md` for 
+
 - MCP scanners, 
 - runtime monitoring/policy options, and 
 - hardening utilities (with deployment notes and safety warnings).
@@ -126,6 +133,7 @@ See `mcp_security_tools.md` for
 
 **Categories:**
 Categories include 
+
 - AppSec/SAST/dependencies, 
 - reverse engineering/mobile, 
 - threat intelligence/OSINT, 
@@ -158,6 +166,7 @@ See `mcp_vulnerable_environments_and_labs.md` for vulnerable labs and PoCs, plus
 Video primers and security-focused sessions with channel, speaker, date, duration, links, and suggested learning outcomes. Organized into general primers, security videos, demo and PoC content, and CVE / exploit walkthroughs.
 
 **Selected:**
+
 - [The OWASP MCP Top 10 — Every Risk Ranked and Explained](https://www.youtube.com/watch?v=GRuff6FSo5A) - StackOps AI.
 - [Securing Model Context Protocol (MCP) with Vandana Verma (OWASP/Snyk)](https://www.youtube.com/watch?v=IKU153eICKk) - Long-form session on production MCP security.
 - [First Look - OWASP MCP Top 10 - 2025](https://www.youtube.com/watch?v=P2NHzQdwpWI) - Vandana Verma.
@@ -166,9 +175,10 @@ Video primers and security-focused sessions with channel, speaker, date, duratio
 ### Contributors
 
 We'd like to thank the following contributors for their valuable input:
+
 - Rohit G (for sharing the mcp repo) and 
 - Liran Tal (for sharing the mcp repo).
-
+- Randall Degges (for sharing the incredible feedback and suggesting the changes).
 
 ## Code of Conduct
 
