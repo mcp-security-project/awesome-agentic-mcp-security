@@ -66,6 +66,7 @@
 | [fr0gger/MCP_Security][link_fr0gger_mcp_security] | ORKL threat-intel style queries via MCP | API keys and intel classification handling | ![](https://badgen.net/github/last-commit/fr0gger/MCP_Security) |
 | [roadwy/cve-search_mcp][link_roadwy_cve_search_mcp] | CVE-Search API queries (vendor/product/CVE details) | Validate the upstream CVE-Search instance and rate limits; treat results as enrichment, not ground truth | ![](https://badgen.net/github/last-commit/roadwy/cve-search_mcp) |
 | [nickpending/mcp-recon][link_nickpending_mcp_recon] | Recon workflows (domain/ASN/certs/headers) via MCP | Prefer owned assets and authorized scopes; recon output can enable abuse—log and gate usage | ![](https://badgen.net/github/last-commit/nickpending/mcp-recon) |
+| [ppcvote/misp-mcp-server][link_ppcvote_misp_mcp_server] | [MISP][link_misp] threat-intel platform read-only access with built-in prompt-injection defense | Federated MISP feeds may contain adversarial seeding payloads—server runs every response through prompt-defense-audit's `scanOutput()` before LLM exposure; read-only by design (no event/attribute mutation tools) | ![](https://badgen.net/github/last-commit/ppcvote/misp-mcp-server) |
 
 ---
 
@@ -204,3 +205,5 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 [link_zinja_jadx_ai_mcp]: https://github.com/zinja-coder/jadx-ai-mcp
 [link_mobilehackinglab_jadx_mcp_plugin]: https://github.com/mobilehackinglab/jadx-mcp-plugin
 [link_zitadel]: https://zitadel.com/
+[link_ppcvote_misp_mcp_server]: https://github.com/ppcvote/misp-mcp-server
+[link_misp]: https://www.misp-project.org/
