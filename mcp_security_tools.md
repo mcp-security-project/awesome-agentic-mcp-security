@@ -24,7 +24,6 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Cisco AI Defense MCP Scanner][link_github_com_cisco_ai_defense_mcp_scanner]** | MCP scanner (multi-engine) — Servers, tools, prompts, resources, instructions, source, dependencies; **detects** malicious tools, prompt injection, vulnerable deps, suspicious code, malicious bundles. CLI or REST API (YARA, LLM-judge, Cisco API, pip-audit, optional VirusTotal, offline JSON); some features need API keys / data egress. |
 | **[MSCC (MCP Security Command Center)][link_github_com_gensecaihq_mcpscc]** | MCP security scanner — Common MCP-specific issues; **detects** prompt injection, tool poisoning, secret exposure, other weaknesses. Dev / DevSecOps; validate maturity before enterprise. |
 | **[Secure-Hulk][link_github_com_appiumtestdistribution_secure_hulk]** | MCP config & tool scanner — Config review, reports; **detects** prompt injection, tool poisoning, cross-origin escalation, exfiltration, toxic flows, privilege escalation, cross-resource risks. JSON/HTML reports; whitelist support; early-stage project. |
-| **[Snyk Agent Scan / MCP-Scan][link_github_com_snyk_agent_scan]** (PyPI: `mcp-scan` → `snyk-agent-scan`) | MCP and agent supply-chain scanner — Local agent configs, MCP servers, tools, prompts, resources, skills; **detects** prompt injection, tool poisoning, toxic flows, risky MCP metadata, agent-skill issues. CLI and fleet monitoring; **safety:** stdio scans may start MCP servers — review commands first. **Naming:** Invariant Labs’ [Introducing MCP-Scan][link_invariantlabs_ai_blog_introducing_mcp_scan] described this line of scanning; the former GitHub path `invariantlabs-ai/mcp-scan` **redirects** to this repository (same canonical codebase—do not list twice as separate tools). |
 | **[AI-Infra-Guard][link_github_com_tencent_ai_infra_guard]** (A.I.G) | AI infra red-teaming platform — MCP server & agent-skills scanning, jailbreak eval, and related self-assessment flows; broader than MCP-only scanners (MCP-focused briefing PDFs also linked from [conference talks](mcp_conference_talks.md)). |
 | **[SecureMCP][link_github_com_makalin_securemcp]** | MCP security audit — OAuth/token issues, prompt injection testing, auth & TLS checks, server integrity, reports. |
 | **[mcp-watch][link_github_com_kapilduraphe_mcp_watch]** (npm: `mcp-watch`) | MCP server static/descriptor scanner — Credentials, tool poisoning, parameter injection, ANSI tricks, toxic flows, spoofing; **not** the same project as [mcpwatch][link_github_com_lazymac2x_mcpwatch] (separate maintainer). |
@@ -50,7 +49,6 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 
 | Tool & resources | Category — Summary |
 | --- | --- |
-| **[Invariant Guardrails][link_github_com_invariantlabs_ai_invariant]** | Runtime guardrails / monitoring — Block unsafe agent behavior via rules on tool calls and flows; multi-step toxic flows, tool misuse, exfiltration, continuous monitoring. Sits between app and MCP/LLM. |
 | **[Lasso MCP Gateway][link_github_com_lasso_security_mcp_gateway]** | MCP gateway — Centralize lifecycle, intercept, sanitize, scan before load; single control point for many servers. Enterprise / governed connections. |
 | **[Agent Wall][link_github_com_agent_wall_agent_wall]** | MCP firewall / policy proxy — YAML policy on tool calls and responses; block dangerous reads, shell, exfiltration, risky chains. Client–server middle; local IDE workflows. |
 | **[MCP Action Firewall][link_github_com_starskrime_mcp_action_firewall]** | Human-approval / transparent proxy — OTP approval for dangerous tool calls; circuit breaker for high-impact actions. Demos / local; validate before enterprise. |
@@ -68,7 +66,6 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 
 | Tool & resources | Category — Use for MCP |
 | --- | --- |
-| **[Invariant Guardrails][link_github_com_invariantlabs_ai_invariant]** | Guardrail / policy — Multi-tool flows, transitions, violations; sequence-aware policies. |
 | **[Agent Wall][link_github_com_agent_wall_agent_wall]** | YAML policy on MCP traffic — Local/proxy tool + response enforcement; workstations, early governance. |
 | **[Lasso MCP Gateway][link_github_com_lasso_security_mcp_gateway]** | Gateway policy & sanitization — Centralized policy, lifecycle, sensitive data; enterprise control point. |
 | **[MCP Action Firewall][link_github_com_starskrime_mcp_action_firewall]** | Approval-based policy — Human confirmation for dangerous actions when allow/deny isn’t enough. |
@@ -81,8 +78,6 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | --- | --- |
 | **[Gitleaks][link_github_com_gitleaks_gitleaks]** | Secrets scanner — Keys/tokens in MCP repos, configs, examples, history; CI, pre-commit, `.env`, `mcp.json`, OAuth tokens, etc. |
 | **[Trivy][link_trivy_dev]** | Vuln, misconfig, secret, SBOM, container, K8s, IaC — MCP containers, repos, K8s, cloud deployments; CI/CD, registries, platform eng. |
-| **[Semgrep][link_github_com_semgrep_semgrep]** | SAST — Custom rules: unsafe tools, injection, traversal, SSRF, hardcoded creds, subprocess; PR checks, custom MCP rule packs. |
-| **[Semgrep Supply Chain][link_semgrep_dev_products_semgrep_supply_chain]** | SCA / supply chain — Vulnerable/malicious deps in MCP servers; reachable risk. |
 | **pip-audit, npm audit, OSV-Scanner, Safety, Dependabot, Snyk Open Source** (various vendors) | Language/package scanners — Deps in Python/Node/Go/Java/Rust/container MCP servers; per-language CI; general scanners, not MCP-native. |
 
 ---
@@ -95,7 +90,6 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Promptfoo][link_github_com_promptfoo_promptfoo]** | LLM eval & red team — Prompt injection, exfiltration, RAG, RBAC, BOLA/BFLA, SSRF, SQLi, tool boundaries | Regression tests for agents/guardrails |
 | **[garak][link_github_com_nvidia_garak]** (NVIDIA) | LLM vuln scanner — Model/dialog layer around MCP workflows | Combine with MCP-specific tools |
 | **[PyRIT][link_github_com_microsoft_pyrit]** (Microsoft) | AI red-team automation — Multi-turn adversarial scenarios, tool safety, chained workflows | Research, structured campaigns |
-| **[Invariant MCP injection experiments][link_github_com_invariantlabs_ai_mcp_injection_experiments]** | Tool poisoning / injection research — How metadata influences agents; scanner patterns | Attack research; link to vulnerable labs |
 | **[mcp-ethical-hacking][link_github_com_cmpxchg16_mcp_ethical_hacking]** | Educational MCP examples — “Legitimate” social/analysis demos illustrating abuse potential | **Authorized use only**; respect platform ToS; lab isolation |
 
 ---
