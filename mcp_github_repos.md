@@ -63,6 +63,7 @@
 | Repository / Tool | What It Helps With | Summary | Last updated |
 | --- | --- | --- | --- |
 | [MCP Security Checklist][link_github_com_slowmist_mcp_security_checklist] | Structured review items for MCP design, deployment, and operations | Complements automated scanners; not a substitute for testing | ![](https://badgen.net/github/last-commit/slowmist/MCP-Security-Checklist) |
+| [MCP Azure Security Guide][link_github_com_microsoft_mcp_azure_security_guide] (published guide: [microsoft.github.io/mcp-azure-security-guide][link_microsoft_github_io_mcp_azure_security_guide]) | Maps each OWASP MCP Top 10 risk to concrete Azure mitigations (Entra ID, managed identities, Azure API Management, Key Vault, network isolation, monitoring) | Microsoft reference guidance for securing MCP servers on Azure; pairs threat-by-threat breakdowns with reference architectures and code examples | ![](https://badgen.net/github/last-commit/microsoft/mcp-azure-security-guide) |
 
 ## Representative security-product MCP servers
 
@@ -172,6 +173,8 @@
 [link_github_com_smart_mcp_proxy_mcpproxy_go]: https://github.com/smart-mcp-proxy/mcpproxy-go
 [link_github_com_snyk_agent_scan]: https://github.com/snyk/agent-scan
 [link_github_com_slowmist_mcp_security_checklist]: https://github.com/slowmist/MCP-Security-Checklist
+[link_github_com_microsoft_mcp_azure_security_guide]: https://github.com/microsoft/mcp-azure-security-guide
+[link_microsoft_github_io_mcp_azure_security_guide]: https://microsoft.github.io/mcp-azure-security-guide/
 [link_github_com_stackloklabs_osv_mcp]: https://github.com/StacklokLabs/osv-mcp
 [link_github_com_stackloklabs_toolhive]: https://github.com/StacklokLabs/toolhive
 [link_github_com_spring_projects_spring_ai]: https://github.com/spring-projects/spring-ai

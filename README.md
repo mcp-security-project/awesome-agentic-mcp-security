@@ -33,6 +33,7 @@ If you only have a few minutes, these are widely-cited starting points across th
 - [Model Context Protocol Specification](https://modelcontextprotocol.io/specification/2025-11-25) - Official MCP specification.
 - [Security Best Practices](https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices) - Confused deputy, token passthrough, SSRF, session hijacking, and scope minimization.
 - [OWASP MCP Top 10](https://owasp.org/www-project-mcp-top-10/) - Community risk taxonomy for MCP-enabled systems.
+- [MCP Azure Security Guide](https://microsoft.github.io/mcp-azure-security-guide/) - Microsoft guide mapping the OWASP MCP Top 10 to concrete Azure mitigations.
 - [MCP Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html) - OWASP cheat sheet covering tool trust, validation, and supply-chain hygiene.
 
 **Foundational research and incidents**
@@ -171,6 +172,7 @@ Video primers and security-focused sessions with channel, speaker, date, duratio
 - [Securing Model Context Protocol (MCP) with Vandana Verma (OWASP/Snyk)](https://www.youtube.com/watch?v=IKU153eICKk) - Long-form session on production MCP security.
 - [First Look - OWASP MCP Top 10 - 2025](https://www.youtube.com/watch?v=P2NHzQdwpWI) - Vandana Verma.
 - [MCP Security: Why Your AI Assistant Is an Insider Threat](https://www.youtube.com/watch?v=WCq7bylBbc8) - Liran Tal, Snyk.
+- [Securing the Future of AI: Securing MCP with Defense in Depth Patterns](https://www.youtube.com/watch?v=cVWB58kEt-Y) - Microsoft BlueHat 2026 / MSRC.
 
 ### Contributors
 

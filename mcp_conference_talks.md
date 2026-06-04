@@ -15,6 +15,7 @@
 
 | Title · Speaker · Event & links | Summary |
 |--------------------------------|---------|
+| **2026-05-20** – [BlueHat 2026](https://msrc.microsoft.com/bluehat) – **[Securing the Future of AI: Securing MCP with Defense in Depth Patterns](https://www.youtube.com/watch?v=cVWB58kEt-Y)** – **Jitesh Thakur** | Why layered security controls, not single fixes, are essential for MCP ecosystems. Walkthrough of defense-in-depth patterns for MCP with a simplified framework to evaluate risk by controlling identity, tools, context, and visibility. |
 | **2026-03-25** – [CoSAI at RSAC 2026](https://www.coalitionforsecureai.org/cosai-at-rsac-2026/) – **Securing MCP: Mitigating New Threats in Agentic AI Deployments** – **Sarah Novotny, Jason Clinton** | Coalition-oriented session on threat models and mitigations for MCP in production agentic AI deployments. |
 | **2026-03-25** – [OWASP GenAI @ RSAC 2026](https://genai.owasp.org/event/rsac-conference-2026-owasp-ai-security-summit-safeguarding-genai-agents-autonomous-ai-risk-2026/) – **Securing MCP: OWASP Best Practices – A Practical Guide** – **Idan Habler, Joshua Beck, Tomer Elias** | Practical OWASP-aligned guidance for securing MCP implementations in real organizations. |
 | **2026-03-24** – [Netskope at RSA](https://www.netskope.com/company/events/netskope-at-rsa) – **Trust Me, I’m a Tool: Attacking and Defending the MCP** – **Gianpietro Cutolo** | Red-team and blue-team angles on MCP abuse and hardening in enterprise security contexts. |
