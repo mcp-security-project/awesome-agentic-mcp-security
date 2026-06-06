@@ -143,7 +143,7 @@ Categories include
 
 - trust/reputation layers and agent-identity verification systems, including Solana-native on-chain trust primitives.
 
-- **[TWZRD Agent Intel](https://github.com/twzrd-sol/wzrd-final)** — Solana-native trust scoring and x402 receipt verification MCP server for AI agents. Free preflight + paid signed V5 trust receipts at https://intel.twzrd.xyz
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** — Solana-native trust scoring and x402 receipt verification MCP server for AI agents. Free preflight + paid signed V5 trust receipts at https://intel.twzrd.xyz
 
 ## CVEs and advisories
 
