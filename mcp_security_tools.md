@@ -34,6 +34,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[MCPSafetyScanner][link_github_com_leidosinc_mcpsafetyscanner]** | Agentic MCP safety auditor — Adversarial samples from tools/resources; safety reports; **detects** unsafe tools, malicious execution, credential theft, unauthorized access. Research / academic; **safety:** isolated test env only. |
 | **[MCP-SandboxScan][link_github_com_wapiti08_mcp_sandboxscan]** | Runtime / sandbox analysis — Execute untrusted tools in WASM/WASI-style sandbox; **detects** env/file→prompt, filesystem violations, runtime-only issues. Research / experimental; advanced research & high-risk tool review. |
 | **[MCP Inspector][link_github_com_modelcontextprotocol_inspector]** ([documentation][link_modelcontextprotocol_io_docs_tools_inspector]) | Dev test/debug (not a security scanner) — Manual inspection of servers, tools, prompts, resources, transport; observational only (no automated detection). For security review: validate tools/schemas before approval; **not** a replacement for automated scanning. |
+| **[MCP Doctor][link_github_com_xlyoung_mcp_doctor]** | MCP scanner + quality scorer + registry — Security scanning (8 detection engines: prompt injection, path traversal, credential leakage, network exfiltration, command injection, SSRF, supply chain, excessive permissions), automated quality scoring (0-100 across 5 dimensions), curated registry of 100+ MCP servers with pre-computed scores, side-by-side comparison, one-command install with security gating, CI/CD integration with exit codes. CLI tool (Python). |
 
 ---
 
@@ -158,6 +159,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 [link_github_com_leidosinc_mcpsafetyscanner]: https://github.com/leidosinc/McpSafetyScanner
 [link_github_com_microsoft_pyrit]: https://github.com/microsoft/PyRIT
 [link_github_com_modelcontextprotocol_inspector]: https://github.com/modelcontextprotocol/inspector
+[link_github_com_xlyoung_mcp_doctor]: https://github.com/xlyoung/mcp-doctor
 [link_github_com_modelcontextprotocol_security_mcpserver_audit]: https://github.com/ModelContextProtocol-Security/mcpserver-audit
 [link_github_com_nvidia_garak]: https://github.com/NVIDIA/garak
 [link_github_com_promptfoo_promptfoo]: https://github.com/promptfoo/promptfoo
