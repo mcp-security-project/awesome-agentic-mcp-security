@@ -34,6 +34,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[MCPSafetyScanner][link_github_com_leidosinc_mcpsafetyscanner]** | Agentic MCP safety auditor — Adversarial samples from tools/resources; safety reports; **detects** unsafe tools, malicious execution, credential theft, unauthorized access. Research / academic; **safety:** isolated test env only. |
 | **[MCP-SandboxScan][link_github_com_wapiti08_mcp_sandboxscan]** | Runtime / sandbox analysis — Execute untrusted tools in WASM/WASI-style sandbox; **detects** env/file→prompt, filesystem violations, runtime-only issues. Research / experimental; advanced research & high-risk tool review. |
 | **[MCP Inspector][link_github_com_modelcontextprotocol_inspector]** ([documentation][link_modelcontextprotocol_io_docs_tools_inspector]) | Dev test/debug (not a security scanner) — Manual inspection of servers, tools, prompts, resources, transport; observational only (no automated detection). For security review: validate tools/schemas before approval; **not** a replacement for automated scanning. |
+| **[MCP Doctor][link_github_com_xlyoung_mcp_doctor]** | MCP server quality & security toolkit — 8 security checks (prompt injection, path traversal, credential leakage, SSRF, command injection, supply chain, excessive permissions, network exfiltration); automated 0-100 quality scoring; curated registry of 100+ servers; CI/CD integration. Python CLI; **pip install mcpdoctor**. |
 
 ---
 
@@ -195,3 +196,4 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 [link_sentinelone]: https://www.sentinelone.com/platform/singularity-xdr/
 [link_carbon_black]: https://www.broadcom.com/products/cyber-security/endpoint
 [link_sophos_intercept_x]: https://www.sophos.com/en-us/products/endpoint-antivirus
+[link_github_com_xlyoung_mcp_doctor]: https://github.com/xlyoung/mcp-doctor
