@@ -27,6 +27,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[AI-Infra-Guard][link_github_com_tencent_ai_infra_guard]** (A.I.G) | AI infra red-teaming platform — MCP server & agent-skills scanning, jailbreak eval, and related self-assessment flows; broader than MCP-only scanners (MCP-focused briefing PDFs also linked from [conference talks](mcp_conference_talks.md)). |
 | **[SecureMCP][link_github_com_makalin_securemcp]** | MCP security audit — OAuth/token issues, prompt injection testing, auth & TLS checks, server integrity, reports. |
 | **[mcp-watch][link_github_com_kapilduraphe_mcp_watch]** (npm: `mcp-watch`) | MCP server static/descriptor scanner — Credentials, tool poisoning, parameter injection, ANSI tricks, toxic flows, spoofing; **not** the same project as [mcpwatch][link_github_com_lazymac2x_mcpwatch] (separate maintainer). |
+| **[mcp-audit][link_github_com_adudley78_mcp_audit]** | MCP config scanner (open source, privacy-first) — Scans MCP server JSON configs across 8+ supported clients; **detects** tool poisoning, plaintext credential exposure, transport misconfigs, supply chain / typosquatting, rug-pull description drift, toxic cross-server flows, and multi-hop attack paths. CLI + JSON + SARIF + HTML dashboard; GitHub Action; pre-commit hook; 89 bundled Semgrep SAST rules for MCP server source code; full OWASP MCP Top 10 mapping; runs fully offline by default; Apache 2.0. |
 | **[MCP Server Scanner][link_mcpserverscanner_com]** | Web/SaaS-oriented MCP server discovery or assessment (verify methodology, data handling, and jurisdiction before uploading manifests). |
 | **[MCPScan.ai][link_mcpscan_ai]** | Web scanner / assessment surface for MCP configs or servers (review terms, telemetry, and what leaves your network). |
 | **[Ant Group MCP-Security][link_github_com_antgroup_mcp_security]** | Static + dynamic MCP scanner — Auditing agent tools / plugins; **detects** malicious metadata (prompt injection), insecure tools, unsafe reads, code vulns. Semgrep-style taint + dynamic LLM eval; local or remote GitHub repos. |
@@ -146,6 +147,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 [link_marketplace_visualstudio_com_agentity_mcp_audit_extension]: https://marketplace.visualstudio.com/items?itemName=Agentity.mcp-audit-extension
 [link_mcpscan_ai]: https://mcpscan.ai/
 [link_mcpserverscanner_com]: https://mcpserverscanner.com/
+[link_github_com_adudley78_mcp_audit]: https://github.com/adudley78/mcp-audit
 [link_github_com_agent_wall_agent_wall]: https://github.com/agent-wall/agent-wall
 [link_github_com_antgroup_mcp_security]: https://github.com/antgroup/MCP-Security
 [link_github_com_appiumtestdistribution_secure_hulk]: https://github.com/AppiumTestDistribution/secure-hulk
