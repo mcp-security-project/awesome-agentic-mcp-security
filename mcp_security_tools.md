@@ -54,6 +54,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[MCP Action Firewall][link_github_com_starskrime_mcp_action_firewall]** | Human-approval / transparent proxy — OTP approval for dangerous tool calls; circuit breaker for high-impact actions. Demos / local; validate before enterprise. |
 | **[OpenTelemetry MCP semantic conventions][link_opentelemetry_io_docs_specs_semconv_gen_ai_mcp]** ([Grafana MCP observability guide][link_grafana_com_blog_ai_observability_mcp_servers]) | Observability / telemetry — Spans, latency, errors, health, audit metadata; baseline and detect abnormal tool patterns. Feeds Grafana, Tempo, Datadog, etc. |
 | **Egress proxies & network controls** (Smokescreen-style, corporate proxy, mesh egress, K8s NetworkPolicy) | Network runtime control — Block metadata SSRF, private IPs, paste sites, unexpected APIs; SSRF, exfiltration, untrusted remote fetch. Treat MCP servers as user-acting code; minimal explicit egress. |
+| **[Armorer Guard][link_github_com_armorerlabs_armorer_guard]** | Local Rust scanner and MCP proxy — Wrap stdio MCP servers, inspect `tools/call` arguments, emit structured reasons, and block prompt injection, credential leakage, exfiltration, or dangerous tool-call risk before execution. |
 | **[mcp-context-protector][link_github_com_trailofbits_mcp_context_protector]** (Trail of Bits) | MCP client wrapper / visibility layer — Surfaces malicious or deceptive server-provided context (e.g. description-driven exfiltration, “line jumping”); complements scanners and policy proxies. |
 | **[MCP Audit (VS Code extension)][link_github_com_agentity_com_mcp_audit_extension]** ([Visual Studio Marketplace][link_marketplace_visualstudio_com_agentity_mcp_audit_extension]) | IDE-side audit logging — Intercepts and logs Copilot/MCP tool calls with optional SIEM/syslog forwarders; governance and troubleshooting, not a substitute for server-side controls. |
 | **[MCP-Defender][link_github_com_mcp_defender_mcp_defender]** | Desktop proxy — Intercepts MCP traffic from supported clients, signature-style checks, user allow/block prompts; review AGPL terms and update channel before fleet rollout. |
@@ -133,6 +134,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 
 [link_github_com_agentity_com_mcp_audit_extension]: https://github.com/Agentity-com/mcp-audit-extension
 [link_github_com_82ch_mcp_dandan]: https://github.com/82ch/MCP-Dandan
+[link_github_com_armorerlabs_armorer_guard]: https://github.com/ArmorerLabs/Armorer-Guard
 [link_github_com_cmpxchg16_mcp_ethical_hacking]: https://github.com/cmpxchg16/mcp-ethical-hacking
 [link_github_com_defenter_ai_defenter_proxy]: https://github.com/Defenter-AI/defenter-proxy
 [link_github_com_kapilduraphe_mcp_watch]: https://github.com/kapilduraphe/mcp-watch
