@@ -182,4 +182,4 @@ We'd like to thank the following contributors for their valuable input:
 
 ## Code of Conduct
 
-Community participation follows the [Code of Conduct](CODE_OF_CONDUCT.md).
+Community participation follows the [Code of Conduct](CODE_OF_CONDUCT.md).# mcp-security-scanner
