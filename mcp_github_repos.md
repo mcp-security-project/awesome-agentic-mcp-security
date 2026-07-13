@@ -15,23 +15,27 @@
 
 ## Code repositories
 
-[TypeScript SDK][link_github_com_modelcontextprotocol_typescript_sdk]
-
-[Python SDK][link_github_com_modelcontextprotocol_python_sdk]
-
-[C# SDK][link_github_com_modelcontextprotocol_csharp_sdk]
-
-[Go SDK][link_github_com_modelcontextprotocol_go_sdk]
-
-[Java SDK][link_github_com_modelcontextprotocol_java_sdk]
-
-[Rust SDK][link_github_com_modelcontextprotocol_rust_sdk]
-
-[Servers][link_github_com_modelcontextprotocol_servers]
-
-[Registry][link_github_com_modelcontextprotocol_registry]
-
-[GitHub MCP Server][link_github_com_github_github_mcp_server]
+| Repository | What It Is | Last updated |
+| --- | --- | --- |
+| [TypeScript SDK][link_github_com_modelcontextprotocol_typescript_sdk] | Official TypeScript SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/typescript-sdk) |
+| [Python SDK][link_github_com_modelcontextprotocol_python_sdk] | Official Python SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/python-sdk) |
+| [C# SDK][link_github_com_modelcontextprotocol_csharp_sdk] | Official C# SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/csharp-sdk) |
+| [Go SDK][link_github_com_modelcontextprotocol_go_sdk] | Official Go SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/go-sdk) |
+| [Java SDK][link_github_com_modelcontextprotocol_java_sdk] | Official Java SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/java-sdk) |
+| [Rust SDK][link_github_com_modelcontextprotocol_rust_sdk] | Official Rust SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/rust-sdk) |
+| [PHP SDK][link_github_com_modelcontextprotocol_php_sdk] | Official PHP SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/php-sdk) |
+| [Swift SDK][link_github_com_modelcontextprotocol_swift_sdk] | Official Swift SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/swift-sdk) |
+| [Kotlin SDK][link_github_com_modelcontextprotocol_kotlin_sdk] | Official Kotlin SDK for MCP servers and clients | ![](https://badgen.net/github/last-commit/modelcontextprotocol/kotlin-sdk) |
+| [Specification and documentation][link_github_com_modelcontextprotocol_modelcontextprotocol] | MCP spec source and documentation site content | ![](https://badgen.net/github/last-commit/modelcontextprotocol/modelcontextprotocol) |
+| [Servers][link_github_com_modelcontextprotocol_servers] | Reference MCP server implementations | ![](https://badgen.net/github/last-commit/modelcontextprotocol/servers) |
+| [Servers (archived)][link_github_com_modelcontextprotocol_servers_archived] | Archived reference servers (read-only; no security patches) | ![](https://badgen.net/github/last-commit/modelcontextprotocol/servers-archived) |
+| [Registry][link_github_com_modelcontextprotocol_registry] · [Registry (browse)][link_registry_modelcontextprotocol_io] | Community registry service and published-server browse UI | ![](https://badgen.net/github/last-commit/modelcontextprotocol/registry) |
+| [MCP Inspector][link_github_com_modelcontextprotocol_inspector] | Official visual testing and debugging tool for MCP servers | ![](https://badgen.net/github/last-commit/modelcontextprotocol/inspector) |
+| [ext-apps (MCP Apps)][link_github_com_modelcontextprotocol_ext_apps] | MCP Apps protocol spec and SDK | ![](https://badgen.net/github/last-commit/modelcontextprotocol/ext-apps) |
+| [mcpb (Desktop Extensions)][link_github_com_modelcontextprotocol_mcpb] | Desktop extension packaging for one-click local MCP installs | ![](https://badgen.net/github/last-commit/modelcontextprotocol/mcpb) |
+| [quickstart-resources][link_github_com_modelcontextprotocol_quickstart_resources] | Tutorial servers and clients from MCP quickstarts | ![](https://badgen.net/github/last-commit/modelcontextprotocol/quickstart-resources) |
+| [conformance tests][link_github_com_modelcontextprotocol_conformance] | MCP conformance test suite | ![](https://badgen.net/github/last-commit/modelcontextprotocol/conformance) |
+| [GitHub MCP Server][link_github_com_github_github_mcp_server] | First-party GitHub API MCP server (successor to archived reference server) | ![](https://badgen.net/github/last-commit/github/github-mcp-server) |
 
 ## Security scanners and defensive tools
 
@@ -55,14 +59,39 @@
 | [MCP Audit extension][link_github_com_agentity_com_mcp_audit_extension]                                                                                                                                                                                                                                                                                                                                                         | VS Code extension: logs/forwards Copilot MCP tool calls for audit                                                                                | IDE-only visibility; pair with server-side controls                 | ![](https://badgen.net/github/last-commit/Agentity-com/mcp-audit-extension) |
 | [MCP Ethical Hacking][link_github_com_cmpxchg16_mcp_ethical_hacking]                                                                                                                                                                                                                                                                                                                                                         | Educational MCP samples illustrating abuse classes                                                                                | **Authorized testing only**; lab isolation                 | ![](https://badgen.net/github/last-commit/cmpxchg16/mcp-ethical-hacking) |
 | [octocode-mcp][link_github_com_bgauryy_octocode_mcp]                                                                                                                                                                                                                                                                                                                                                         | Research-oriented MCP tooling for GitHub-centric dev workflows ([octocode.ai](https://octocode.ai))                                                                                | Requires GitHub auth—treat tokens like production secrets                 | ![](https://badgen.net/github/last-commit/bgauryy/octocode-mcp) |
-| [MCP Server Scanner][link_mcpserverscanner_com] · [MCPScan.ai][link_mcpscan_ai]                                                                                                                                                                                                                                                                                                                                                         | Web-based MCP assessment / discovery surfaces                                                                                | Read privacy policy before submitting manifests or endpoints                 | 2026-05-06 |
+| [MCP Server Scanner][link_mcpserverscanner_com] · [MCPScan.ai][link_mcpscan_ai]                                                                                                                                                                                                                                                                                                                                                         | Web-based MCP assessment / discovery surfaces                                                                                | Read privacy policy before submitting manifests or endpoints                 | 2026-07-13 |
 | [MCP Doctor][link_github_com_realwigu_mcp_doctor] · [MCP Doctor][link_github_com_agentopssec_mcp_doctor]                                                                                                                                                                                                                                                                       | Detects broken or risky MCP configs                                                                         | Useful for developer hygiene                              | ![](https://badgen.net/github/last-commit/realwigu/mcp-doctor) ![](https://badgen.net/github/last-commit/AgentOpsSec/mcp-doctor) |
+| [MSCC][link_github_com_gensecaihq_mcpscc] (MCP Security Command Center)                                                                                                                                                                                                                                                                                                                                                         | YARA-based MCP security scanner for common MCP-specific weaknesses                                                                                | Dev / DevSecOps; validate maturity before enterprise rollout                 | ![](https://badgen.net/github/last-commit/gensecaihq/mcpscc) |
+| [Secure-Hulk][link_github_com_appiumtestdistribution_secure_hulk]                                                                                                                                                                                                                                                                                                                                                         | Config and tool scanner with JSON/HTML reports                                                                                | Early-stage; whitelist support; overlaps with other descriptor scanners                 | ![](https://badgen.net/github/last-commit/AppiumTestDistribution/secure-hulk) |
+| [MCPServer Audit][link_github_com_modelcontextprotocol_security_mcpserver_audit]                                                                                                                                                                                                                                                                                                                                                         | Community pre-use audit workflow and publishing surface                                                                                | Verify maturity and evidence format before relying on audit DB entries                 | ![](https://badgen.net/github/last-commit/ModelContextProtocol-Security/mcpserver-audit) |
+| [MCPSafetyScanner][link_github_com_leidosinc_mcpsafetyscanner]                                                                                                                                                                                                                                                                                                                                                         | Adversarial samples from tools/resources; academic safety auditor                                                                                | **Isolated test env only**; pairs with [arXiv paper](mcp_blogs_whitepapers_academicpapers.md)                 | ![](https://badgen.net/github/last-commit/leidosinc/McpSafetyScanner) |
+| [MCP-SandboxScan][link_github_com_wapiti08_mcp_sandboxscan]                                                                                                                                                                                                                                                                                                                                                         | WASM/WASI-style sandbox runtime analysis of untrusted tools                                                                                | Research / experimental; catches runtime-only issues static scans miss                 | ![](https://badgen.net/github/last-commit/Wapiti08/MCP-SandboxScan) |
+| [MCP Inspector][link_github_com_modelcontextprotocol_inspector]                                                                                                                                                                                                                                                                                                                                                         | Official dev test/debug UI (not an automated scanner)                                                                                | Manual schema review before approval; see [CVE-2025-49596](mcp_cve.md) for historical Inspector risk                 | ![](https://badgen.net/github/last-commit/modelcontextprotocol/inspector) |
+| [mcp-swiss-knife][link_github_com_nik1097_mcp_swiss_knife]                                                                                                                                                                                                                                                                                                                                                         | Multi-layer tool-poisoning detection (pattern, semantic, structural)                                                                                | Live server scans; tune threshold for false positives                 | ![](https://badgen.net/github/last-commit/nik1097/mcp-swiss-knife) |
+| [mcpguard][link_github_com_loplop_h_mcpguard] · [mcpguard][link_github_com_nbosa_mcpguard] · [mcpguard][link_github_com_ardakocadoruu_mcpguard] · [MCPGuard][link_github_com_rohitguta2432_mcpguard]                                                                                                                                                                                           | Config/manifest/npm-package scanners; OWASP MCP Top 10 mapping, rug-pull alerts, SARIF                                                                                         | **Four unrelated projects** sharing the name—pick by maintainer and use case                  | ![](https://badgen.net/github/last-commit/loplop-h/mcpguard) ![](https://badgen.net/github/last-commit/nbosa/mcpguard) ![](https://badgen.net/github/last-commit/ardakocadoruu/mcpguard) ![](https://badgen.net/github/last-commit/rohitguta2432/mcpguard) |
+| [MCPSec][link_github_com_mcp_shark_mcpsec]                                                                                                                                                                                                                                                                                                                                                         | OWASP MCP + Agentic AI compliance audits; SARIF and CI gating                                                                                | CLI or MCP server mode; maps to FastMCP security baseline                 | ![](https://badgen.net/github/last-commit/mcp-shark/mcpsec) |
+| [MCTS][link_github_com_mcp_audit_mcts] (Model Context Threat Scanner)                                                                                                                                                                                                                                                                                                                                                         | Static + live MCP server scanning with SARIF/HTML output                                                                                | Alpha; local-first CI gates; OWASP LLM + MCP Top 10 mapping                 | ![](https://badgen.net/github/last-commit/MCP-Audit/MCTS) |
+| [mcp-audit][link_github_com_sovereign_shovels_mcp_audit]                                                                                                                                                                                                                                                                                                                                                         | Static “npm audit for MCP” — no execution of scanned code                                                                                | npm packages, GitHub repos, or local paths                 | ![](https://badgen.net/github/last-commit/sovereign-shovels/mcp-audit) |
+| [inkog-mcp][link_github_com_inkog_io_inkog_mcp]                                                                                                                                                                                                                                                                                                                                                         | Agent/MCP security scanner across 20+ frameworks                                                                                | Maps findings to OWASP LLM Top 10 and EU AI Act themes                 | ![](https://badgen.net/github/last-commit/inkog-io/inkog-mcp) |
+| [agent-bom][link_github_com_msaad00_agent_bom]                                                                                                                                                                                                                                                                                                                                                         | Agent supply-chain scanner: CVEs, SBOMs, MCP client discovery, blast radius                                                                                | Broad compliance mapping (OWASP LLM, MITRE ATLAS, NIST AI RMF)                 | ![](https://badgen.net/github/last-commit/msaad00/agent-bom) |
+| [mcp-guardian][link_github_com_rudraneel93_mcp_guardian]                                                                                                                                                                                                                                                                                                                                                         | Governance proxy: YAML policy, OAuth/OIDC RBAC, STRIDE threat model                                                                                | Distinct from [MCP Guardian][link_github_com_eqtylab_mcp_guardian] (eqtylab)                 | ![](https://badgen.net/github/last-commit/rudraneel93/mcp-guardian) |
+| [shield][link_github_com_aperionai_shield] (AperionAI)                                                                                                                                                                                                                                                                                                                                                         | Local guardrail proxy: TOFU tool-catalog pinning, rug-pull detection                                                                                | Wraps stdio or Streamable HTTP upstream servers                 | ![](https://badgen.net/github/last-commit/AperionAI/shield) |
+| [sint-protocol][link_github_com_sint_ai_sint_protocol]                                                                                                                                                                                                                                                                                                                                                         | Governance proxy + `sint-scan` CLI for preflight tool-risk audits                                                                                | Capability tokens, approval tiers, tamper-evident receipts                 | ![](https://badgen.net/github/last-commit/sint-ai/sint-protocol) |
+| [mcp-firewall][link_github_com_behrensd_mcp_firewall]                                                                                                                                                                                                                                                                                                                                                         | Deterministic policy proxy (“iptables for MCP”)                                                                                | YAML policies, secret-leak scanning, no cloud dependency                 | ![](https://badgen.net/github/last-commit/behrensd/mcp-firewall) |
+| [Lasso MCP Gateway][link_github_com_lasso_security_mcp_gateway]                                                                                                                                                                                                                                                                                                                                                         | Enterprise gateway: lifecycle, intercept, sanitize before load                                                                                | See also [MCP security tools](mcp_security_tools.md) runtime section                 | ![](https://badgen.net/github/last-commit/lasso-security/mcp-gateway) |
+| [Agent Wall][link_github_com_agent_wall_agent_wall]                                                                                                                                                                                                                                                                                                                                                         | YAML policy proxy on tool calls and responses                                                                                | Workstation / IDE middlebox; block exfiltration and risky chains                 | ![](https://badgen.net/github/last-commit/agent-wall/agent-wall) |
+| [MCP Action Firewall][link_github_com_starskrime_mcp_action_firewall]                                                                                                                                                                                                                                                                                                                                                         | Human-approval proxy with OTP for dangerous tool calls                                                                                | Validate before enterprise; circuit breaker for high-impact actions                 | ![](https://badgen.net/github/last-commit/starskrime/mcp-action-firewall) |
+| [mcp-gateway-scan][link_github_com_willianpinho_mcp_gateway_scan]                                                                                                                                                                                                                                                                                                                                                         | Read-only static scorer for MCP/agent-gateway production readiness                                                                                | Seven security dimensions; never executes scanned code                 | ![](https://badgen.net/github/last-commit/willianpinho/mcp-gateway-scan) |
+| [agentscore-mcp-server][link_github_com_thezenmonster_agentscore_mcp_server]                                                                                                                                                                                                                                                                                                                                                         | Monitors npm MCP packages for install scripts, drift, and publisher posture                                                                                | GitHub Action policy gate; distinct from trust-score MCP servers                 | ![](https://badgen.net/github/last-commit/Thezenmonster/agentscore-mcp-server) |
+| [mcpskills-server][link_github_com_bebravebekind_mcpskills_server]                                                                                                                                                                                                                                                                                                                                                         | Pre-install trust gate for MCP servers, skills, and npm packages                                                                                | Listed in official MCP Registry; `auto_gate` go/no-go decision                 | ![](https://badgen.net/github/last-commit/BeBraveBeKind/mcpskills-server) |
+| [mcp-shield][link_github_com_muhannad_hash_mcp_shield] (npm `@muhannad-hash/mcp-shield`)                                                                                                                                                                                                                                                                                                                                                         | Pre-install npm/local directory scanner                                                                                | **Not** the same repos as other “MCP Shield” entries above                 | ![](https://badgen.net/github/last-commit/muhannad-hash/mcp-shield) |
 
 ## Checklists and governance artifacts
 
 | Repository / Tool | What It Helps With | Summary | Last updated |
 | --- | --- | --- | --- |
 | [MCP Security Checklist][link_github_com_slowmist_mcp_security_checklist] | Structured review items for MCP design, deployment, and operations | Complements automated scanners; not a substitute for testing | ![](https://badgen.net/github/last-commit/slowmist/MCP-Security-Checklist) |
+| [OWASP MCP Top 10][link_github_com_owasp_www_project_mcp_top_10] | Community risk taxonomy for MCP-enabled systems (MCP01–MCP10) | Living document; pair with [OWASP cheat sheet](mcp_blogs_whitepapers_academicpapers.md) and scanner OWASP mappings | ![](https://badgen.net/github/last-commit/OWASP/www-project-mcp-top-10) |
 
 ## Representative security-product MCP servers
 
@@ -80,7 +109,7 @@
 | [Wazuh MCP][link_github_com_gbrigandi_mcp_server_wazuh] | **SIEM / XDR:** drive [Wazuh](https://wazuh.com/) from an MCP client | SOC-tier data access; least privilege on Wazuh API keys; confirm transport and retention | ![](https://badgen.net/github/last-commit/gbrigandi/mcp-server-wazuh) |
 | [TheHive MCP][link_github_com_gbrigandi_mcp_server_thehive] | **Case management:** drive [TheHive](https://strangebee.com/thehive/) from an MCP client | Incident data is sensitive; restrict API users; confirm transport and retention | ![](https://badgen.net/github/last-commit/gbrigandi/mcp-server-thehive) |
 | [Cortex MCP][link_github_com_gbrigandi_mcp_server_cortex] | **SOAR / analyzers:** drive [Cortex](https://strangebee.com/cortex/) from an MCP client | Analyzer outputs may include secrets; least privilege; confirm transport and retention | ![](https://badgen.net/github/last-commit/gbrigandi/mcp-server-cortex) |
-| [RunReveal MCP][link_runreveal_mcp_docs] | **Log analytics:** use RunReveal via MCP ([vendor MCP docs](https://docs.runreveal.com/reference/model-context-protocol)) | SOC-tier data access; separate credentials; confirm transport and retention per vendor guidance | 2026-05-06 |
+| [RunReveal MCP][link_runreveal_mcp_docs] | **Log analytics:** use RunReveal via MCP ([vendor MCP docs](https://docs.runreveal.com/reference/model-context-protocol)) | SOC-tier data access; separate credentials; confirm transport and retention per vendor guidance | 2026-07-13 |
 
 ## Frameworks, adapters, and server builders
 
@@ -93,12 +122,19 @@
 | [Fastapi MCP][link_github_com_tadata_org_fastapi_mcp] · [Fastapi MCP][link_github_com_lakshmana64_fastapi_mcp]                                                       | Exposes APIs as MCP tools                         | High risk if endpoints are exposed without review                | ![](https://badgen.net/github/last-commit/tadata-org/fastapi_mcp) ![](https://badgen.net/github/last-commit/lakshmana64/fastapi-mcp) |
 | [Modelfetch][link_github_com_phuctm97_modelfetch] · [Easymcp][link_github_com_secretiveshell_easymcp]                                                             | Boilerplates and helper libraries                 | Check for auth, validation, logging, and maintained dependencies | ![](https://badgen.net/github/last-commit/phuctm97/modelfetch) ![](https://badgen.net/github/last-commit/SecretiveShell/easymcp) |
 | [workers-mcp][link_github_com_cloudflare_workers_mcp]                                                                                                                                                   | Cloudflare Worker ↔ local MCP bridge (CLI + Worker helpers)                      | Remote MCP guidance supersedes some older patterns—follow current Cloudflare Agents docs; sandbox Worker secrets                 | ![](https://badgen.net/github/last-commit/cloudflare/workers-mcp) |
+| [create-python-server][link_github_com_modelcontextprotocol_create_python_server] · [create-typescript-server][link_github_com_modelcontextprotocol_create_typescript_server]                                                             | Official scaffolding CLIs for new MCP servers                 | Review generated auth, transport, and tool defaults before shipping | ![](https://badgen.net/github/last-commit/modelcontextprotocol/create-python-server) ![](https://badgen.net/github/last-commit/modelcontextprotocol/create-typescript-server) |
 
 ## MCP hosting and enterprise runtimes
 
 | Repository / Tool | Why It Matters | Summary | Last updated |
 | --- | --- | --- | --- |
 | [ToolHive][link_github_com_stackloklabs_toolhive] | Open-source MCP platform: container-isolated servers, identity hooks, K8s operator, observability | Distinct from [osv-mcp][link_github_com_stackloklabs_osv_mcp] in the integrations catalog—both are Stacklok ecosystem | ![](https://badgen.net/github/last-commit/StacklokLabs/toolhive) |
+| [MetaMCP][link_github_com_metatool_ai_metamcp] | Aggregator/gateway: namespaces, OAuth/API-key endpoints, tool filtering | Docker-first middleware; review session cookie and API-key handling | ![](https://badgen.net/github/last-commit/metatool-ai/metamcp) |
+| [Lunar MCPX][link_github_com_thelunarcompany_lunar] | Enterprise AI control plane: tool-level RBAC, audit trails, credential isolation | Open-source core at `TheLunarCompany/lunar` (`mcpx` path); review enterprise vs OSS feature split | ![](https://badgen.net/github/last-commit/TheLunarCompany/lunar) |
+| [Docker MCP Gateway][link_github_com_docker_mcp_gateway] | Container-isolated MCP servers, secrets, OAuth, catalog integration | Powers Docker Desktop MCP Toolkit; verify image signatures (`--verify-signatures`) | ![](https://badgen.net/github/last-commit/docker/mcp-gateway) |
+| [Microsoft MCP Gateway][link_github_com_microsoft_mcp_gateway] | K8s reverse proxy: session-aware routing, adapter lifecycle, tool gateway router | Enterprise telemetry and access-control integration points; Azure path optional | ![](https://badgen.net/github/last-commit/microsoft/mcp-gateway) |
+| [IBM ContextForge][link_github_com_ibm_mcp_context_forge] | Federated registry/gateway for MCP, A2A, REST/gRPC with guardrails and OTel | PyPI `mcp-contextforge-gateway`; multi-cluster federation needs Redis review | ![](https://badgen.net/github/last-commit/IBM/mcp-context-forge) |
+| [MCPJungle][link_github_com_mcpjungle_mcpjungle] | Lightweight self-hosted registry + unified MCP endpoint | Enterprise mode requires explicit client-to-server ACLs; stdio image tag for local servers | ![](https://badgen.net/github/last-commit/mcpjungle/MCPJungle) |
 
 ## Server discovery and awesome lists
 
@@ -106,83 +142,141 @@
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------- | ------------ |
 | [punkpeye/awesome-mcp-servers - Awesome MCP Servers][link_github_com_punkpeye_awesome_mcp_servers]                                                                                                                                  | Canonical community awesome-list of MCP server repos; includes a long curated [#security][link_github_com_punkpeye_awesome_mcp_servers_security] section | Discovery only-not a trust boundary; verify each server, maintainer, and install path independently | ![](https://badgen.net/github/last-commit/punkpeye/awesome-mcp-servers) |
 | [lirantal/awesome-mcp-best-practices - Awesome MCP Best Practices][link_github_com_lirantal_awesome_mcp_best_practices] | Curated best practices for MCP servers and clients | Use as guidance; still validate each server’s threat model, auth, and permissions | ![](https://badgen.net/github/last-commit/lirantal/awesome-mcp-best-practices) |
-| [Awesome MCP Servers][link_github_com_wong2_awesome_mcp_servers] · [mcpservers.org][link_mcpservers_org]                                                                                          | Categorized MCP server discovery               | Validate freshness, repo ownership, and install commands | ![](https://badgen.net/github/last-commit/wong2/awesome-mcp-servers) |
+| [Awesome MCP Servers][link_github_com_wong2_awesome_mcp_servers] · [mcpservers.org][link_mcpservers_org]                                                                                          | Categorized MCP server discovery               | Validate freshness, repo ownership, and install commands | ![](https://badgen.net/github/last-commit/wong2/awesome-mcp-servers) · 2026-07-13 |
 | [Awesome MCP Servers][link_github_com_appcypher_awesome_mcp_servers]                                                                                                                              | Another curated server list                    | Cross-check duplicates and abandoned entries             | ![](https://badgen.net/github/last-commit/appcypher/awesome-mcp-servers) |
 | [Arindam200/awesome-ai-apps][link_github_com_arindam200_awesome_ai_apps] | Curated “awesome list” of AI applications and demos | Broad AI app discovery (not MCP-specific); treat as an ideas index and validate each linked repo’s security posture and permissions | ![](https://badgen.net/github/last-commit/Arindam200/awesome-ai-apps) |
-| [mcp.so][link_mcp_so]                                                                                                                                                                                                   | Broad ecosystem discovery                      | Validate publisher, permissions, and package provenance  | 2026-05-06 |
-| [PulseMCP][link_pulsemcp_com] · [Github][link_github_com_pulsemcp]                                                                                                                                  | Tracks clients, servers, and ecosystem updates | Useful for discovery, not a trust boundary               | 2026-05-06 |
-| [Glama MCP directory][link_glama_ai_mcp_servers]                                                                                                                                                                         | Server discovery and metadata                  | Review verification model before trusting entries        | 2026-05-06 |
+| [mcp.so][link_mcp_so]                                                                                                                                                                                                   | Broad ecosystem discovery                      | Validate publisher, permissions, and package provenance  | 2026-07-13 |
+| [PulseMCP][link_pulsemcp_com] · [Github][link_github_com_pulsemcp]                                                                                                                                  | Tracks clients, servers, and ecosystem updates | Useful for discovery, not a trust boundary               | ![](https://badgen.net/github/last-commit/pulsemcp/mcp-servers) · 2026-07-13 |
+| [Glama MCP directory][link_glama_ai_mcp_servers]                                                                                                                                                                         | Server discovery and metadata                  | Review verification model before trusting entries        | 2026-07-13 |
+| [TensorBlock/awesome-mcp-servers][link_github_com_tensorblock_awesome_mcp_servers]                                                                                                                                  | Large categorized index (~7,700+ servers) with searchable API | Active community automation; discovery only—not a trust boundary | ![](https://badgen.net/github/last-commit/TensorBlock/awesome-mcp-servers) |
+| [tolkonepiu/best-of-mcp-servers][link_github_com_tolkonepiu_best_of_mcp_servers] | Ranked list (~400 servers) by project-quality score | Good for finding maintained, high-signal servers; CC-BY-SA | ![](https://badgen.net/github/last-commit/tolkonepiu/best-of-mcp-servers) |
+| [LuciferForge/mcp-directory][link_github_com_luciferforge_mcp_directory] · [protodex.io][link_protodex_io]                                                                                          | Broad automated index (18k+ servers)               | Weekly scraper; ranked by GitHub stars—validate each entry independently | ![](https://badgen.net/github/last-commit/LuciferForge/mcp-directory) · 2026-07-13 |
+| [connerlambden/awesome-mcp][link_github_com_connerlambden_awesome_mcp]                                                                                                                              | Auto-updated awesome list of MCP servers, clients, frameworks                    | Daily GitHub API refresh; cross-check with official registry             | ![](https://badgen.net/github/last-commit/connerlambden/awesome-mcp) |
+| [AlexMili/Awesome-MCP][link_github_com_alexmili_awesome_mcp] | Ecosystem list grouped by use case with activity signals | Includes clients, SDKs, and servers; not security-curated | ![](https://badgen.net/github/last-commit/AlexMili/Awesome-MCP) |
+| [MCP Registry (official browse)][link_registry_modelcontextprotocol_io]                                                                                                                                                                         | Authoritative published-server discovery                  | Prefer over stale README lists in `modelcontextprotocol/servers`        | ![](https://badgen.net/github/last-commit/modelcontextprotocol/registry) |
 
 
 
 [link_github_com_82ch_mcp_dandan]: https://github.com/82ch/MCP-Dandan
+[link_github_com_agent_wall_agent_wall]: https://github.com/agent-wall/agent-wall
 [link_github_com_agentity_com_mcp_audit_extension]: https://github.com/Agentity-com/mcp-audit-extension
 [link_github_com_agentopssec_mcp_doctor]: https://github.com/AgentOpsSec/mcp-doctor
+[link_github_com_alexmili_awesome_mcp]: https://github.com/AlexMili/Awesome-MCP
 [link_github_com_antgroup_mcp_security]: https://github.com/antgroup/MCP-Security
+[link_github_com_aperionai_shield]: https://github.com/AperionAI/shield
 [link_github_com_appcypher_awesome_mcp_servers]: https://github.com/appcypher/awesome-mcp-servers
+[link_github_com_appiumtestdistribution_secure_hulk]: https://github.com/AppiumTestDistribution/secure-hulk
 [link_github_com_arindam200_awesome_ai_apps]: https://github.com/Arindam200/awesome-ai-apps
+[link_github_com_ardakocadoruu_mcpguard]: https://github.com/ardakocadoruu/mcpguard
+[link_github_com_bebravebekind_mcpskills_server]: https://github.com/BeBraveBeKind/mcpskills-server
+[link_github_com_behrensd_mcp_firewall]: https://github.com/behrensd/mcp-firewall
 [link_github_com_bgauryy_octocode_mcp]: https://github.com/bgauryy/octocode-mcp
 [link_github_com_cloudflare_workers_mcp]: https://github.com/cloudflare/workers-mcp
 [link_github_com_cmpxchg16_mcp_ethical_hacking]: https://github.com/cmpxchg16/mcp-ethical-hacking
 [link_github_com_cisco_ai_defense_mcp_scanner]: https://github.com/cisco-ai-defense/mcp-scanner
+[link_github_com_connerlambden_awesome_mcp]: https://github.com/connerlambden/awesome-mcp
 [link_github_com_defenter_ai_defenter_proxy]: https://github.com/Defenter-AI/defenter-proxy
+[link_github_com_docker_mcp_gateway]: https://github.com/docker/mcp-gateway
 [link_github_com_eqtylab_mcp_guardian]: https://github.com/eqtylab/mcp-guardian
 [link_github_com_fosdickio_binary_ninja_mcp]: https://github.com/fosdickio/binary_ninja_mcp
 [link_github_com_gaboitb_mcp_shield]: https://github.com/GaboITB/mcp-shield
 [link_github_com_gbrigandi_mcp_server_cortex]: https://github.com/gbrigandi/mcp-server-cortex
 [link_github_com_gbrigandi_mcp_server_thehive]: https://github.com/gbrigandi/mcp-server-thehive
 [link_github_com_gbrigandi_mcp_server_wazuh]: https://github.com/gbrigandi/mcp-server-wazuh
-[link_github_com_google_mcp_security]: https://github.com/google/mcp-security
-[link_github_com_lauriewired_ghidramcp]: https://github.com/LaurieWired/GhidraMCP
-[link_github_com_mrexodia_ida_pro_mcp]: https://github.com/mrexodia/ida-pro-mcp
-[link_github_com_panther_labs_mcp_panther]: https://github.com/panther-labs/mcp-panther
-[link_github_com_portswigger_mcp_server]: https://github.com/PortSwigger/mcp-server
-[link_github_com_radareorg_radare2_mcp]: https://github.com/radareorg/radare2-mcp
-[link_github_com_semgrep_mcp]: https://github.com/semgrep/mcp
-[link_github_com_zinja_jadx_ai_mcp]: https://github.com/zinja-coder/jadx-ai-mcp
-[link_runreveal_mcp_docs]: https://docs.runreveal.com/reference/model-context-protocol
+[link_github_com_gensecaihq_mcpscc]: https://github.com/gensecaihq/mcpscc
 [link_github_com_github_github_mcp_server]: https://github.com/github/github-mcp-server
-[link_github_com_lakshmana64_fastapi_mcp]: https://github.com/lakshmana64/fastapi-mcp
-[link_invariantlabs_ai_blog_introducing_mcp_scan]: https://invariantlabs.ai/blog/introducing-mcp-scan
+[link_github_com_google_mcp_security]: https://github.com/google/mcp-security
+[link_github_com_ibm_mcp_context_forge]: https://github.com/IBM/mcp-context-forge
+[link_github_com_inkog_io_inkog_mcp]: https://github.com/inkog-io/inkog-mcp
 [link_github_com_kapilduraphe_mcp_watch]: https://github.com/kapilduraphe/mcp-watch
+[link_github_com_lakshmana64_fastapi_mcp]: https://github.com/lakshmana64/fastapi-mcp
 [link_github_com_langchain_ai_langchain_mcp_adapters]: https://github.com/langchain-ai/langchain-mcp-adapters
+[link_github_com_lasso_security_mcp_gateway]: https://github.com/lasso-security/mcp-gateway
+[link_github_com_lauriewired_ghidramcp]: https://github.com/LaurieWired/GhidraMCP
 [link_github_com_lazymac2x_mcpwatch]: https://github.com/lazymac2x/mcpwatch
+[link_github_com_leidosinc_mcpsafetyscanner]: https://github.com/leidosinc/McpSafetyScanner
 [link_github_com_lirantal_awesome_mcp_best_practices]: https://github.com/lirantal/awesome-mcp-best-practices
+[link_github_com_loplop_h_mcpguard]: https://github.com/loplop-h/mcpguard
+[link_github_com_luciferforge_mcp_directory]: https://github.com/LuciferForge/mcp-directory
 [link_github_com_makalin_securemcp]: https://github.com/makalin/SecureMCP
+[link_github_com_mcp_audit_mcts]: https://github.com/MCP-Audit/MCTS
 [link_github_com_mcp_defender_mcp_defender]: https://github.com/MCP-Defender/MCP-Defender
+[link_github_com_mcp_shark_mcpsec]: https://github.com/mcp-shark/mcpsec
+[link_github_com_mcpjungle_mcpjungle]: https://github.com/mcpjungle/MCPJungle
 [link_github_com_mcpshield_mcpshield]: https://github.com/mcpshield/mcpshield
+[link_github_com_metatool_ai_metamcp]: https://github.com/metatool-ai/metamcp
+[link_github_com_microsoft_mcp_gateway]: https://github.com/microsoft/mcp-gateway
+[link_github_com_modelcontextprotocol_conformance]: https://github.com/modelcontextprotocol/conformance
+[link_github_com_modelcontextprotocol_create_python_server]: https://github.com/modelcontextprotocol/create-python-server
+[link_github_com_modelcontextprotocol_create_typescript_server]: https://github.com/modelcontextprotocol/create-typescript-server
 [link_github_com_modelcontextprotocol_csharp_sdk]: https://github.com/modelcontextprotocol/csharp-sdk
+[link_github_com_modelcontextprotocol_ext_apps]: https://github.com/modelcontextprotocol/ext-apps
 [link_github_com_modelcontextprotocol_go_sdk]: https://github.com/modelcontextprotocol/go-sdk
+[link_github_com_modelcontextprotocol_inspector]: https://github.com/modelcontextprotocol/inspector
 [link_github_com_modelcontextprotocol_java_sdk]: https://github.com/modelcontextprotocol/java-sdk
+[link_github_com_modelcontextprotocol_kotlin_sdk]: https://github.com/modelcontextprotocol/kotlin-sdk
+[link_github_com_modelcontextprotocol_mcpb]: https://github.com/modelcontextprotocol/mcpb
+[link_github_com_modelcontextprotocol_modelcontextprotocol]: https://github.com/modelcontextprotocol/modelcontextprotocol
+[link_github_com_modelcontextprotocol_php_sdk]: https://github.com/modelcontextprotocol/php-sdk
 [link_github_com_modelcontextprotocol_python_sdk]: https://github.com/modelcontextprotocol/python-sdk
+[link_github_com_modelcontextprotocol_quickstart_resources]: https://github.com/modelcontextprotocol/quickstart-resources
 [link_github_com_modelcontextprotocol_registry]: https://github.com/modelcontextprotocol/registry
 [link_github_com_modelcontextprotocol_rust_sdk]: https://github.com/modelcontextprotocol/rust-sdk
+[link_github_com_modelcontextprotocol_security_mcpserver_audit]: https://github.com/ModelContextProtocol-Security/mcpserver-audit
 [link_github_com_modelcontextprotocol_servers]: https://github.com/modelcontextprotocol/servers
+[link_github_com_modelcontextprotocol_servers_archived]: https://github.com/modelcontextprotocol/servers-archived
+[link_github_com_modelcontextprotocol_swift_sdk]: https://github.com/modelcontextprotocol/swift-sdk
 [link_github_com_modelcontextprotocol_typescript_sdk]: https://github.com/modelcontextprotocol/typescript-sdk
+[link_github_com_mrexodia_ida_pro_mcp]: https://github.com/mrexodia/ida-pro-mcp
+[link_github_com_msaad00_agent_bom]: https://github.com/msaad00/agent-bom
+[link_github_com_muhannad_hash_mcp_shield]: https://github.com/muhannad-hash/mcp-shield
+[link_github_com_nbosa_mcpguard]: https://github.com/nbosa/mcpguard
+[link_github_com_nik1097_mcp_swiss_knife]: https://github.com/nik1097/mcp-swiss-knife
 [link_github_com_ogulcanaydogan_mcp_security_scanner]: https://github.com/ogulcanaydogan/mcp-security-scanner
+[link_github_com_owasp_www_project_mcp_top_10]: https://github.com/OWASP/www-project-mcp-top-10
+[link_github_com_panther_labs_mcp_panther]: https://github.com/panther-labs/mcp-panther
 [link_github_com_phuctm97_modelfetch]: https://github.com/phuctm97/modelfetch
+[link_github_com_portswigger_mcp_server]: https://github.com/PortSwigger/mcp-server
 [link_github_com_prefecthq_fastmcp]: https://github.com/PrefectHQ/fastmcp
 [link_github_com_pulsemcp]: https://github.com/pulsemcp
 [link_github_com_punkpeye_awesome_mcp_servers]: https://github.com/punkpeye/awesome-mcp-servers
 [link_github_com_punkpeye_awesome_mcp_servers_security]: https://github.com/punkpeye/awesome-mcp-servers#security
+[link_github_com_radareorg_radare2_mcp]: https://github.com/radareorg/radare2-mcp
 [link_github_com_realwigu_mcp_doctor]: https://github.com/realwigu/mcp-doctor
 [link_github_com_riseandignite_mcp_shield]: https://github.com/riseandignite/mcp-shield
 [link_github_com_rodolfboctor_mcp_scan]: https://github.com/rodolfboctor/mcp-scan
+[link_github_com_rohitguta2432_mcpguard]: https://github.com/rohitguta2432/mcpguard
+[link_github_com_rudraneel93_mcp_guardian]: https://github.com/rudraneel93/mcp-guardian
 [link_github_com_secretiveshell_easymcp]: https://github.com/SecretiveShell/easymcp
+[link_github_com_semgrep_mcp]: https://github.com/semgrep/mcp
+[link_github_com_sint_ai_sint_protocol]: https://github.com/sint-ai/sint-protocol
 [link_github_com_smart_mcp_proxy_mcpproxy_go]: https://github.com/smart-mcp-proxy/mcpproxy-go
 [link_github_com_snyk_agent_scan]: https://github.com/snyk/agent-scan
 [link_github_com_slowmist_mcp_security_checklist]: https://github.com/slowmist/MCP-Security-Checklist
+[link_github_com_sovereign_shovels_mcp_audit]: https://github.com/sovereign-shovels/mcp-audit
 [link_github_com_stackloklabs_osv_mcp]: https://github.com/StacklokLabs/osv-mcp
 [link_github_com_stackloklabs_toolhive]: https://github.com/StacklokLabs/toolhive
 [link_github_com_spring_projects_spring_ai]: https://github.com/spring-projects/spring-ai
-[link_github_com_tencent_ai_infra_guard]: https://github.com/Tencent/AI-Infra-Guard
-[link_github_com_trailofbits_mcp_context_protector]: https://github.com/trailofbits/mcp-context-protector
+[link_github_com_starskrime_mcp_action_firewall]: https://github.com/starskrime/mcp-action-firewall
 [link_github_com_tadata_org_fastapi_mcp]: https://github.com/tadata-org/fastapi_mcp
+[link_github_com_tencent_ai_infra_guard]: https://github.com/Tencent/AI-Infra-Guard
+[link_github_com_tensorblock_awesome_mcp_servers]: https://github.com/TensorBlock/awesome-mcp-servers
+[link_github_com_thelunarcompany_lunar]: https://github.com/TheLunarCompany/lunar
+[link_github_com_thezenmonster_agentscore_mcp_server]: https://github.com/Thezenmonster/agentscore-mcp-server
+[link_github_com_tolkonepiu_best_of_mcp_servers]: https://github.com/tolkonepiu/best-of-mcp-servers
+[link_github_com_trailofbits_mcp_context_protector]: https://github.com/trailofbits/mcp-context-protector
 [link_github_com_vercel_mcp_handler]: https://github.com/vercel/mcp-handler
+[link_github_com_wapiti08_mcp_sandboxscan]: https://github.com/Wapiti08/MCP-SandboxScan
+[link_github_com_willianpinho_mcp_gateway_scan]: https://github.com/willianpinho/mcp-gateway-scan
 [link_github_com_wong2_awesome_mcp_servers]: https://github.com/wong2/awesome-mcp-servers
+[link_github_com_zinja_jadx_ai_mcp]: https://github.com/zinja-coder/jadx-ai-mcp
 [link_glama_ai_mcp_servers]: https://glama.ai/mcp/servers
+[link_invariantlabs_ai_blog_introducing_mcp_scan]: https://invariantlabs.ai/blog/introducing-mcp-scan
 [link_mcp_so]: https://mcp.so/
 [link_mcpscan_ai]: https://mcpscan.ai/
 [link_mcpservers_org]: https://mcpservers.org/
 [link_mcpserverscanner_com]: https://mcpserverscanner.com/
+[link_protodex_io]: https://protodex.io/
 [link_pulsemcp_com]: https://www.pulsemcp.com/
+[link_registry_modelcontextprotocol_io]: https://registry.modelcontextprotocol.io/
+[link_runreveal_mcp_docs]: https://docs.runreveal.com/reference/model-context-protocol
