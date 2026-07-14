@@ -28,6 +28,7 @@
 | [addcontent/nuclei-mcp][link_addcontent_nuclei_mcp] | [Nuclei][link_projectdiscovery_nuclei]-driven scanning via MCP | **High risk** if pointed at non-owned targets; auth and rate limits mandatory | ![](https://badgen.net/github/last-commit/addcontent/nuclei-mcp) |
 | [elliotllliu/agent-shield][link_elliotllliu_agent_shield] | Pre-deployment scanning for agent skills, MCP servers, and plugins | Offline-focused static analysis for injection-style risks; still requires human review of findings | ![](https://badgen.net/github/last-commit/elliotllliu/agent-shield) |
 | [prompt-security/clawsec][link_prompt_security_clawsec] | Audit pipeline for agent skills and MCP servers | Multi-stage analysis; validate where data/artefacts are stored and how reports are generated | ![](https://badgen.net/github/last-commit/prompt-security/clawsec) |
+| [@tensorfeed/mcp-server][link_tensorfeed_mcp_server] | General TensorFeed.ai catalog MCP (news, status, model data) with a dedicated `get_ai_supply_chain_iocs` tool surfacing the daily AI-keyword-filtered GHSA feed across npm, PyPI, Go, Maven, and other ecosystems | Pure data feed, no scanning or code execution; daily refresh from GitHub Security Advisories; treat the linked GHSA record as authoritative. Useful as a single AI-relevant defender feed for MCP-server reviewers and supply-chain monitors | ![](https://badgen.net/github/last-commit/RipperMercs/tensorfeed) |
 
 ---
 
@@ -204,3 +205,4 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 [link_zinja_jadx_ai_mcp]: https://github.com/zinja-coder/jadx-ai-mcp
 [link_mobilehackinglab_jadx_mcp_plugin]: https://github.com/mobilehackinglab/jadx-mcp-plugin
 [link_zitadel]: https://zitadel.com/
+[link_tensorfeed_mcp_server]: https://github.com/RipperMercs/tensorfeed
