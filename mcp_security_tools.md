@@ -32,6 +32,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Ant Group MCP-Security][link_github_com_antgroup_mcp_security]** | Static + dynamic MCP scanner — Auditing agent tools / plugins; **detects** malicious metadata (prompt injection), insecure tools, unsafe reads, code vulns. Semgrep-style taint + dynamic LLM eval; local or remote GitHub repos. |
 | **[MCPServer Audit][link_github_com_modelcontextprotocol_security_mcpserver_audit]** | MCP server audit — Pre-use safety checks; publishing to audit/DB; output per audit workflow. Community initiative — verify maturity / evidence format. |
 | **[MCPSafetyScanner][link_github_com_leidosinc_mcpsafetyscanner]** | Agentic MCP safety auditor — Adversarial samples from tools/resources; safety reports; **detects** unsafe tools, malicious execution, credential theft, unauthorized access. Research / academic; **safety:** isolated test env only. |
+| **[Pluto AgentGuard][link_github_com_arpitha_dhanapathi_pluto_aguard]** | MCP config scanner + policy tester → Static analysis of MCP configs for dangerous servers, hardcoded secrets, missing auth, context safety gaps; **plus** policy coverage testing (22 attack scenarios), what-if risk simulation, OWASP-inspired control mapping, baseline drift detection, and launch evidence generation. Offline, no API keys; validated against 1,200 real GitHub MCP configs. |
 | **[MCP-SandboxScan][link_github_com_wapiti08_mcp_sandboxscan]** | Runtime / sandbox analysis — Execute untrusted tools in WASM/WASI-style sandbox; **detects** env/file→prompt, filesystem violations, runtime-only issues. Research / experimental; advanced research & high-risk tool review. |
 | **[MCP Inspector][link_github_com_modelcontextprotocol_inspector]** ([documentation][link_modelcontextprotocol_io_docs_tools_inspector]) | Dev test/debug (not a security scanner) — Manual inspection of servers, tools, prompts, resources, transport; observational only (no automated detection). For security review: validate tools/schemas before approval; **not** a replacement for automated scanning. |
 
@@ -195,3 +196,4 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 [link_sentinelone]: https://www.sentinelone.com/platform/singularity-xdr/
 [link_carbon_black]: https://www.broadcom.com/products/cyber-security/endpoint
 [link_sophos_intercept_x]: https://www.sophos.com/en-us/products/endpoint-antivirus
+[link_github_com_arpitha_dhanapathi_pluto_aguard]: https://github.com/arpitha-dhanapathi/pluto-aguard
