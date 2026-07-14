@@ -172,7 +172,6 @@ Video primers and security-focused sessions with channel, speaker, date, duratio
 - [Securing Model Context Protocol (MCP) with Vandana Verma (OWASP/Snyk)](https://www.youtube.com/watch?v=IKU153eICKk) - Long-form session on production MCP security.
 - [First Look - OWASP MCP Top 10 - 2025](https://www.youtube.com/watch?v=P2NHzQdwpWI) - Vandana Verma.
 - [MCP Security: Why Your AI Assistant Is an Insider Threat](https://www.youtube.com/watch?v=WCq7bylBbc8) - Liran Tal, Snyk.
-- [Securing the Future of AI: Securing MCP with Defense in Depth Patterns](https://www.youtube.com/watch?v=cVWB58kEt-Y) - Microsoft BlueHat 2026 / MSRC.
 
 ### Contributors
 
