@@ -51,6 +51,7 @@ Include videos that help learners understand, build, break, defend, or govern MC
 | [The OWASP MCP Top 10 — Every Risk Ranked and Explained][link_youtube_com_watch_51]: **StackOps AI**                                                  | 2026-05-14                             | One-minute ranked walkthrough of all ten OWASP MCP Top 10 risks with brief mitigations—good quick refresher after the formal taxonomy.                              |
 | [AI Agents and MCP Security Risks - Risk Mitigation][link_youtube_com_watch_52]: **Black Hills Information Security** - Joff Thyer                     | 2025-12-17                             | Short clip on MCP risks: chroot/filesystem restrictions, logging, RBAC, and validating tool data sources before agent execution.                                    |
 | [Agent Identity for MCP: Prefactor's Approach to Secure, Auditable AI Agents][link_youtube_com_watch_53]: **Agentic AI Foundation** - Matt Doughty, Simon | 2025-09-19                             | Demo and deep dive on agent identity beyond OAuth: signed payloads, immutable audit logs, workload identity, and task-based access for MCP.                         |
+| [Securing the Future of AI: Securing MCP with Defense in Depth Patterns][link_youtube_com_watch_55]: **Microsoft BlueHat / MSRC** - Jitesh Thakur                                | 2026-05-20                          | Microsoft Security Response Center session on layered defenses for MCP: treating tool descriptions as code, sandboxing, authorization boundaries, tool-integrity verification, and runtime monitoring against tool poisoning and confused-deputy attacks. |
 
 
 ---
@@ -175,6 +176,7 @@ Common “short list” curations often cluster **Arcade-style tool auth**, **A2
 [link_youtube_com_watch_52]: https://www.youtube.com/watch?v=tKvKgJWJ57A
 [link_youtube_com_watch_53]: https://www.youtube.com/watch?v=MqQCMYSpSE0
 [link_youtube_com_watch_54]: https://www.youtube.com/watch?v=G7hKl96qZTE
+[link_youtube_com_watch_55]: https://www.youtube.com/watch?v=cVWB58kEt-Y
 [link_youtube_com_watch_5]: https://www.youtube.com/watch?v=kOhLoixrJXo
 [link_youtube_com_watch_6]: https://www.youtube.com/watch?v=0IhZdcjddo4
 [link_youtube_com_watch_7]: https://www.youtube.com/watch?v=G5KyIzV-254
