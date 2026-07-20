@@ -127,6 +127,7 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 | [KOVY/agentforge-trust-mcp][link_kovy_agentforge_trust_mcp] | MCP trust scores and policy-style recommendations before connecting | Third-party scores are heuristics—do not bypass internal approval | ![](https://badgen.net/github/last-commit/KOVY/agentforge-trust-mcp) |
 | [agentgraph-co/agentgraph][link_agentgraph_co_agentgraph] | Attestations and scanning posture signals for third-party MCP servers | Verify attestation roots and freshness | ![](https://badgen.net/github/last-commit/agentgraph-co/agentgraph) |
 | [vinaybhosle/agentstamp][link_vinaybhosle_agentstamp] | Agent identity stamps and reputation registry | API and payment rails; watch data residency | ![](https://badgen.net/github/last-commit/vinaybhosle/agentstamp) |
+| [jonnadul/veriforge][link_jonnadul_veriforge] | Neutral verification oracle: signed, hash-chained verdicts attesting whether evidence (e.g. a gig-completion photo) matches a task intent | Attestation is only as good as the judge pool and forensics; review what is anchored vs. marketing | ![](https://badgen.net/github/last-commit/jonnadul/veriforge) |
 
 ---
 
@@ -197,6 +198,7 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 [link_takleb3rry_zitadel_mcp]: https://github.com/takleb3rry/zitadel-mcp
 [link_toan203_osv_ui]: https://github.com/toan203/osv-ui
 [link_vinaybhosle_agentstamp]: https://github.com/vinaybhosle/agentstamp
+[link_jonnadul_veriforge]: https://github.com/jonnadul/veriforge
 [link_virustotal]: https://www.virustotal.com/
 [link_wd041216_bit_ironclaw_agent_guard]: https://github.com/wd041216-bit/ironclaw-agent-guard
 [link_cordum_io_cordum]: https://github.com/cordum-io/cordum
