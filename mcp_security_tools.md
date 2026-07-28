@@ -93,6 +93,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Promptfoo MCP red team plugin][link_promptfoo_dev_docs_red_team_plugins_mcp]** | MCP red teaming — Function-call exploits, manipulation, prompt leakage, unauthorized discovery | Discovery, param injection, excessive calls, metadata injection, etc.; CI-style automation |
 | **[Promptfoo][link_github_com_promptfoo_promptfoo]** | LLM eval & red team — Prompt injection, exfiltration, RAG, RBAC, BOLA/BFLA, SSRF, SQLi, tool boundaries | Regression tests for agents/guardrails |
 | **[garak][link_github_com_nvidia_garak]** (NVIDIA) | LLM vuln scanner — Model/dialog layer around MCP workflows | Combine with MCP-specific tools |
+| **[Darkmoon](https://github.com/ASCIT31/Dark-Moon)** | Autonomous AI red team platform running full offensive campaigns across web, API, Active Directory and Kubernetes via an LLM orchestrator with specialist sub agents | Open source GPL-3.0, MCP host, local Privacy Gateway so the model never sees raw sensitive values |
 | **[PyRIT][link_github_com_microsoft_pyrit]** (Microsoft) | AI red-team automation — Multi-turn adversarial scenarios, tool safety, chained workflows | Research, structured campaigns |
 | **[mcp-ethical-hacking][link_github_com_cmpxchg16_mcp_ethical_hacking]** | Educational MCP examples — “Legitimate” social/analysis demos illustrating abuse potential | **Authorized use only**; respect platform ToS; lab isolation |
 
