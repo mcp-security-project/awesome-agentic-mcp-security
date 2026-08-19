@@ -127,6 +127,7 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 | [KOVY/agentforge-trust-mcp][link_kovy_agentforge_trust_mcp] | MCP trust scores and policy-style recommendations before connecting | Third-party scores are heuristics—do not bypass internal approval | ![](https://badgen.net/github/last-commit/KOVY/agentforge-trust-mcp) |
 | [agentgraph-co/agentgraph][link_agentgraph_co_agentgraph] | Attestations and scanning posture signals for third-party MCP servers | Verify attestation roots and freshness | ![](https://badgen.net/github/last-commit/agentgraph-co/agentgraph) |
 | [vinaybhosle/agentstamp][link_vinaybhosle_agentstamp] | Agent identity stamps and reputation registry | API and payment rails; watch data residency | ![](https://badgen.net/github/last-commit/vinaybhosle/agentstamp) |
+| [ezequiellich44-cmd/MandateGuard][link_ezequiellich44_cmd_mandateguard] | Deterministic payment policy with budgets, allowlists, signed mandates, audit ledger | Pre-action authorization gate for agent payments; no LLM in decision path | ![](https://badgen.net/github/last-commit/ezequiellich44-cmd/MandateGuard) |
 
 ---
 
@@ -208,3 +209,4 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 [link_zitadel]: https://zitadel.com/
 [link_ppcvote_misp_mcp_server]: https://github.com/ppcvote/misp-mcp-server
 [link_misp]: https://www.misp-project.org/
+[link_ezequiellich44_cmd_mandateguard]: https://github.com/ezequiellich44-cmd/MandateGuard
