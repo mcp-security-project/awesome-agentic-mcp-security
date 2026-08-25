@@ -50,6 +50,23 @@
 | [A Practical Guide for Securely Using Third-Party MCP Servers][link_genai_owasp_org_resource_cheatsheet_a_practical_guide_for_securely_usi] - OWASP GenAI Security Project | Practical guide for evaluating and safely using third-party MCP servers. |
 | [A Practical Guide for Secure MCP Server Development][link_genai_owasp_org_resource_a_practical_guide_for_secure_mcp_server_devel] - OWASP GenAI Security Project | Secure development guidance for MCP servers, covering architecture, auth, validation, session isolation, and hardened deployment. |
 | [OWASP MCP Top 10][link_owasp_org_www_project_mcp_top_10] - OWASP | Community risk taxonomy for MCP-enabled systems. Useful for mapping written research into common risk categories. |
+| [Introducing the Model Context Protocol][link_anthropic_com_news_model_context_protocol] - Anthropic | Foundational Nov 2024 announcement defining MCP as an open standard for connecting AI assistants to data sources and tools-useful context for how the ecosystem started. |
+| [Model Context Protocol: What Security Teams Need to Know Before Agents Scale][link_zenity_io_academy_model_context_protocol_explained] - Zenity Academy | Security-architect primer on MCP adoption sequence, OAuth maturation, and governance gaps before agents move from pilot to production. |
+| [How to secure your remote MCP server on Google Cloud][link_cloud_google_com_blog_secure_remote_mcp_server] - Google Cloud | Enterprise pattern: centralized MCP proxy on Cloud Run/GKE/Apigee with IAM, Model Armor, and audit logging-without modifying individual servers. |
+| [Don't Let Your AI Go Rogue: Securing Database Tools with MCP Toolbox][link_medium_google_cloud_mcp_toolbox_database_security] - Google Cloud (Medium) | Shows least-privilege tool design via MCP Toolbox `tools.yaml` guardrails against confused deputy and overbroad database access. |
+| [Secure AI agent access patterns to AWS resources using Model Context Protocol][link_aws_amazon_com_blog_security_secure_ai_agent_access_mcp] - AWS Security Blog | Three IAM principles for deterministic agent controls: least privilege, config-bound permissions, and differentiating MCP vs direct API access via context keys. |
+| [Understanding IAM for Managed AWS MCP Servers][link_aws_amazon_com_blog_security_iam_managed_mcp_servers] - AWS Security Blog | Explains `aws:ViaAWSMCPService` and `aws:CalledViaAWSMCP` context keys for governing AI-initiated vs human-initiated AWS actions. |
+| [MCP Servers Are the New Unmanaged API. Start Treating Them That Way.][link_paloaltonetworks_com_blog_mcp_servers_unmanaged_api] - Palo Alto Networks | Frames MCP as shadow-API problem: discovery, policy, runtime detection, and why local/unmanaged servers bypass traditional network controls. |
+| [MCP Security Exposed: What You Need to Know Now][link_paloaltonetworks_community_mcp_security_exposed] - Palo Alto Networks (Community) | Early threat overview: optional auth in MCP SDK, malicious tool repos, consent fatigue, sandbox gaps, and plaintext credential exposure. |
+| [MCP Server Security: Risks, Attacks & Controls][link_imperva_com_blog_mcp_server_security_blind_spot] - Imperva | Positions MCP servers as a security blind spot in the AI stack; cites Framelink Figma RCE and OWASP secure-development guidance. |
+| [Another Critical RCE Discovered in a Popular MCP Server][link_imperva_com_blog_framelink_figma_mcp_rce] - Imperva | Technical writeup of CVE-2025-53967 command injection in Framelink Figma MCP Server (`child_process.exec` + curl fallback). |
+| [Critical RCE in Anthropic MCP Inspector (CVE-2025-49596)][link_oligo_security_blog_mcp_inspector_rce] - Oligo Security | CSRF/DNS-rebinding RCE in MCP Inspector proxy when bound to localhost without auth-origin checks. |
+| [How Tenable Research Discovered a Critical RCE Vulnerability on Anthropic MCP Inspector][link_tenable_com_blog_mcp_inspector_rce] - Tenable | Coordinated disclosure narrative for CVE-2025-49596: client/proxy architecture, attack prerequisites, and v0.14.1 remediation. |
+| [MCP Security Statistics 2026: CVEs, Vulnerabilities & Breach Data][link_practical_devsecops_mcp_security_statistics_2026] - Practical DevSecOps | Data-heavy roundup: SDK downloads, public-server vuln rates, OAuth adoption gaps, and major CVE timeline through early 2026. |
+| [MCP Security Best Practices: A Runtime Checklist for Securing AI Agent Connections][link_edgelabs_ai_blog_mcp_security_best_practices] - AI EdgeLabs | Runtime checklist for SecOps: token handling, tool shadowing, confused deputy, session hijacking, and agent-side detection posture. |
+| [MCP Security Risks & Best Practices: Enterprise Guide][link_truefoundry_com_blog_mcp_security_risks_best_practices] - TrueFoundry | Enterprise framing of tool poisoning, credential sprawl, audit blind spots, and infrastructure-layer controls (identity-aware execution, HITL). |
+| [MCP Security: Enterprise Guide to Securing AI Agents, Tools, and Data Access][link_langprotect_com_blog_mcp_security_enterprise_guide] - LangProtect | Four-layer governance model: discovery/inventory, identity/access, runtime enforcement, and audit logging mapped to OWASP MCP Top 10. |
+| [Your MCP Setup Is a Security Nightmare. Here's the Fix.][link_medium_candemir_mcp_security_nightmare_fix] - Can Demir (Medium) | Practitioner timeline of real MCP incidents (tool poisoning, mcp-remote, Asana, postmark-mcp) with a hardening checklist. |
 
 ### Dated incidents, investigations, and community mirrors
 
@@ -103,6 +120,18 @@ This subsection is a **chronological-style mirror** of high-signal posts, vendor
 | 2025-10-02 | [Secure from Day One: Building Production Ready MCP Servers][link_nickyt_mcp_dev_summit_eu_2025] - Nick Taylor (Pomerium) | Talk page for MCP Developers Summit EU session (OAuth 2.1 + Pomerium patterns)-canonical when curators mean “Nick Taylor / Pomerium MCP” but do not link YouTube. |
 | 2024–2025 | [Securing MCP Servers with Zero Trust][link_nickyt_securing_mcp_zero_trust_apollo] - Nick Taylor (Pomerium) | Apollo MCP Server Builder series talk page on zero trust for MCP servers. |
 | 2025 | [Agentic Access: OAuth Gets You In, Zero Trust Keeps You Safe (All Things Open)][link_nickyt_agentic_access_ato_2025] - Nick Taylor (Pomerium) | Conference-specific instance of the OAuth + zero trust narrative for MCP/agent clients. |
+| 2026-01 | [Microsoft & Anthropic MCP Servers at Risk of RCE, Cloud Takeovers][link_darkreading_microsoft_anthropic_mcp_rce] - Dark Reading | Joint disclosure day: Cyata Git MCP exploit chain (CVE-2025-68143/44/45) + BlueRock MarkItDown SSRF; ~36.7% of scanned servers share SSRF patterns. |
+| 2026-01 | [Anthropic MCP Server Flaws Lead to Code Execution, Data Exposure][link_securityweek_anthropic_mcp_git_flaws] - SecurityWeek | News writeup of Cyata findings in Anthropic's official `mcp-server-git`: IPI-triggered path traversal, argument injection, and scoping bypass. |
+| 2026-01 | [MCP fURI: Microsoft MarkItDown MCP Server Vulnerabilities][link_bluerock_io_post_mcp_furi_markitdown] - BlueRock Security | SSRF via unbounded `convert_to_markdown` URI fetching; AWS EC2 metadata credential theft when deployed on cloud instances. |
+| 2026-01 | [Microsoft MarkItDown MCP Server SSRF][link_vulnerablemcp_info_markitdown_ssrf] - The Vulnerable MCP Project | Community catalog entry for MarkItDown MCP SSRF (a.k.a. MCP fURI) with cloud metadata exploitation preconditions. |
+| 2026-01 | [Critical MCP Flaws Turn AI Assistants Into Cloud and RCE Attack Vectors][link_petri_critical_mcp_flaws_ai_cloud_rce] - Petri | Synthesis of Cyata Git MCP RCE chain and BlueRock MarkItDown SSRF with ecosystem-wide insecure-fetch patterns. |
+| 2025-06 | [Agentic AI's Risky MCP Backbone Opens New Attack Vectors][link_darkreading_agentic_ai_mcp_backbone] - Dark Reading | Early coverage of CVE-2025-49596 (MCP Inspector) and CVE-2025-6514 (`mcp-remote`) as client-side MCP supply-chain risks. |
+| 2025-06 | [MCP Inspector CVE-2025-49596 RCE Deep Dive][link_safeguard_sh_mcp_inspector_rce_postmortem] - Safeguard.sh | Postmortem on loopback-trust anti-pattern in MCP Inspector and same pattern in community MCP scaffolds (CVE-2025-54994, etc.). |
+| 2025-09 | [Another Critical RCE Discovered in a Popular MCP Server (CVE-2025-53967)][link_imperva_com_blog_framelink_figma_mcp_rce] - Imperva | Framelink Figma MCP command injection via `fetchWithRetry` curl fallback-affected 600K+ downloads and major IDE integrations. |
+| 2026-04~ | [MCP Supply Chain Advisory: RCE Vulnerabilities Across the AI Ecosystem][link_ox_security_blog_mcp_supply_chain_advisory] - OX Security | Full CVE advisory catalog for STDIO command-injection family across LiteLLM, Windsurf, LangFlow, Flowise, DocsGPT, and related platforms. |
+| 2026-04~ | [200,000 MCP servers expose a command execution flaw that Anthropic calls a feature][link_venturebeat_mcp_stdio_flaw_200000_servers] - VentureBeat | Journalism on OX Security STDIO research: scale estimates, vendor patch status, and Anthropic "by design" response. |
+| 2026-03 | [AI Agent Security Risks 2026: MCP, OpenClaw & Supply Chain][link_cyberdesserts_ai_agent_security_risks_2026] - CyberDesserts | Practitioner synthesis tying MCP to 2026 agent supply-chain incidents (ClawHub, Cyata Git MCP, shadow MCP servers). |
+| 2026-05 | [The NSA Published an MCP Security Playbook (PP-26-1834 Field Guide)][link_mcpblog_dev_nsa_mcp_security_field_guide] - MCPBlog.dev | Practitioner breakdown of NSA CSI nine requirements: gateway/DLP, sandboxing, server identity, message integrity, audit logging, and federal-contractor timeline. |
 
 ---
 
@@ -120,6 +149,12 @@ This subsection lists long-form industry research, enterprise guides, and struct
 
 | Title — Author / Org | Summary |
 | --- | --- |
+| [Agentic MCP Security Best Practices Guide (v1)][link_csa_agentic_mcp_security_best_practices_v1] - Cloud Security Alliance | Draft enterprise whitepaper (Mar 2026): six threat categories, control domains, four-level MCP Security Maturity Model, and crosswalk to OWASP ASI, CSA AICM, and MITRE ATLAS. |
+| [Securing the AI Agent Revolution: A Practical Guide to MCP Security][link_cosai_securing_ai_agent_revolution_mcp] - Coalition for Secure AI (CoSAI) | Downloadable CoSAI whitepaper (Jan 2026): ~12 threat categories, ~40 threats, deployment patterns, and defense-in-depth for production MCP. Complements the CoSAI/OASIS GitHub analysis already listed. |
+| [MCP Server Security Report][link_zenity_io_whitepaper_mcp_server_security_report] - Zenity | Industry report on real-world MCP vulnerabilities, command-injection exposure rates, token-handling gaps, and third-party server governance blind spots. |
+| [MCP Security Crisis: Systemic Design Flaws in AI Agent Infrastructure][link_csa_research_note_mcp_security_crisis] - Cloud Security Alliance | CSA research note (May 2026) on OX Security STDIO disclosure: design-default RCE propagation, confirmed CVE table, and enterprise response guidance. |
+| [MCP Security Statistics 2026: CVEs, Vulnerabilities & Breach Data][link_practical_devsecops_mcp_security_statistics_2026] - Practical DevSecOps | Structured data report (also listed under [Blogs](#blogs)): adoption metrics, scan statistics, and CVE timeline useful for executive briefings. |
+| [Model Context Protocol (MCP): Security Design Considerations for AI-Driven Automation (CSI)][link_nsa_gov_csi_mcp_security_design_considerations] - NSA Artificial Intelligence Security Center | Official U.S. government CSI (May 2026, PP-26-1834): nine architectural requirements for MCP in high-stakes/production use-gateway inspection, sandboxing, identity, message integrity, audit, and trust segmentation. |
 | [MCP Security Considerations and Mitigation Strategies for the Enterprise][link_fractal_ai_docs_whitepaper_fractal_partner_and_alliances_mcp_security_] - Fractal | Enterprise-oriented whitepaper covering MCP interaction model, OAuth/token theft, prompt injection, tool poisoning, RCE/command injection, data governance, supply chain, and layered mitigation. Key actions: MCP governance policy; hardened identity/access; validation; observability; human-in-the-loop for high-risk actions. |
 | [Model Context Protocol Strategies on AWS][link_docs_aws_amazon_com_prescriptive_guidance_latest_mcp_strategies_welcom] - AWS Prescriptive Guidance | Enterprise strategy guide for MCP tool design, server hosting, and governance. Emphasizes workflow-scoped tools, permission filtering, token isolation, server lifecycle control, and traceable access (“who, what, when, which permissions”). |
 | [Enterprise-Grade Security for the Model Context Protocol: Frameworks and Mitigation Strategies][link_arxiv_org_abs_2504_08623] - Vineeth Sai Narajala, Idan Habler | Research/industry paper translating MCP threat modeling into implementable enterprise controls. Treat MCP security as architecture (identity, access, monitoring, validation, governance), not only code review. |
@@ -152,6 +187,17 @@ This subsection lists academic and preprint research relevant to MCP security. E
 | [Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning][link_arxiv_org_abs_2603_22489] - Charoes Huang, Xin Huang, Ngoc Phu Tran, Amin Milani Fard - arXiv | STRIDE/DREAD across MCP components plus empirical tool-poisoning tests across major MCP clients. Client security, permission UX, host/client risk. |
 | [MCP Security Bench: Benchmarking Attacks Against MCP-Based Agents][link_openreview_net_forum] - D. Zhang et al. - OpenReview / preprint | Large benchmark of MCP-based agent attacks across stages, scenarios, tasks, and tools. Supports red-team benchmarking and client/agent regression testing. |
 | [Behavioral Detection Methods for Automated MCP Server Security Monitoring][link_digitalcommons_odu_edu_cgi_viewcontent_cgi] - C. Coleman - ODU undergraduate research repository | Explores behavioral detection for MCP server monitoring. SOC detection and anomaly-monitoring ideas. |
+| [Model Context Protocol (MCP) at First Glance: Studying the Security and Maintainability of MCP Servers][link_arxiv_org_html_2506_13538v1] - authors per arXiv - arXiv | First large-scale empirical study (1,899 GitHub servers): 7.2% general vulnerabilities, 5.5% tool poisoning, eight distinct MCP-specific vuln classes. |
+| [A Measurement Study of Model Context Protocol Ecosystem][link_arxiv_org_abs_2509_25292] - authors per arXiv - arXiv | MCPCrawler measurement across six markets: 8,060 servers + 341 clients; fragmentation, security posture, and interoperability findings. |
+| [A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures][link_arxiv_org_abs_2506_19676] - authors per arXiv - arXiv | Broader agent-communication survey with MCP and A2A attack experiments; three-layer lifecycle taxonomy and defense outlook. |
+| [MCPSecBench: A Systematic Security Benchmark and Playground for Testing Model Context Protocols][link_arxiv_org_html_2508_13220v3] - authors per arXiv - arXiv | 17 attack types across four surfaces; modular benchmark with GUI harness tested on Claude, OpenAI, and Cursor hosts. Distinct from MCP Security Bench (OpenReview) below. |
+| [MCPGuard: Automatically Detecting Vulnerabilities in MCP Servers][link_arxiv_org_abs_2510_23673] - Bin Wang et al. - arXiv | Survey of MCP threat landscape plus layered detection pipeline: static patterns, fine-tuned neural module, and LLM arbitration. |
+| [SMCP: Secure Model Context Protocol][link_arxiv_org_abs_2602_01129] - authors per arXiv - arXiv | Protocol extension proposal: unified identity, mutual authentication, security context propagation, fine-grained policy enforcement, and audit logging. |
+| [MCPShield: A Security Cognition Layer for Adaptive Trust Calibration in Model Context Protocol Agents][link_arxiv_org_abs_2602_14281] - authors per arXiv - arXiv | Runtime trust calibration via metadata-guided probing, isolated execution projection, and periodic reasoning over historical traces. |
+| [MCP-38: A Comprehensive Threat Taxonomy for Model Context Protocol Systems (v1.0)][link_arxiv_org_abs_2603_18063] - authors per arXiv - arXiv | Academic formalization of the 38-category MCP-38 taxonomy with STRIDE, OWASP LLM Top 10, and OWASP Agentic Top 10 crosswalks. |
+| [A Formal Security Framework for MCP-Based AI Agents (MCPSHIELD)][link_arxiv_org_abs_2604_05969] - authors per arXiv - arXiv | Formal framework: 7 categories / 23 vectors, labeled transition-system verification model, and defense-in-depth reference architecture (~91% theoretical coverage). |
+| [Exposed by Design: A Dynamic Security Assessment of Internet-Facing MCP Servers at Scale][link_arxiv_org_html_2608_00150v1] - authors per arXiv - arXiv | Corvus framework: passive discovery + dynamic testing of 414 internet-facing servers; 68 reportable vulns including SQLi, SSRF/IMDS, and prompt template injection. |
+| [Security Threats in the Model Context Protocol: A Comprehensive Survey and Trust Boundary Mitigation Framework][link_ijsr_net_mcp_security_survey_tbmf] - authors per IJSR - IJSR / preprint | Ten-class threat taxonomy mapped to 2025–2026 governance frameworks; proposes Trust Boundary Mitigation Framework (TBMF) with six defense layers. |
 
 ---
 
@@ -168,6 +214,7 @@ This subsection lists academic and preprint research relevant to MCP security. E
 | [OWASP MCP Tool Poisoning Attack Page][link_owasp_org_www_community_attacks_mcp_tool_poisoning] - OWASP | Tool poisoning as indirect prompt injection. **For this project:** attack taxonomy and lab references. |
 | [OWASP Practical Guide for Securely Using Third-Party MCP Servers][link_genai_owasp_org_resource_cheatsheet_a_practical_guide_for_securely_usi] - OWASP GenAI Security Project | Third-party server adoption checklist. **For this project:** vetting, approval, monitoring, isolation, least privilege. |
 | [OWASP Practical Guide for Secure MCP Server Development][link_genai_owasp_org_resource_a_practical_guide_for_secure_mcp_server_devel] - OWASP GenAI Security Project | Secure development for MCP server authors. **For this project:** architecture, auth, validation, session isolation, hardened deployment. |
+| [MCPS: Cryptographic Security Layer for the Model Context Protocol (Internet-Draft)][link_datatracker_ietf_org_doc_draft_sharif_mcps_secure_mcp] - IETF | Proposed MCPS envelope: agent passports, per-message signing, full tool-object signatures (anti-poisoning), and nonce/timestamp replay protection. Backward-compatible L0–L4 trust levels. |
 
 ### OAuth, Identity, and Authorization References
 
@@ -193,21 +240,44 @@ Read **[OAuth 2.1][link_datatracker_ietf_org_doc_draft_ietf_oauth_v2_1]** first 
 | [OWASP Top 10 for LLM Applications][link_genai_owasp_org_llm_top_10] - OWASP GenAI Security Project | MCP risks overlap with prompt injection, sensitive disclosure, supply chain issues, excessive agency, insecure output handling. |
 | [OWASP Top 10 for Agentic Applications][link_genai_owasp_org_resource_owasp_top_10_for_agentic_applications_for_202] - OWASP GenAI Security Project | Agentic risk taxonomy for systems that plan, act, and use tools-companion to MCP-specific risk lists. |
 | [CSA AI Controls Matrix][link_labs_cloudsecurityalliance_org_mcp] - Cloud Security Alliance | Control mapping for AI workloads; see also [Industry resource hubs](#industry-resource-hubs) for the broader CSA MCP index. |
+| [NSA CSI: MCP Security Design Considerations for AI-Driven Automation][link_nsa_gov_csi_mcp_security_design_considerations] - NSA AISC | First U.S. government MCP-specific security guidance (May 2026). Use alongside NIST AI RMF for federal/high-assurance deployments; see also [Whitepapers](#whitepapers). |
 
 
 [link_aclanthology_org_2025_emnlp_main_62]: https://aclanthology.org/2025.emnlp-main.62/
 [link_aembit_io_blog_mcp_oauth_2_1_pkce_and_the_future_of_ai_authorization]: https://aembit.io/blog/mcp-oauth-2-1-pkce-and-the-future-of-ai-authorization/
+[link_anthropic_com_news_model_context_protocol]: https://www.anthropic.com/news/model-context-protocol
 [link_arxiv_org_abs_2503_23278]: https://arxiv.org/abs/2503.23278
 [link_arxiv_org_abs_2504_03767]: https://arxiv.org/abs/2504.03767
 [link_arxiv_org_abs_2504_08623]: https://arxiv.org/abs/2504.08623
 [link_arxiv_org_abs_2504_12757]: https://arxiv.org/abs/2504.12757
 [link_arxiv_org_abs_2504_19997]: https://arxiv.org/abs/2504.19997
 [link_arxiv_org_abs_2506_02040]: https://arxiv.org/abs/2506.02040
+[link_arxiv_org_abs_2506_19676]: https://arxiv.org/abs/2506.19676
 [link_arxiv_org_abs_2508_14925]: https://arxiv.org/abs/2508.14925
+[link_arxiv_org_abs_2509_25292]: https://arxiv.org/abs/2509.25292
+[link_arxiv_org_abs_2510_23673]: https://arxiv.org/abs/2510.23673
 [link_arxiv_org_abs_2511_20920]: https://arxiv.org/abs/2511.20920
 [link_arxiv_org_abs_2601_17549]: https://arxiv.org/abs/2601.17549
+[link_arxiv_org_abs_2602_01129]: https://arxiv.org/abs/2602.01129
+[link_arxiv_org_abs_2602_14281]: https://arxiv.org/abs/2602.14281
+[link_arxiv_org_abs_2603_18063]: https://arxiv.org/abs/2603.18063
 [link_arxiv_org_abs_2603_22489]: https://arxiv.org/abs/2603.22489
+[link_arxiv_org_abs_2604_05969]: https://arxiv.org/abs/2604.05969
+[link_arxiv_org_html_2506_13538v1]: https://arxiv.org/html/2506.13538v1
+[link_arxiv_org_html_2508_13220v3]: https://arxiv.org/html/2508.13220v3
+[link_arxiv_org_html_2608_00150v1]: https://arxiv.org/html/2608.00150v1
 [link_arxiv_org_html_2508_12538v1]: https://arxiv.org/html/2508.12538v1
+[link_aws_amazon_com_blog_security_iam_managed_mcp_servers]: https://aws.amazon.com/blogs/security/understanding-iam-for-managed-aws-mcp-servers/
+[link_aws_amazon_com_blog_security_secure_ai_agent_access_mcp]: https://aws.amazon.com/blogs/security/secure-ai-agent-access-patterns-to-aws-resources-using-model-context-protocol/
+[link_bluerock_io_post_mcp_furi_markitdown]: https://www.bluerock.io/post/mcp-furi-microsoft-markitdown-vulnerabilities
+[link_cloud_google_com_blog_secure_remote_mcp_server]: https://cloud.google.com/blog/products/identity-security/how-to-secure-your-remote-mcp-server-on-google-cloud
+[link_cosai_securing_ai_agent_revolution_mcp]: https://www.coalitionforsecureai.org/securing-the-ai-agent-revolution-a-practical-guide-to-mcp-security/
+[link_csa_agentic_mcp_security_best_practices_v1]: https://labs.cloudsecurityalliance.org/agentic/agentic-mcp-security-best-practices-v1/
+[link_csa_research_note_mcp_security_crisis]: https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-security-crisis-20260504-csa-styled/
+[link_cyberdesserts_ai_agent_security_risks_2026]: https://blog.cyberdesserts.com/ai-agent-security-risks/
+[link_darkreading_agentic_ai_mcp_backbone]: https://www.darkreading.com/application-security/agentic-ai-risky-mcp-backbone-attack-vectors
+[link_darkreading_microsoft_anthropic_mcp_rce]: https://www.darkreading.com/application-security/microsoft-anthropic-mcp-servers-risk-takeovers
+[link_datatracker_ietf_org_doc_draft_sharif_mcps_secure_mcp]: https://datatracker.ietf.org/doc/draft-sharif-mcps-secure-mcp/
 [link_blog_modelcontextprotocol_io_posts_client_registration]: https://blog.modelcontextprotocol.io/posts/client_registration/
 [link_blog_trailofbits_com_2025_04_21_jumping_the_line_how_mcp_servers_can_a]: https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/
 [link_blog_trailofbits_com_2025_04_23_how_mcp_servers_can_steal_your_convers]: https://blog.trailofbits.com/2025/04/23/how-mcp-servers-can-steal-your-conversation-history/
@@ -226,6 +296,7 @@ Read **[OAuth 2.1][link_datatracker_ietf_org_doc_draft_ietf_oauth_v2_1]** first 
 [link_docs_aws_amazon_com_prescriptive_guidance_latest_mcp_strategies_welcom]: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strategies/welcome.html
 [link_docs_litellm_ai_blog_mcp_stdio_command_injection_april_2026]: https://docs.litellm.ai/blog/mcp-stdio-command-injection-april-2026
 [link_fractal_ai_docs_whitepaper_fractal_partner_and_alliances_mcp_security_]: https://fractal.ai/docs/Whitepaper/Fractal-Partner-And-Alliances-MCP-Security-Considerations-And-Mitigation-Strategies-For-The-Enterprise.pdf
+[link_edgelabs_ai_blog_mcp_security_best_practices]: https://edgelabs.ai/blog/mcp-security-best-practices
 [link_genai_owasp_org_llm_top_10]: https://genai.owasp.org/llm-top-10/
 [link_genai_owasp_org_resource_a_practical_guide_for_secure_mcp_server_devel]: https://genai.owasp.org/resource/a-practical-guide-for-secure-mcp-server-development/
 [link_genai_owasp_org_resource_cheatsheet_a_practical_guide_for_securely_usi]: https://genai.owasp.org/resource/cheatsheet-a-practical-guide-for-securely-using-third-party-mcp-servers-1-0/
@@ -236,8 +307,14 @@ Read **[OAuth 2.1][link_datatracker_ietf_org_doc_draft_ietf_oauth_v2_1]** first 
 [link_invariantlabs_ai_blog_mcp_security_notification_tool_poisoning_attacks]: https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks
 [link_invariantlabs_ai_blog_toxic_flow_analysis]: https://invariantlabs.ai/blog/toxic-flow-analysis
 [link_invariantlabs_ai_blog_whatsapp_mcp_exploited]: https://invariantlabs.ai/blog/whatsapp-mcp-exploited
+[link_imperva_com_blog_framelink_figma_mcp_rce]: https://www.imperva.com/blog/another-critical-rce-discovered-in-a-popular-mcp-server/
+[link_imperva_com_blog_mcp_server_security_blind_spot]: https://www.imperva.com/blog/mcp-server-security-blind-spot-ai-stack/
+[link_ijsr_net_mcp_security_survey_tbmf]: https://doi.org/10.21275/sr26316110418
 [link_iso_org_standard_81230_html]: https://www.iso.org/standard/81230.html
 [link_labs_cloudsecurityalliance_org_mcp]: https://labs.cloudsecurityalliance.org/mcp/
+[link_langprotect_com_blog_mcp_security_enterprise_guide]: https://www.langprotect.com/blog/mcp-security-enterprise-guide
+[link_medium_candemir_mcp_security_nightmare_fix]: https://medium.com/@candemir13/your-mcp-setup-is-a-security-nightmare-heres-the-fix-76ae27c210e4
+[link_medium_google_cloud_mcp_toolbox_database_security]: https://medium.com/google-cloud/dont-let-your-ai-go-rogue-securing-database-tools-with-mcp-toolbox-dab9a53dd6a0
 [link_modelcontextprotocol_io_docs_tutorials_security_security_best_practice]: https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices
 [link_modelcontextprotocol_io_specification_2025_11_25]: https://modelcontextprotocol.io/specification/2025-11-25
 [link_modelcontextprotocol_io_specification_draft_basic_authorization]: https://modelcontextprotocol.io/specification/draft/basic/authorization
@@ -245,6 +322,7 @@ Read **[OAuth 2.1][link_datatracker_ietf_org_doc_draft_ietf_oauth_v2_1]** first 
 [link_modelcontextprotocol_security_io_top10_client]: https://modelcontextprotocol-security.io/top10/client/
 [link_modelcontextprotocol_security_io_top10_server]: https://modelcontextprotocol-security.io/top10/server/
 [link_nist_gov_itl_ai_risk_management_framework]: https://www.nist.gov/itl/ai-risk-management-framework
+[link_nsa_gov_csi_mcp_security_design_considerations]: https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4496698/nsa-releases-security-design-considerations-for-ai-driven-automation-leveraging/
 [link_openid_net_specs_openid_connect_discovery_1_0_html]: https://openid.net/specs/openid-connect-discovery-1_0.html
 [link_openreview_net_forum]: https://openreview.net/forum?id=irxxkFMrry
 [link_owasp_cheatsheetseries_mcp_security]: https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html
@@ -252,7 +330,15 @@ Read **[OAuth 2.1][link_datatracker_ietf_org_doc_draft_ietf_oauth_v2_1]** first 
 [link_owasp_org_www_project_mcp_top_10]: https://owasp.org/www-project-mcp-top-10/
 [link_ox_security_blog_the_mother_of_all_ai_supply_chains_critical_systemic_]: https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-critical-systemic-vulnerability-at-the-core-of-the-mcp/
 [link_ox_security_blog_the_mother_of_all_ai_supply_chains_technical_deep_div]: https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-technical-deep-dive/
+[link_oligo_security_blog_mcp_inspector_rce]: https://www.oligo.security/blog/critical-rce-vulnerability-in-anthropic-mcp-inspector-cve-2025-49596
+[link_ox_security_blog_mcp_supply_chain_advisory]: https://www.ox.security/blog/mcp-supply-chain-advisory-rce-vulnerabilities-across-the-ai-ecosystem/
+[link_paloaltonetworks_com_blog_mcp_servers_unmanaged_api]: https://www.paloaltonetworks.com/blog/cloud-security/mcp-servers-ai-attack-surface-security/
+[link_paloaltonetworks_community_mcp_security_exposed]: https://live.paloaltonetworks.com/t5/community-blogs/mcp-security-exposed-what-you-need-to-know-now/ba-p/1227143
+[link_petri_critical_mcp_flaws_ai_cloud_rce]: https://petri.com/critical-mcp-server-flaws-ai-cloud-rce-attacks/
+[link_practical_devsecops_mcp_security_statistics_2026]: https://www.practical-devsecops.com/mcp-security-statistics-2026-report/
 [link_redhat_com_en_blog_mcp_security_implementing_robust_authentication_and]: https://www.redhat.com/en/blog/mcp-security-implementing-robust-authentication-and-authorization
+[link_safeguard_sh_mcp_inspector_rce_postmortem]: https://safeguard.sh/resources/blog/mcp-inspector-cve-2025-49596-rce-postmortem
+[link_securityweek_anthropic_mcp_git_flaws]: https://www.securityweek.com/anthropic-mcp-server-flaws-lead-to-code-execution-data-exposure/
 [link_snyk_io_articles_building_secure_mcp_servers]: https://snyk.io/articles/building-secure-mcp-servers/
 [link_snyk_io_blog_scan_your_ai_generated_code_from_cursor_using_model_conte]: https://snyk.io/blog/scan-your-ai-generated-code-from-cursor-using-model-context-protocol-mcp/
 [link_snyk_io_blog_securing_low_code_agentic_ai_mcp_guardrails]: https://snyk.io/blog/securing-low-code-agentic-ai-mcp-guardrails/
@@ -293,6 +379,7 @@ Read **[OAuth 2.1][link_datatracker_ietf_org_doc_draft_ietf_oauth_v2_1]** first 
 [link_mcpmanager_ai_blog_mcp_security_best_practices]: https://mcpmanager.ai/blog/mcp-security-best-practices/
 [link_mcpmanager_ai_blog_mcp_security_risks]: https://mcpmanager.ai/blog/mcp-security-risks-model-context-protocol/
 [link_mcpmanager_ai_blog_mcp_supply_chain_security]: https://mcpmanager.ai/blog/mcp-supply-chain-security/
+[link_mcpblog_dev_nsa_mcp_security_field_guide]: https://mcpblog.dev/blog/2026-05-30-nsa-mcp-security-guidance-pp-26-1834-field-guide
 [link_nickyt_agentic_access_ato_2025]: https://www.nickyt.co/talks/agentic-access-oauth-gets-you-in-zero-trust-keeps-you-safe-all-things-open-2025/
 [link_nickyt_mcp_dev_summit_eu_2025]: https://www.nickyt.co/talks/mcp-developers-summit-eu-2025-building-secure-mcp-servers/
 [link_nickyt_securing_mcp_zero_trust_apollo]: https://www.nickyt.co/talks/securing-mcp-servers-with-zero-trust-apollo-mcp-server-builder-series-2024/
@@ -304,8 +391,14 @@ Read **[OAuth 2.1][link_datatracker_ietf_org_doc_draft_ietf_oauth_v2_1]** first 
 [link_pulik_dev_blog_mcp_security]: https://pulik.dev/blog/mcp-security
 [link_research_jfrog_mcp_remote_command_injection]: https://research.jfrog.com/vulnerabilities/mcp-remote-command-injection-rce-jfsa-2025-001290844/
 [link_simonwillison_net_2025_aug_9_when_a_jira_ticket_can_steal_your_secrets]: https://simonwillison.net/2025/Aug/9/when-a-jira-ticket-can-steal-your-secrets/
+[link_tenable_com_blog_mcp_inspector_rce]: https://www.tenable.com/blog/how-tenable-research-discovered-a-critical-remote-code-execution-vulnerability-on-anthropic
 [link_thenewstack_mcp_evolution]: https://thenewstack.io/model-context-protocol-evolution/
 [link_thenewstack_mcp_security_reality_check]: https://thenewstack.io/the-model-context-protocol-security-reality-check/
 [link_trailofbits_ansi_deception_mcp]: https://blog.trailofbits.com/2025/04/29/deceiving-users-with-ansi-terminal-codes-in-mcp/
+[link_truefoundry_com_blog_mcp_security_risks_best_practices]: https://www.truefoundry.com/blog/mcp-security-risks-best-practices
+[link_venturebeat_mcp_stdio_flaw_200000_servers]: https://venturebeat.com/security/mcp-stdio-flaw-200000-ai-agent-servers-exposed-ox-security-audit
 [link_vulcan_mcp_38_taxonomy]: https://vulcanlab.ai/introducing-mcp-38/
 [link_vulnerablemcp_info_cursor_jira_mcp_zero_click]: https://vulnerablemcp.info/vuln/cursor-jira-mcp-zero-click.html
+[link_vulnerablemcp_info_markitdown_ssrf]: https://vulnerablemcp.info/vuln/microsoft-markitdown-mcp-ssrf.html
+[link_zenity_io_academy_model_context_protocol_explained]: https://zenity.io/academy/model-context-protocol-explained
+[link_zenity_io_whitepaper_mcp_server_security_report]: https://zenity.io/resources/white-papers/mcp-server-security-report

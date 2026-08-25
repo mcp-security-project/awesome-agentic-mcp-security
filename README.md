@@ -118,7 +118,7 @@ Audio and live sessions on MCP security and related agentic risk, with metadata 
 
 [Browse all security tooling →](mcp_security_tools.md)
 
-50+ scanners, monitors, policy and gateway controls, secrets and dependency checks, and related utilities with deployment notes and safety warnings where relevant. Organized by category: MCP scanners, runtime monitoring, policy engines, secrets and dependency scanners, red team tools, and blue team / SOC tools.
+50+ scanners, monitors, policy and gateway controls, secrets and dependency checks, and related open-source utilities with deployment notes and safety warnings where relevant. Organized by category: MCP scanners, runtime monitoring, policy engines, secrets and dependency scanners, red team tools, and open-source observability.
 
 See `mcp_security_tools.md` for 
 
@@ -149,7 +149,7 @@ Categories include
 Structured catalogs of published CVEs affecting MCP servers, clients, SDKs, and related tooling.
 
 **Notable:**
-See `mcp_cve.md` for [mcp-cve-project](https://github.com/vermava/mcp-cve-project) and [vulnerablemcp](https://github.com/vineethsai/vulnerablemcp).
+See `mcp_cve.md` for [mcp-cve-project](https://github.com/mcp-security-project/mcp-cve-project) (**466** indexed CVEs) and [vulnerablemcp](https://github.com/vineethsai/vulnerablemcp).
 
 ## Vulnerable environments and labs
 

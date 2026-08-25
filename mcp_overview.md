@@ -151,3 +151,76 @@ And that is why MCP security matters.
 [3]: https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html "MCP Security Cheat Sheet - OWASP Cheat Sheet Series"
 [4]: https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices "Security Best Practices - Model Context Protocol"
 
+---
+
+## Review Update: Practical Security Lens
+
+This overview is strongest when it treats MCP as an operational security boundary, not just a protocol feature. The sections above explain why MCP matters; the additions below translate that framing into practical questions teams can use when evaluating MCP clients, servers, tools, and deployments.
+
+### Threat Modeling Questions
+
+Before adopting or publishing an MCP server, ask:
+
+* What data can this server read, and under whose identity?
+* What actions can its tools perform?
+* Which actions are read-only, write-capable, destructive, privileged, or externally visible?
+* Can tool outputs influence later tool calls?
+* Can untrusted content enter the model context through documents, webpages, tickets, logs, emails, repository issues, or database rows?
+* Are tool descriptions, schemas, and server manifests pinned, reviewed, and monitored for changes?
+* Are secrets ever exposed through prompts, logs, traces, tool outputs, environment variables, or error messages?
+* Can one MCP server indirectly influence another MCP server through shared context?
+* Is there a reliable audit trail showing user intent, model-selected tools, arguments, approvals, returned data, and resulting actions?
+
+### Deployment Checklist
+
+A secure MCP deployment should include:
+
+* Server allowlisting and inventory management
+* Per-server and per-tool permission scoping
+* Separate identities for users, clients, servers, and downstream services
+* Short-lived, audience-bound credentials for remote services
+* No token passthrough from MCP clients to unrelated downstream APIs
+* Sandboxing for local servers and command execution
+* Explicit approval flows for sensitive, destructive, financial, production, or externally visible actions
+* Input validation for tool arguments
+* Output handling rules that treat tool responses as data, not instructions
+* Logging that captures tool name, arguments, caller identity, approval state, timestamp, and result status
+* Alerting for new servers, changed tool descriptions, privilege expansion, unusual call volume, and failed authorization attempts
+* A process for revoking server access, rotating credentials, and disabling compromised tools
+
+### Common Failure Modes
+
+MCP risk often appears through small configuration decisions that compound over time:
+
+* A local filesystem server is granted access to an entire home directory instead of a project folder.
+* A development MCP server is reused in production without review.
+* A tool description is trusted as if it were code, even though the model relies on it for tool-selection behavior.
+* A server uses broad OAuth scopes because narrow scopes are inconvenient during development.
+* Tool results from untrusted sources are placed directly into model context without labeling or filtering.
+* Logs capture prompts, tool arguments, or returned data that contain credentials or sensitive business records.
+* Multiple MCP servers share the same model context, allowing one untrusted data source to influence actions in another system.
+
+### Recommended Assurance Activities
+
+Security teams can evaluate MCP systems through a combination of design review, testing, and runtime monitoring:
+
+* Review server source code, package provenance, tool schemas, and permissions before installation.
+* Run prompt-injection tests using malicious documents, webpages, ticket comments, repository issues, and tool responses.
+* Test authorization boundaries with users who should have different access levels.
+* Verify that sensitive tools require user approval and that approvals are specific to the action being performed.
+* Confirm that credentials are scoped, rotated, and never written to prompts, traces, or general application logs.
+* Compare tool definitions over time to detect renamed tools, changed descriptions, new parameters, or expanded behavior.
+* Exercise incident response by disabling an MCP server, revoking credentials, and reviewing historical tool-call logs.
+
+### Maturity Model
+
+MCP security maturity can be viewed in four stages:
+
+| Stage | Description |
+| --- | --- |
+| Ad hoc | Developers install MCP servers manually with little inventory, review, or logging. |
+| Managed | Approved servers are documented, permissions are scoped, and sensitive actions require user consent. |
+| Monitored | Tool calls, schema changes, failed authorization attempts, and unusual usage patterns are logged and alerted. |
+| Governed | MCP servers are managed through central policy, supply chain review, continuous testing, and incident response workflows. |
+
+The goal is not to block MCP adoption. The goal is to make MCP adoption observable, governable, and resilient enough for real environments.
