@@ -143,6 +143,7 @@ Repos previously listed here that returned **HTTP 404** on GitHub (verified 2026
 | [Microsoft MCP Gateway][link_github_com_microsoft_mcp_gateway] | K8s reverse proxy: session-aware routing, adapter lifecycle, tool gateway router | Enterprise telemetry and access-control integration points; Azure path optional | ![](https://badgen.net/github/last-commit/microsoft/mcp-gateway) · last commit: 17 days ago |
 | [IBM ContextForge][link_github_com_ibm_mcp_context_forge] | Federated registry/gateway for MCP, A2A, REST/gRPC with guardrails and OTel | PyPI `mcp-contextforge-gateway`; multi-cluster federation needs Redis review | ![](https://badgen.net/github/last-commit/IBM/mcp-context-forge) · last commit: 27 minutes ago |
 | [MCPJungle][link_github_com_mcpjungle_mcpjungle] | Lightweight self-hosted registry + unified MCP endpoint | Enterprise mode requires explicit client-to-server ACLs; stdio image tag for local servers | ![](https://badgen.net/github/last-commit/mcpjungle/MCPJungle) · last commit: about 2 months ago |
+| [SandBase Harness][link_github_com_sandbaseai_sandbase_harness] | Self-hosted agent runtime and MCP bridge with sandboxed sessions, credentials, approvals, and audit/replay | Local, Docker, Kubernetes, and self-hosted worker backends; review deployment boundaries and runtime authentication before production | ![](https://badgen.net/github/last-commit/sandbaseai/sandbase-harness) |
 
 ## Server discovery and awesome lists
 
@@ -263,6 +264,7 @@ Repos previously listed here that returned **HTTP 404** on GitHub (verified 2026
 [link_microsoft_github_io_mcp_azure_security_guide]: https://microsoft.github.io/mcp-azure-security-guide/
 [link_github_com_stackloklabs_osv_mcp]: https://github.com/StacklokLabs/osv-mcp
 [link_github_com_stackloklabs_toolhive]: https://github.com/StacklokLabs/toolhive
+[link_github_com_sandbaseai_sandbase_harness]: https://github.com/sandbaseai/sandbase-harness
 [link_github_com_spring_projects_spring_ai]: https://github.com/spring-projects/spring-ai
 [link_github_com_starskrime_mcp_action_firewall]: https://github.com/starskrime/mcp-action-firewall
 [link_github_com_tadata_org_fastapi_mcp]: https://github.com/tadata-org/fastapi_mcp
