@@ -86,6 +86,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[MCP-Defender][link_github_com_mcp_defender_mcp_defender]** | Desktop proxy — Intercepts MCP traffic from supported clients, signature-style checks, user allow/block prompts; review AGPL terms and update channel before fleet rollout. |
 | **[MCP-Dandan][link_github_com_82ch_mcp_dandan]** | Desktop monitoring — Real-time observation of MCP sessions with Electron UI; tune noise vs. signal for SOC handoff. |
 | **[Pipelock][link_github_com_luckypipewrench_pipelock]** | Runtime MCP/HTTP proxy — Scans tool descriptions, call arguments, and responses on every message; DLP-style credential leak patterns and egress inspection; Apache 2.0. |
+| **[Bifrost][link_github_com_maximhq_bifrost]** | AI gateway — MCP support, request routing, guardrails, rate limits, access controls, and telemetry for governed model traffic. |
 | **[shield (AperionAI)][link_github_com_aperionai_shield]** | Local guardrail proxy — TOFU tool-catalog pinning and rug-pull detection; wraps stdio or Streamable HTTP upstream servers. |
 | **[sint-protocol][link_github_com_sint_ai_sint_protocol]** | Governance proxy + `sint-scan` CLI — Preflight tool-risk audits, capability tokens, approval tiers, tamper-evident receipts; Apache 2.0. |
 | **[mcp-firewall][link_github_com_behrensd_mcp_firewall]** | Deterministic policy proxy — YAML policies (“iptables for MCP”), secret-leak scanning, no cloud dependency. |
@@ -238,3 +239,4 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_invariantlabs_ai_github_io_docs_mcp_scan]: https://invariantlabs-ai.github.io/docs/mcp-scan/
 [link_microsoft_github_io_mcp_azure_security_guide]: https://microsoft.github.io/mcp-azure-security-guide/
 [link_owasp_org_www_project_mcp_top_10]: https://owasp.org/www-project-mcp-top-10/
+[link_github_com_maximhq_bifrost]: https://github.com/maximhq/bifrost
