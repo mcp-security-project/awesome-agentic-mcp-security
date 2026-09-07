@@ -94,6 +94,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Sentinelgate][link_github_com_sentinel_gate_sentinelgate]** | MCP proxy — CEL policies, RBAC, audit trail for governed deployments. |
 | **[MCP Guardian (eqtylab)][link_github_com_eqtylab_mcp_guardian]** | Human-approval MCP proxy — Real-time approve/deny for tool calls, message logging, multi-config management; Apache 2.0. Distinct from [mcp-guardian (rudraneel93)][link_github_com_rudraneel93_mcp_guardian]. |
 | **[MCPProxy Go][link_github_com_smart_mcp_proxy_mcpproxy_go]** | Local MCP proxy + dashboard — Security quarantine for new servers (TPA mitigation), BM25 tool discovery, Docker-isolated upstreams, sensitive-data detection in tool calls, full audit log; MIT. |
+| **[memory-blackbox][link_github_com_lavkumarv_memory_blackbox]** | MCP gateway / provenance ledger — Forwards every `tools/call` upstream byte-identically while recording memory reads and writes into an append-only, Ed25519-signed ledger (BLAKE3 hash chain, signed Merkle checkpoints) and a provenance DAG. Post-incident it traces an agent action to the memory that caused it, computes the forward closure of a poisoned source, and rolls back by appending rather than deleting. Reconstruction, not enforcement; Apache-2.0, early development. |
 
 ---
 
@@ -171,6 +172,7 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_invariantlabs_ai_invariant]: https://github.com/invariantlabs-ai/invariant
 [link_github_com_invariantlabs_ai_mcp_injection_experiments]: https://github.com/invariantlabs-ai/mcp-injection-experiments
 [link_github_com_lasso_security_mcp_gateway]: https://github.com/lasso-security/mcp-gateway
+[link_github_com_lavkumarv_memory_blackbox]: https://github.com/lavkumarv/memory-blackbox
 [link_github_com_leidosinc_mcpsafetyscanner]: https://github.com/leidosinc/McpSafetyScanner
 [link_github_com_microsoft_pyrit]: https://github.com/microsoft/PyRIT
 [link_github_com_modelcontextprotocol_inspector]: https://github.com/modelcontextprotocol/inspector
