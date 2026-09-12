@@ -103,6 +103,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | --- | --- |
 | **[Agent Wall][link_github_com_agent_wall_agent_wall]** | YAML policy on MCP traffic — Local/proxy tool + response enforcement; workstations, early governance. |
 | **[Lasso MCP Gateway][link_github_com_lasso_security_mcp_gateway]** | Gateway policy & sanitization — Centralized policy, lifecycle, sensitive data; enterprise control point. |
+| **[Gram][link_github_com_speakeasy_api_gram]** | MCP policy and access control — Open-source control plane for centrally managing MCPs with team-, server-, and tool-level permissions, threat detection, and auditable events. |
 | **[MCP Action Firewall][link_github_com_starskrime_mcp_action_firewall]** | Approval-based policy — Human confirmation for dangerous actions when allow/deny isn’t enough. |
 | **[mcp-firewall][link_github_com_behrensd_mcp_firewall]** | YAML deny/allow on MCP traffic — Deterministic local proxy; secret-leak scanning built in. |
 | **[mcp-guardian][link_github_com_rudraneel93_mcp_guardian]** | RBAC + YAML policy — OAuth/OIDC, STRIDE-aligned governance proxy. |
@@ -167,6 +168,7 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_appiumtestdistribution_secure_hulk]: https://github.com/AppiumTestDistribution/secure-hulk
 [link_github_com_cisco_ai_defense_mcp_scanner]: https://github.com/cisco-ai-defense/mcp-scanner
 [link_github_com_gensecaihq_mcpscc]: https://github.com/gensecaihq/mcpscc
+[link_github_com_speakeasy_api_gram]: https://github.com/speakeasy-api/gram
 [link_github_com_gitleaks_gitleaks]: https://github.com/gitleaks/gitleaks
 [link_github_com_invariantlabs_ai_invariant]: https://github.com/invariantlabs-ai/invariant
 [link_github_com_invariantlabs_ai_mcp_injection_experiments]: https://github.com/invariantlabs-ai/mcp-injection-experiments
