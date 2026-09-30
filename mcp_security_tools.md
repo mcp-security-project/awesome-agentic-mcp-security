@@ -173,6 +173,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Vulnerable MCP Servers Lab][link_github_com_appsecco_vulnerable_mcp_servers_lab]** | Deliberately vulnerable local and remote MCP servers for defensive validation | Prompt injection, malicious tools, code execution, filesystem abuse, typosquatting, vulnerable dependencies, and secrets exposure; **isolated labs only** |
 | **[MCP Attack Labs][link_github_com_aminrj_labs_mcp_attack_labs]** | Reproducible MCP exploit-and-defense labs | Tool poisoning, shadowing, cross-server abuse, and MCP-to-A2A kill chains with locally testable controls; **authorized labs only** |
 | **[MCP Gauntlet][link_github_com_studiomeyer_io_mcp_gauntlet]** | Schema-aware MCP fuzzing and load testing | Hostile/boundary tool inputs, crash/hang/validation-gap detection, SARIF, and CI performance gates; **authorized targets only** |
+| **[Ziran][link_github_com_taoq_ai_ziran]** (TaoQ AI) | Agent security testing — Scans MCP and A2A agents over their native protocols; graph-based tool chain discovery, execution-level side-effect detection, multi-phase campaigns | Tool chain exfiltration paths, silent tool execution behind refusals, multi-agent trust boundaries; **authorized targets only** |
 
 ---
 
@@ -322,3 +323,4 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_studiomeyer_io_mcp_gauntlet]: https://github.com/studiomeyer-io/mcp-gauntlet
 [link_github_com_studiomeyer_io_mcp_otel]: https://github.com/studiomeyer-io/mcp-otel
 [link_github_com_ryux1_mcp_trace]: https://github.com/ryux1/mcp-trace
+[link_github_com_taoq_ai_ziran]: https://github.com/taoq-ai/ziran
