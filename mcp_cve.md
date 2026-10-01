@@ -15,6 +15,7 @@ Repositories and pages that maintain **structured catalogs of published CVEs** a
 | Catalog | Description | Last updated |
 | --- | --- | --- |
 | [mcp-security-project/mcp-cve-project][link_mcp_cve_project] | Curated index of **570** MCP-related CVEs with per-CVE notes (`cves/`) and OWASP MCP Top 10 mapping. | [![last commit](https://badgen.net/github/last-commit/mcp-security-project/mcp-cve-project)][link_mcp_cve_project_commits] |
+| [Continuum-AI-Corp/Orca-AI-Incident-Archive][link_orca_ai_incident_archive] | **Orca AI Incident Archive** — broader AI agent security events database with JSON/CSV exports; **31** of its 379 records are tagged MCP (e.g. the MCPwn nginx-ui MCP endpoint exploited in the wild), each source-linked and flagged for whether a victim was confirmed. | [![last commit](https://badgen.net/github/last-commit/Continuum-AI-Corp/Orca-AI-Incident-Archive)][link_orca_ai_incident_archive_commits] |
 
 **Contributing:** Submit new catalog repositories via pull request. Submit individual CVE records to [mcp-cve-project](https://github.com/mcp-security-project/mcp-cve-project).
 
@@ -614,6 +615,8 @@ Repositories and pages that maintain **structured catalogs of published CVEs** a
 
 [link_mcp_cve_project]: https://github.com/mcp-security-project/mcp-cve-project
 [link_mcp_cve_project_commits]: https://github.com/mcp-security-project/mcp-cve-project/commits/main/
+[link_orca_ai_incident_archive]: https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive
+[link_orca_ai_incident_archive_commits]: https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive/commits/main/
 [link_opencve_modelcontextprotocol]: https://app.opencve.io/cve/?vendor=modelcontextprotocol
 [link_github_advisories_mcp_search]: https://github.com/advisories?query=model+context+protocol
 [link_mcp_python_sdk_advisories]: https://github.com/modelcontextprotocol/python-sdk/security/advisories
