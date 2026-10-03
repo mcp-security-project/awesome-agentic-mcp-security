@@ -94,6 +94,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | --- | --- |
 | **[Lasso MCP Gateway][link_github_com_lasso_security_mcp_gateway]** | MCP gateway — Centralize lifecycle, intercept, sanitize, scan before load; single control point for many servers. Enterprise / governed connections. |
 | **[Agent Wall][link_github_com_agent_wall_agent_wall]** | MCP firewall / policy proxy — YAML policy on tool calls and responses; block dangerous reads, shell, exfiltration, risky chains. Client–server middle; local IDE workflows. |
+| **[HOL Guard][link_github_com_hashgraph_online_hol_guard]** | Local-first runtime firewall for AI coding agents — Intercepts shell, secrets, MCP config changes, and package installs before execution; Apache-2.0; optional Guard Cloud for hosted policy/evidence sync. Docs https://hol.org/guard. Scan is not a safety guarantee. |
 | **[MCP Action Firewall][link_github_com_starskrime_mcp_action_firewall]** | Human-approval / transparent proxy — OTP approval for dangerous tool calls; circuit breaker for high-impact actions. Demos / local; validate before enterprise. |
 | **[OpenTelemetry MCP semantic conventions][link_opentelemetry_io_docs_specs_semconv_gen_ai_mcp]** ([Grafana MCP observability guide][link_grafana_com_blog_ai_observability_mcp_servers]) | Observability / telemetry — Spans, latency, errors, health, audit metadata; baseline and detect abnormal tool patterns. Feeds Grafana, Tempo, Loki, Prometheus, OpenSearch, and other OSS backends. |
 | **Egress proxies & network controls** (Smokescreen-style, corporate proxy, mesh egress, K8s NetworkPolicy) | Network runtime control — Block metadata SSRF, private IPs, paste sites, unexpected APIs; SSRF, exfiltration, untrusted remote fetch. Treat MCP servers as user-acting code; minimal explicit egress. |
@@ -205,6 +206,7 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_marketplace_visualstudio_com_agentity_mcp_audit_extension]: https://marketplace.visualstudio.com/items?itemName=Agentity.mcp-audit-extension
 [link_github_com_adudley78_mcp_audit]: https://github.com/adudley78/mcp-audit
 [link_github_com_agent_wall_agent_wall]: https://github.com/agent-wall/agent-wall
+[link_github_com_hashgraph_online_hol_guard]: https://github.com/hashgraph-online/hol-guard
 [link_github_com_antgroup_mcp_security]: https://github.com/antgroup/MCP-Security
 [link_github_com_appiumtestdistribution_secure_hulk]: https://github.com/AppiumTestDistribution/secure-hulk
 [link_github_com_cisco_ai_defense_mcp_scanner]: https://github.com/cisco-ai-defense/mcp-scanner
