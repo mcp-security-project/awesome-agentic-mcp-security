@@ -69,6 +69,7 @@ For MCP-aware scanners, gateways, and hardening utilities that do not wrap a ven
 | [13bm/GhidraMCP][link_13bm_ghidramcp] | Alternate Ghidra MCP bridge | Same as above; pick one maintained path per team | ![](https://badgen.net/github/last-commit/13bm/GhidraMCP) |
 | [jtang613/GhidrAssistMCP][link_jtang613_ghidrassistmcp] | Ghidra-native MCP server with GUI options | Same isolation guidance | ![](https://badgen.net/github/last-commit/jtang613/GhidrAssistMCP) |
 | [MCPPhalanx/binaryninja-mcp][link_mcpphalanx_binaryninja_mcp] | Binary Ninja MCP integration (community) | Compare with official/community options before standardizing | ![](https://badgen.net/github/last-commit/MCPPhalanx/binaryninja-mcp) |
+| [morluto/rea][link_morluto_rea] | Local-first reverse-engineering CLI/MCP | Analyzes native binaries and shipped JavaScript, .NET, and browser targets; native engines are bring-your-own. Use only on authorized targets. | ![](https://badgen.net/github/last-commit/morluto/rea) |
 | [zinja-coder/jadx-ai-mcp][link_zinja_jadx_ai_mcp] | JADX decompiler + MCP for Android RE | APKs may contain PII; storage and network egress policy | ![](https://badgen.net/github/last-commit/zinja-coder/jadx-ai-mcp) |
 | [mobilehackinglab/jadx-mcp-plugin][link_mobilehackinglab_jadx_mcp_plugin] | JADX HTTP MCP plugin | Exposes decompiler over HTTP—TLS and auth required | ![](https://badgen.net/github/last-commit/mobilehackinglab/jadx-mcp-plugin) |
 | [zinja-coder/apktool-mcp-server][link_zinja_apktool_mcp] | APKTool automation via MCP | Build pipeline integration only with reviewed APKs | ![](https://badgen.net/github/last-commit/zinja-coder/apktool-mcp-server) |
@@ -311,6 +312,7 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 [link_mobilehackinglab_jadx_mcp_plugin]: https://github.com/mobilehackinglab/jadx-mcp-plugin
 [link_mobsf]: https://github.com/MobSF/Mobile-Security-Framework-MobSF
 [link_mordavid_bloodhound_mcp_ai]: https://github.com/MorDavid/BloodHound-MCP-AI
+[link_morluto_rea]: https://github.com/morluto/rea
 [link_mrexodia_ida_pro_mcp]: https://github.com/mrexodia/ida-pro-mcp
 [link_msaad00_agent_bom]: https://github.com/msaad00/agent-bom
 [link_nickpending_mcp_recon]: https://github.com/nickpending/mcp-recon
