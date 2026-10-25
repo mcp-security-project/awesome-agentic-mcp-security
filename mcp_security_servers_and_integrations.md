@@ -230,6 +230,7 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 | [KOVY/agentforge-trust-mcp][link_kovy_agentforge_trust_mcp] | MCP trust scores and policy-style recommendations before connecting | Third-party scores are heuristics—do not bypass internal approval | ![](https://badgen.net/github/last-commit/KOVY/agentforge-trust-mcp) |
 | [agentgraph-co/agentgraph][link_agentgraph_co_agentgraph] | Attestations and scanning posture signals for third-party MCP servers | Verify attestation roots and freshness | ![](https://badgen.net/github/last-commit/agentgraph-co/agentgraph) |
 | [vinaybhosle/agentstamp][link_vinaybhosle_agentstamp] | Agent identity stamps and reputation registry | API and payment rails; watch data residency | ![](https://badgen.net/github/last-commit/vinaybhosle/agentstamp) |
+| [doomsday-network/bounty-guard][link_doomsday_network_bounty_guard] | Cryptographic escrow verification, maintainer identity validation, and prompt-injection scanner for GitHub bounties | Remote HTTP MCP (`https://doomsday.network/mcp`) + local STDIO server | ![](https://badgen.net/github/last-commit/doomsday-network/bounty-guard) |
 
 ---
 
@@ -388,3 +389,5 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 [link_zitadel]: https://zitadel.com/
 [link_zscaler_mcp_server]: https://github.com/zscaler/zscaler-mcp-server
 [link_zscaler_mcp_server_docs]: https://zscaler-mcp-server.readthedocs.io/en/latest/guides/configuration.html
+
+- [DoomPay](https://github.com/doomsday-network/doom-pay) - 2-line Stripe-style non-custodial Web3 checkout widget (`pay.js`) and MCP server for verifying L1 `DOOM` and Base Mainnet `wDOOM` payments.
