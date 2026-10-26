@@ -20,6 +20,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 
 | Tool & resources | Category — Use for / detects |
 | --- | --- |
+| **[mcprism][link_github_com_hua503_mcprism]** | MCP configuration and source scanner — Checks credentials, transport, tool poisoning, and tool-input flows into command execution, SSRF, and filesystem sinks. Go CLI; offline static scans by default, opt-in live metadata inspection without tool calls; JSON/SARIF/HTML reports; MIT. |
 | **[Cisco AI Defense MCP Scanner][link_github_com_cisco_ai_defense_mcp_scanner]** | MCP scanner (multi-engine) — Servers, tools, prompts, resources, instructions, source, dependencies; **detects** malicious tools, prompt injection, vulnerable deps, suspicious code, malicious bundles. CLI or REST API (YARA, LLM-judge, Cisco API, pip-audit, optional VirusTotal, offline JSON); some features need API keys / data egress. |
 | **[MSCC (MCP Security Command Center)][link_github_com_gensecaihq_mcpscc]** | MCP security scanner — Common MCP-specific issues; **detects** prompt injection, tool poisoning, secret exposure, other weaknesses. Dev / DevSecOps; validate maturity before enterprise. |
 | **[Secure-Hulk][link_github_com_appiumtestdistribution_secure_hulk]** | MCP config & tool scanner — Config review, reports; **detects** prompt injection, tool poisoning, cross-origin escalation, exfiltration, toxic flows, privilege escalation, cross-resource risks. JSON/HTML reports; whitelist support; early-stage project. |
@@ -238,6 +239,7 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 
 
 [link_github_com_agentity_com_mcp_audit_extension]: https://github.com/Agentity-com/mcp-audit-extension
+[link_github_com_hua503_mcprism]: https://github.com/HUA503/mcprism
 [link_github_com_82ch_mcp_dandan]: https://github.com/82ch/MCP-Dandan
 [link_github_com_armorerlabs_armorer_guard]: https://github.com/ArmorerLabs/Armorer-Guard
 [link_github_com_cmpxchg16_mcp_ethical_hacking]: https://github.com/cmpxchg16/mcp-ethical-hacking
