@@ -142,6 +142,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Deconvolute][link_github_com_deconvolute_labs_deconvolute]** | Client-side MCP firewall — CEL argument policies, default-deny enforcement, tool-definition hash baselines, origin validation, and JSONL audit; Apache 2.0. |
 | **[MCP Zero Trust Layer (MCPZT)][link_github_com_686f6c61_mcp_zero_trust_layer]** | HTTP/stdio policy layer — Parameter controls, approvals, output redaction, tool-drift detection, hash-chained audit logs, and Prometheus metrics; Apache 2.0; early-stage. |
 | **[PortcullisMCP][link_github_com_paclabsnet_portcullismcp]** | Identity-aware MCP policy gateway — Per-call authorization, policy-driven human escalation, OIDC/mTLS identity handling, argument-bound approval tokens, and centralized audit logs; Apache 2.0; early-stage. |
+| **[Speakeasy control plane][link_github_com_speakeasy_api_gram]** | Identity-aware MCP gateway — Role-based tool access, OAuth authentication, and tool-call logs; AGPL-3.0 source with a documented local setup. |
 
 ---
 
@@ -322,3 +323,4 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_studiomeyer_io_mcp_gauntlet]: https://github.com/studiomeyer-io/mcp-gauntlet
 [link_github_com_studiomeyer_io_mcp_otel]: https://github.com/studiomeyer-io/mcp-otel
 [link_github_com_ryux1_mcp_trace]: https://github.com/ryux1/mcp-trace
+[link_github_com_speakeasy_api_gram]: https://github.com/speakeasy-api/gram
