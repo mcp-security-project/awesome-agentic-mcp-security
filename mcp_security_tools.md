@@ -71,6 +71,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[MCPeek][link_github_com_iamakash_06_mcpeek]** | TypeScript/JavaScript MCP SAST — Recognizes MCP handlers and traces tool inputs into command/code execution, SQLi, path traversal, and SSRF sinks; SARIF includes taint paths; MIT. |
 | **[MCPSense][link_github_com_fayzkk889_mcpsense]** | Multi-mode MCP scanner — Audits source, manifests, client configs, and live servers for tool poisoning, annotation deception, command injection, SSRF, environment leakage, and supply-chain risks; MIT. |
 | **[MCP X-Ray][link_github_com_traceforce_mcp_xray]** | Unified MCP scanner and pentest utility — Config, SCA, SAST, secrets, TLS/OAuth, tool analysis, and active tests with SARIF output; local token analysis works offline, while cloud upload is optional. |
+| **[ControlLoop][link_github_com_controlloop_security_controlloop]** | Static MCP and agent-config CI gate — Reads MCP declarations for eleven hosts plus Claude Code, Codex, Cursor and Gemini CLI settings, A2A cards, OpenAPI and AWS IAM into a capability bill of materials; **detects** new or changed MCP server packages, broadened tool permissions, exfiltration paths and other authority increases against an approved baseline. Offline and deterministic, never starts servers; SARIF; GitHub Action; pre-commit hook; Apache-2.0. |
 
 ---
 
@@ -322,3 +323,4 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_studiomeyer_io_mcp_gauntlet]: https://github.com/studiomeyer-io/mcp-gauntlet
 [link_github_com_studiomeyer_io_mcp_otel]: https://github.com/studiomeyer-io/mcp-otel
 [link_github_com_ryux1_mcp_trace]: https://github.com/ryux1/mcp-trace
+[link_github_com_controlloop_security_controlloop]: https://github.com/controlloop-security/controlloop
