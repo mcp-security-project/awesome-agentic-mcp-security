@@ -125,6 +125,7 @@ See `mcp_security_tools.md` for
 - MCP scanners, 
 - runtime monitoring/policy options, and 
 - hardening utilities (with deployment notes and safety warnings).
+- [Dctify MCP Config Checker](https://dctify.com/tools/mcp-config-checker) - Web tool that audits MCP client configs for risky servers: permissions, prompt-injection surface, supply-chain flags. Free, no signup. From Dctify's MCP & agent security hub.
 
 ## MCP security servers and integrations
 
