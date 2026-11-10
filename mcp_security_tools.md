@@ -164,6 +164,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Agent Wall][link_github_com_agent_wall_agent_wall]** | YAML policy on MCP traffic — Local/proxy tool + response enforcement; workstations, early governance. |
 | **[Lasso MCP Gateway][link_github_com_lasso_security_mcp_gateway]** | Gateway policy & sanitization — Centralized policy, lifecycle, sensitive data; enterprise control point. |
 | **[MCP Action Firewall][link_github_com_starskrime_mcp_action_firewall]** | Approval-based policy — Human confirmation for dangerous actions when allow/deny isn’t enough. |
+| **[MELRA][link_github_com_xagi_lab_melra]** | Local MCP execution runtime — Rechecks policy at execution, gates sensitive changes on scoped approval, verifies declared evidence, and parks uncertain writes for reconciliation; Apache 2.0; alpha. |
 | **[mcp-firewall][link_github_com_behrensd_mcp_firewall]** | YAML deny/allow on MCP traffic — Deterministic local proxy; secret-leak scanning built in. |
 | **[mcp-guardian][link_github_com_rudraneel93_mcp_guardian]** | RBAC + YAML policy — OAuth/OIDC, STRIDE-aligned governance proxy. |
 | **[sint-protocol][link_github_com_sint_ai_sint_protocol]** | Capability-token policy — Approval tiers and preflight `sint-scan` audits. |
@@ -310,6 +311,7 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_piiiico_mcpaudit]: https://github.com/piiiico/mcpaudit
 [link_github_com_policylayer_intercept]: https://github.com/PolicyLayer/Intercept
 [link_github_com_rudraneel93_mcp_guardian]: https://github.com/rudraneel93/mcp-guardian
+[link_github_com_xagi_lab_melra]: https://github.com/XAGI-Lab/melra
 [link_github_com_sahiloj_mcpscan]: https://github.com/sahiloj/MCPScan
 [link_github_com_sentinel_gate_sentinelgate]: https://github.com/Sentinel-Gate/Sentinelgate
 [link_github_com_sint_ai_sint_protocol]: https://github.com/sint-ai/sint-protocol
