@@ -61,7 +61,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[mcp-verify][link_github_com_finktech_dev_mcp_verify]** | MCP security and protocol verifier — 61 security rules, schema-aware fuzzing, JSON-RPC/MCP compliance checks, gateway threat detection, and SARIF/HTML reports; AGPL-3.0. |
 | **[MCP Tool Auditor][link_github_com_perparimmjeku_mcp_auditor]** (`mcp-tool-auditor`) | Live tool-schema auditor — Detects tool poisoning, ATPA behavior, shadowing, signed-baseline tampering, rug pulls, and cross-tool attack paths; MIT. |
 | **[MCP Audit (AgentPostmortem)][link_github_com_agentpostmortem_mcp_audit]** | Offline deterministic linter — 18 rules for live stdio/HTTP servers or static manifests, with JSON/SARIF CI output; MIT. Distinct from the other `mcp-audit` projects listed here. |
-| **mcpguard** (four unrelated projects — pick by maintainer) — [loplop-h/mcpguard][link_github_com_loplop_h_mcpguard] (OWASP MCP Top 10 mapping, auto-fix, rug-pull alerts); [nbosa/mcpguard][link_github_com_nbosa_mcpguard] (Go scanner + stdio guard proxy, SARIF, entropy secret detection); [ardakocadoruu/mcpguard][link_github_com_ardakocadoruu_mcpguard] (Python npm-package static scanner, typosquat DB); [rohitguta2432/mcpguard][link_github_com_rohitguta2432_mcpguard] (deterministic manifest scanner, CI exit codes, eval suite). |
+| **mcpguard** (five unrelated projects — pick by maintainer) | [loplop-h/mcpguard][link_github_com_loplop_h_mcpguard] (OWASP MCP Top 10 mapping, auto-fix, rug-pull alerts); [nbosa/mcpguard][link_github_com_nbosa_mcpguard] (Go scanner + stdio guard proxy, SARIF, entropy secret detection); [ardakocadoruu/mcpguard][link_github_com_ardakocadoruu_mcpguard] (Python npm-package static scanner, typosquat DB); [rohitguta2432/mcpguard][link_github_com_rohitguta2432_mcpguard] (deterministic manifest scanner, CI exit codes, eval suite); [GT-Projects256/mcpguard][link_github_com_gt_projects256_mcpguard] (config scanner and runtime firewall, OWASP MCP Top 10, SARIF and audit logs; npm `@gtprojects/mcpguard`; MIT). |
 | **[mcp-shield][link_github_com_muhannad_hash_mcp_shield]** (npm `@muhannad-hash/mcp-shield`) | Pre-install npm/local MCP scanner — Exfiltration, code execution, obfuscation, prompt injection, supply-chain trust scoring; MCP server mode with `scan_package` / `scan_directory`; MIT. **Not** [MCPShield (mcpshield)][link_github_com_mcpshield_mcpshield] or other unrelated “MCP Shield” repos. |
 | **[Ramparts][link_github_com_highflame_ai_ramparts]** | MCP and agent-skill scanner — Multi-transport discovery, evasion-resistant YARA analysis, prompt/tool-poisoning detection, OSV dependency checks, OWASP mapping, and SARIF/JSON/Markdown reports; Apache 2.0. |
 | **[APIsec MCP Audit][link_github_com_apisec_inc_mcp_audit]** | MCP configuration and source scanner — Discovers exposed secrets and shadow APIs, generates AI-BOMs, and detects MCP tool-input flows into unsafe shell execution; MIT. Distinct from the other `mcp-audit` projects listed here. |
@@ -71,6 +71,19 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[MCPeek][link_github_com_iamakash_06_mcpeek]** | TypeScript/JavaScript MCP SAST — Recognizes MCP handlers and traces tool inputs into command/code execution, SQLi, path traversal, and SSRF sinks; SARIF includes taint paths; MIT. |
 | **[MCPSense][link_github_com_fayzkk889_mcpsense]** | Multi-mode MCP scanner — Audits source, manifests, client configs, and live servers for tool poisoning, annotation deception, command injection, SSRF, environment leakage, and supply-chain risks; MIT. |
 | **[MCP X-Ray][link_github_com_traceforce_mcp_xray]** | Unified MCP scanner and pentest utility — Config, SCA, SAST, secrets, TLS/OAuth, tool analysis, and active tests with SARIF output; local token analysis works offline, while cloud upload is optional. |
+| **[MCPRadar][link_github_com_yatuk_mcpradar]** | MCP protocol, source, config, and supply-chain scanner — Tool poisoning, prompt injection, schema abuse, secret exposure, transport issues, cross-server paths, Python and JavaScript SAST, OSV checks, CycloneDX SBOM, and signed snapshot drift; optional Docker or Podman sandbox; JSON, SARIF, and CEF; MIT. |
+| **[Agent Governance Toolkit `mcp-scan`][link_github_com_microsoft_agent_governance_toolkit]** ([CLI tutorial][link_microsoft_github_io_agt_mcp_scan]) | Local-first metadata scanner in Microsoft’s Agent Governance Toolkit — Hidden instructions, description injection, schema abuse, cross-server impersonation, and rug-pull fingerprint drift across stdio, Streamable HTTP, and HTTP+SSE; `--static-only` does not launch commands or connect to endpoints. MIT. Distinct from [Snyk Agent Scan][link_github_com_snyk_agent_scan] (legacy Invariant `mcp-scan`). |
+| **[DefenseClaw][link_github_com_cisco_ai_defense_defenseclaw]** | Admission scanner — Reviews MCP servers, agent skills, plugins, and tool calls before use, then pairs with a runtime sidecar and audit export. Apache 2.0. Distinct from [Cisco AI Defense MCP Scanner][link_github_com_cisco_ai_defense_mcp_scanner]. |
+| **[Aguara][link_github_com_garagon_aguara]** | Deterministic local scanner — MCP configs, skills, packages, and workflows for prompt injection and secrets; SARIF and CI. Apache 2.0. |
+| **[Agent Audit Kit][link_github_com_sattyamjjain_agent_audit_kit]** | Static agent-pipeline scanner — MCP-connected workflows with SARIF output and compliance mappings; deterministic rules. Apache 2.0. |
+| **[AgentShield (affaan-m)][link_github_com_affaan_m_agentshield]** (npm `ecc-agentshield`) | Agent-config auditor — Hardcoded secrets, permission misconfigs, hook injection, MCP server risk, and prompt injection; CLI, GitHub Action, and GitHub App. MIT. Distinct from other projects named AgentShield. |
+| **[SkillSpector][link_github_com_nvidia_skillspector]** (NVIDIA) | Pre-install skill scanner — Vulnerabilities, prompt injection, exfiltration, and supply-chain risk in agent skills, including MCP skills. Apache 2.0. A skill-package scanner, separate from a live MCP protocol or config scanner. |
+| **[Agent Security Scanner MCP][link_github_com_sinewaveai_agent_security_scanner_mcp]** | Scanner for MCP servers, prompts, generated code, dependencies, and agent actions. MIT. Review any cloud or LLM data handling before CI use. |
+| **[MCP Scorecard][link_github_com_aak204_mcp_scorecard]** | CI scorecard — Launches a local stdio server and scores conformance, security, ergonomics, and metadata with deterministic rules. Apache 2.0. Treat the scan host as untrusted-code execution. |
+| **[mcp-gateway (Niraven)][link_github_com_niraven_mcp_gateway]** (npm `@niraven/mcp-gateway`) | Config audit — Tool-description poisoning, supply-chain signals, and security misconfiguration, plus a live proxy mode. MIT; early-stage. |
+| **[mcpsentry][link_github_com_roshan6335_mcpsentry]** (npm `@roshan6335/mcpsentry`) | Scanner and trust baseline — Tool poisoning and rug-pull drift against a saved baseline, with a proxy mode that inspects tool-call results. MIT. |
+| **[Project Sentinel][link_github_com_sentinel_atl_project_sentinel]** | MCP trust scanner — Scores servers and issues signed trust certificates that a companion gateway can enforce. Apache 2.0. Review who signs certificates and what the score measures. |
+| **[mcpwn (ressl)][link_github_com_ressl_mcpwn]** | Pre-deployment vulnerability scanner — Prompt injection, tool poisoning, exfiltration, SSRF, command injection, and exposed secrets. AGPL-3.0. Companion to [mcp-firewall (ressl)][link_github_com_ressl_mcp_firewall]. Distinct from [mcpwn (D0rs4n)][link_github_com_d0rs4n_mcpwn]. **Authorized targets only.** |
 
 ---
 
@@ -85,6 +98,9 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[MCP Server Security Standard (MSSS)][link_github_com_mcp_security_standard_mcp_server_security_standard]** | Open community standard — Tiered controls and evidence requirements for filesystem, execution, SSRF, authorization, validation, logging, supply chain, and deployment; includes machine-readable schemas. |
 | **[Official MCP Security Best Practices][link_modelcontextprotocol_io_security_best_practices]** | Protocol guidance — Confused-deputy attacks, token passthrough, SSRF, OAuth state and audience validation, consent, and session security. |
 | **[Pentesting MCP Servers Checklist][link_github_com_appsecco_pentesting_mcp_servers_checklist]** | CC BY 4.0 assessment checklist — Local and remote MCP testing across transport, authorization, tools, injection, context isolation, secrets, concurrency, and logging. |
+| **[OWASP MCP Security Cheat Sheet][link_owasp_mcp_security_cheat_sheet]** | Cheat sheet — Least privilege, tool-schema integrity and pinning, sandboxing, human approval, transport security, and monitoring for MCP hosts, clients, and servers. |
+| **[OWASP MCP Security Testing Guide][link_github_com_owasp_mcp_security_testing_guide]** | Community testing guide (MCPSTG) — Threat write-ups and tests for hosts, clients, servers, tools, transports, and gateways, modeled on the Web Security Testing Guide. GPL-3.0. The repository presents this as community guidance. **Authorized testing only.** |
+| **[MCP Checklists][link_github_com_mcp_manager_mcp_checklists]** | Practitioner checklists — Screening items for poisoning, rug pulls, OAuth, metadata pinning, least privilege, and monitoring. AGPL-3.0. Published by MCP Manager; validate against current MCP and OWASP material. |
 
 ---
 
@@ -121,6 +137,23 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[mcpproxy (hoophq)][link_github_com_hoophq_mcpproxy]** | MCP security gateway — Tool filtering, held-call approvals, session budgets, rug-pull detection, server-request gating, multi-plane auth, audit, Prometheus, and OTLP; MIT; early-stage. Distinct from MCPProxy Go above. |
 | **[mcp-audit (P4ST4S)][link_github_com_p4st4s_mcp_audit]** | Transparent MCP audit proxy — Signed JSONL/SQLite evidence, redaction, tool policy, rate limits, dashboard, Prometheus, and OTLP export; Apache 2.0. Distinct from the scanner projects with the same name. |
 | **[BlueRock OSS][link_github_com_bluerock_io_bluerock]** | Python MCP runtime sensor — Zero-code-change telemetry for tool/resource calls, sessions, transports, and module imports with SHA-256 evidence emitted as NDJSON; Apache 2.0; pre-1.0. |
+| **[ToolHive][link_github_com_stacklok_toolhive]** | MCP runtime platform — Runs each server in an isolated container, enforces OIDC authentication and Cedar authorization, and emits audit logs and OpenTelemetry. Apache 2.0. Fleet RBAC compilation is a Stacklok Enterprise feature; Cedar policies are in the open-source gateway. |
+| **[Kuadrant MCP Gateway][link_github_com_kuadrant_mcp_gateway]** | Envoy-based MCP gateway — Aggregates servers and attaches Istio/Kuadrant policy for authentication, per-tool and per-prompt authorization, rate limits, and token exchange. Apache 2.0. |
+| **[GreenGateway][link_github_com_greenhat_security_greengateway]** | Self-hosted API and MCP gateway — JWT/OIDC, RBAC, deny-by-default firewall rules, shadow mode, egress allowlists, audit logs, and an admin UI. Apache 2.0; early-stage. |
+| **[mcp-firewall (ressl)][link_github_com_ressl_mcp_firewall]** | MCP security gateway — YAML and per-agent RBAC, injection and chain detection, SSRF egress control, human approval, response scanning, and signed audit logs; includes a pre-deployment scan via [mcpwn (ressl)][link_github_com_ressl_mcpwn]. AGPL-3.0. Distinct from [behrensd/mcp-firewall][link_github_com_behrensd_mcp_firewall]. |
+| **[DefenseClaw][link_github_com_cisco_ai_defense_defenseclaw]** | Runtime governance sidecar — Inspects MCP and agent tool-call traffic after admission scanning and exports audit evidence. Apache 2.0. |
+| **[Agent Governance Toolkit MCP gateway][link_github_com_microsoft_agent_governance_toolkit]** | Runtime controls in the same toolkit as [`mcp-scan`][link_microsoft_github_io_agt_mcp_scan] — Poisoning detection, drift monitoring, typosquatting, and hidden-instruction scanning with policy evidence. MIT; community preview. Verify package provenance before deployment. |
+| **[HOL Guard][link_github_com_hashgraph_online_hol_guard]** | Local-first agent runtime guard — Risky tools, secret access, prompt injection, packages, MCP servers, plugins, and skills. Apache 2.0. Review which checks stay on the machine. |
+| **[Warden][link_github_com_parveshsaini_warden]** (npm `warden-gateway`) | Federating MCP gateway — Tool-poisoning and prompt-injection checks, YAML policy, rate limits, approval gates, JSONL audit, and OpenTelemetry. MIT. Distinct from the Bitwarden admin server `warden-mcp`. |
+| **[ShieldMCP][link_github_com_saurabh_yergattikar_shieldmcp]** | Runtime MCP proxy — Inspects tool metadata, call arguments, and responses for poisoning, rug pulls, and indirect injection over stdio or legacy SSE; optional local classifiers. Apache 2.0. Response checks run after the tool executes. |
+| **[SentinelMCP (Technosive)][link_github_com_technosiveuk_ui_sentinelmcp]** | MCP firewall — HTTP/SSE proxy or in-process Go SDK; YAML risk policies, PII and secret redaction, human approval, egress allowlists, and OpenTelemetry audit. Apache 2.0. Distinct from [Sentinelgate][link_github_com_sentinel_gate_sentinelgate]. |
+| **[Flint][link_github_com_tejaaswini_flint]** | Local stdio session firewall — Default-deny RBAC and explicit deny rules on every `tools/call`. Behavioral checks for secret relay, cross-scope movement, and tool poisoning are scored and audited. MIT. No cloud dependency. |
+| **[vex-mcp][link_github_com_mdombrov_33_vex_mcp]** | Transparent Rust gateway — Scans tool descriptions and schemas for injection, hidden Unicode, and definition drift. MIT. A legitimate description edit can look like drift; tune the policy before blocking. |
+| **[mcpfw][link_github_com_kphatak001_mcpfw]** | Transparent MCP policy proxy — YAML per-call and session policy, tool-description rug-pull blocking, and response-injection scanning over stdio or HTTP. Apache 2.0; early-stage. |
+| **[mcp-gateway (Niraven)][link_github_com_niraven_mcp_gateway]** | Live proxy — Argument checks, descriptor-drift detection, and secret redaction in front of upstream MCP servers. MIT; early-stage. |
+| **[mcpsentry][link_github_com_roshan6335_mcpsentry]** | Live MCP proxy — Forwards client traffic and inspects tool-call results for injected instructions before they reach the agent. MIT. |
+| **[Project Sentinel][link_github_com_sentinel_atl_project_sentinel]** | Trust-certificate gateway — Can refuse MCP traffic when a server certificate fails the configured trust check. Apache 2.0. |
+| **[MCP Guardian (PawelKozy)][link_github_com_pawelkozy_mcp_guardian]** | Security proxy — Aggregates servers, enforces allow/block policy, fingerprints tools for rug pulls, and writes JSON audit logs. MIT; early-stage. Distinct from [MCP Guardian (eqtylab)][link_github_com_eqtylab_mcp_guardian] and [mcp-guardian (rudraneel93)][link_github_com_rudraneel93_mcp_guardian]. |
 
 ---
 
@@ -142,6 +175,19 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Deconvolute][link_github_com_deconvolute_labs_deconvolute]** | Client-side MCP firewall — CEL argument policies, default-deny enforcement, tool-definition hash baselines, origin validation, and JSONL audit; Apache 2.0. |
 | **[MCP Zero Trust Layer (MCPZT)][link_github_com_686f6c61_mcp_zero_trust_layer]** | HTTP/stdio policy layer — Parameter controls, approvals, output redaction, tool-drift detection, hash-chained audit logs, and Prometheus metrics; Apache 2.0; early-stage. |
 | **[PortcullisMCP][link_github_com_paclabsnet_portcullismcp]** | Identity-aware MCP policy gateway — Per-call authorization, policy-driven human escalation, OIDC/mTLS identity handling, argument-bound approval tokens, and centralized audit logs; Apache 2.0; early-stage. |
+| **[ToolHive][link_github_com_stacklok_toolhive]** | Cedar authorization — Default deny in front of containerized MCP servers after OIDC authentication. |
+| **[Kuadrant MCP Gateway][link_github_com_kuadrant_mcp_gateway]** | CEL AuthPolicy — Per-tool and per-prompt authorization, rate limits, and token exchange on an Envoy gateway. |
+| **[GreenGateway][link_github_com_greenhat_security_greengateway]** | RBAC and firewall rules — JWT/OIDC, shadow mode, and egress controls for API and MCP traffic. |
+| **[mcp-firewall (ressl)][link_github_com_ressl_mcp_firewall]** | YAML and per-agent RBAC — Injection, chain, and SSRF checks with human approval. Distinct from [behrensd/mcp-firewall][link_github_com_behrensd_mcp_firewall]. |
+| **[Agent Governance Toolkit][link_github_com_microsoft_agent_governance_toolkit]** | Deterministic MCP policy — Scan evidence, drift checks, and gateway enforcement in one MIT toolkit. |
+| **[Warden][link_github_com_parveshsaini_warden]** | YAML policy and approval gates — Quarantines poisoned tool definitions at the gateway. |
+| **[ShieldMCP][link_github_com_saurabh_yergattikar_shieldmcp]** | Metadata, argument, and response checks — Schema pinning with heuristic or local-model detectors. |
+| **[SentinelMCP (Technosive)][link_github_com_technosiveuk_ui_sentinelmcp]** | YAML risk policy — Allow, redact, block, or interrupt, with secret and PII redaction. |
+| **[Flint][link_github_com_tejaaswini_flint]** | Default-deny RBAC — Explicit deny rules override allows on stdio tool calls. |
+| **[vex-mcp][link_github_com_mdombrov_33_vex_mcp]** | Definition-drift policy — Blocks injection and hidden Unicode in tool schemas. |
+| **[mcpfw][link_github_com_kphatak001_mcpfw]** | YAML call and session policy — Blocks tool-description changes after the first `tools/list`. |
+| **[Project Sentinel][link_github_com_sentinel_atl_project_sentinel]** | Certificate gate — Routes MCP traffic only when the trust certificate passes. |
+| **[MCP Guardian (PawelKozy)][link_github_com_pawelkozy_mcp_guardian]** | Allow/block policy — Argument conditions and rug-pull fingerprinting at the proxy. |
 
 ---
 
@@ -167,7 +213,8 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[Invariant MCP injection experiments][link_github_com_invariantlabs_ai_mcp_injection_experiments]** | Reproducible MCP attack samples — Tool poisoning, shadowing, and related PoCs for research and detection validation | Pair with scanners; lab isolation only |
 | **[mcpnuke][link_github_com_babywyrm_mcpnuke]** | Active MCP security testing — Metadata analysis and behavioral probing over HTTP, SSE, stdio, and Kubernetes | Injection, SSRF, exfiltration, and attack-chain checks; **authorized labs only** |
 | **[batesian][link_github_com_calbebop_batesian]** | MCP/A2A protocol security testing — Sends adversarial protocol traffic; 21 MCP-specific rules and SARIF output | OAuth audience/scope, sessions, callbacks, and authorization boundaries; **authorized use only** |
-| **[mcpwn][link_github_com_d0rs4n_mcpwn]** | MCP reconnaissance and interaction CLI — Stdio/HTTP/SSE sessions, proxy support, and sqlmap-ready tool-call request generation | Offensive testing utility; **authorized labs only** |
+| **[mcpwn][link_github_com_d0rs4n_mcpwn]** | MCP reconnaissance and interaction CLI — Stdio/HTTP/SSE sessions, proxy support, and sqlmap-ready tool-call request generation | Offensive testing utility; **authorized labs only**. Distinct from [mcpwn (ressl)][link_github_com_ressl_mcpwn] |
+| **[mcpwn (ressl)][link_github_com_ressl_mcpwn]** | Pre-deployment vulnerability scanner — Active checks for servers you are allowed to test; companion to [mcp-firewall (ressl)][link_github_com_ressl_mcp_firewall] | Prompt injection, tool poisoning, exfiltration, SSRF, command injection, and exposed secrets; AGPL-3.0; **authorized targets only** |
 | **[mcp-redteam][link_github_com_aah20_mcp_redteam]** | Live MCP scenario tester — Incident-derived security checks | Rug pulls, destructive-tool annotations, unauthenticated exposure, token audiences, and tool-call authorization bypass; **authorized use only** |
 | **[MCP Server Fuzzer][link_github_com_mcp_runtime_mcp_server_fuzzer]** | Schema-driven MCP protocol fuzzer over stdio, HTTP, SSE, and Streamable HTTP | Reproducible, severity-rated request/response evidence; **authorized targets only** |
 | **[Vulnerable MCP Servers Lab][link_github_com_appsecco_vulnerable_mcp_servers_lab]** | Deliberately vulnerable local and remote MCP servers for defensive validation | Prompt injection, malicious tools, code execution, filesystem abuse, typosquatting, vulnerable dependencies, and secrets exposure; **isolated labs only** |
@@ -322,3 +369,33 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_studiomeyer_io_mcp_gauntlet]: https://github.com/studiomeyer-io/mcp-gauntlet
 [link_github_com_studiomeyer_io_mcp_otel]: https://github.com/studiomeyer-io/mcp-otel
 [link_github_com_ryux1_mcp_trace]: https://github.com/ryux1/mcp-trace
+[link_github_com_yatuk_mcpradar]: https://github.com/yatuk/mcpradar
+[link_github_com_microsoft_agent_governance_toolkit]: https://github.com/microsoft/agent-governance-toolkit
+[link_microsoft_github_io_agt_mcp_scan]: https://microsoft.github.io/agent-governance-toolkit/tutorials/27-mcp-scan-cli/
+[link_github_com_cisco_ai_defense_defenseclaw]: https://github.com/cisco-ai-defense/defenseclaw
+[link_github_com_garagon_aguara]: https://github.com/garagon/aguara
+[link_github_com_sattyamjjain_agent_audit_kit]: https://github.com/sattyamjjain/agent-audit-kit
+[link_github_com_affaan_m_agentshield]: https://github.com/affaan-m/agentshield
+[link_github_com_nvidia_skillspector]: https://github.com/NVIDIA/SkillSpector
+[link_github_com_sinewaveai_agent_security_scanner_mcp]: https://github.com/sinewaveai/agent-security-scanner-mcp
+[link_github_com_aak204_mcp_scorecard]: https://github.com/aak204/MCP-Scorecard
+[link_github_com_niraven_mcp_gateway]: https://github.com/Niraven/mcp-gateway
+[link_github_com_roshan6335_mcpsentry]: https://github.com/Roshan6335/mcpsentry
+[link_github_com_sentinel_atl_project_sentinel]: https://github.com/sentinel-atl/project-sentinel
+[link_github_com_ressl_mcpwn]: https://github.com/ressl/mcpwn
+[link_github_com_gt_projects256_mcpguard]: https://github.com/GT-Projects256/mcpguard
+[link_owasp_mcp_security_cheat_sheet]: https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html
+[link_github_com_owasp_mcp_security_testing_guide]: https://github.com/OWASP/MCP-Security-Testing-Guide
+[link_github_com_mcp_manager_mcp_checklists]: https://github.com/MCP-Manager/MCP-Checklists
+[link_github_com_stacklok_toolhive]: https://github.com/stacklok/toolhive
+[link_github_com_kuadrant_mcp_gateway]: https://github.com/Kuadrant/mcp-gateway
+[link_github_com_greenhat_security_greengateway]: https://github.com/Greenhat-Security/GreenGateway
+[link_github_com_ressl_mcp_firewall]: https://github.com/ressl/mcp-firewall
+[link_github_com_hashgraph_online_hol_guard]: https://github.com/hashgraph-online/hol-guard
+[link_github_com_parveshsaini_warden]: https://github.com/parveshsaini/warden
+[link_github_com_saurabh_yergattikar_shieldmcp]: https://github.com/saurabh-yergattikar/ShieldMCP
+[link_github_com_technosiveuk_ui_sentinelmcp]: https://github.com/technosiveuk-ui/SentinelMCP
+[link_github_com_tejaaswini_flint]: https://github.com/Tejaaswini/flint
+[link_github_com_mdombrov_33_vex_mcp]: https://github.com/mdombrov-33/vex-mcp
+[link_github_com_kphatak001_mcpfw]: https://github.com/kphatak001/mcpfw
+[link_github_com_pawelkozy_mcp_guardian]: https://github.com/PawelKozy/mcp-guardian
