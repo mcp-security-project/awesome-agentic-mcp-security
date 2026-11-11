@@ -84,6 +84,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[mcpsentry][link_github_com_roshan6335_mcpsentry]** (npm `@roshan6335/mcpsentry`) | Scanner and trust baseline — Tool poisoning and rug-pull drift against a saved baseline, with a proxy mode that inspects tool-call results. MIT. |
 | **[Project Sentinel][link_github_com_sentinel_atl_project_sentinel]** | MCP trust scanner — Scores servers and issues signed trust certificates that a companion gateway can enforce. Apache 2.0. Review who signs certificates and what the score measures. |
 | **[mcpwn (ressl)][link_github_com_ressl_mcpwn]** | Pre-deployment vulnerability scanner — Prompt injection, tool poisoning, exfiltration, SSRF, command injection, and exposed secrets. AGPL-3.0. Companion to [mcp-firewall (ressl)][link_github_com_ressl_mcp_firewall]. Distinct from [mcpwn (D0rs4n)][link_github_com_d0rs4n_mcpwn]. **Authorized targets only.** |
+| **[KarmaDue][link_github_com_ashadow07_karmadue]** | Pre-install check for npm, PyPI and MCP servers — `check_install` returns block / ask / care, advisories and malicious-package reports, and tested setup fixes where a record exists. Hosted Streamable HTTP endpoint (no account for reads); the public MIT repository contains the guard, Claude Code hook, docs and seed records (hosted server code is not in the repository). Seed records are a founder-operated assessment, not independent. Official MCP Registry: `io.github.ashadow07/karmadue`. |
 
 ---
 
@@ -399,3 +400,4 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_mdombrov_33_vex_mcp]: https://github.com/mdombrov-33/vex-mcp
 [link_github_com_kphatak001_mcpfw]: https://github.com/kphatak001/mcpfw
 [link_github_com_pawelkozy_mcp_guardian]: https://github.com/PawelKozy/mcp-guardian
+[link_github_com_ashadow07_karmadue]: https://github.com/ashadow07/karmadue
