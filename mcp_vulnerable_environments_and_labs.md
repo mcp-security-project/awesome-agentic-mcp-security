@@ -121,6 +121,7 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [Quarkus Secure AI Agent Workshop][link_github_com_wjglerum_quarkus_secure_ai_agent_workshop_javazone_2026] | `main` is the vulnerable app; each later branch is one fix | Attack the conference assistant, then apply the reference diff for that step | ![](https://badgen.net/github/last-commit/wjglerum/quarkus-secure-ai-agent-workshop-javazone-2026) |
 | [VulnAgent][link_github_com_s81207169_a11y_vulnagent] | Vulnerable pillar and hardened twin, graded by `python -m vulnagent.attacks` | Prove MCP tool poisoning and the agent-layer follow-on attacks, then confirm the hardened twin blocks them | ![](https://badgen.net/github/last-commit/s81207169-a11y/Vulnagent) |
 | [agent-sec-lab][link_github_com_wstran118_agent_sec_lab] | Exploit directory and matching fix per scenario, with tests | Eight canary-secret scenarios, including an MCP-style rug pull stopped by tool pinning | ![](https://badgen.net/github/last-commit/wstran118/agent-sec-lab) |
+| [Agent Heist][link_github_com_nitikasec_agent_heist] | Each level ships a vulnerable server, a hardened reference, and tests | Comparing attack vs. fix across indirect prompt injection, token passthrough, confused deputy, and tool poisoning; playing a level needs a model API, but the tests do not | ![](https://badgen.net/github/last-commit/nitikasec/agent-heist) |
 
 ---
 
@@ -314,6 +315,7 @@ Use these to map CVEs and published incidents to hands-on labs above — not sta
 [link_github_com_mcp_shark_mcp_shark_security_lab]: https://github.com/mcp-shark/mcp-shark-security-lab
 [link_github_com_n0v1chok_vulnmcp]: https://github.com/N0V1CHOK/vulnMCP
 [link_github_com_nav33n25_imcp]: https://github.com/nav33n25/imcp
+[link_github_com_nitikasec_agent_heist]: https://github.com/nitikasec/agent-heist
 [link_github_com_opena2a_org_damn_vulnerable_ai_agent]: https://github.com/opena2a-org/damn-vulnerable-ai-agent
 [link_github_com_pawelkozy_mcp_breach_to_fix_labs]: https://github.com/PawelKozy/mcp-breach-to-fix-labs
 [link_github_com_praetorian_inc_mcphammer]: https://github.com/praetorian-inc/MCPHammer
