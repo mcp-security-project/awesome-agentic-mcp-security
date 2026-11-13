@@ -117,6 +117,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[mcp-context-protector][link_github_com_trailofbits_mcp_context_protector]** (Trail of Bits) | MCP client wrapper / visibility layer — Surfaces malicious or deceptive server-provided context (e.g. description-driven exfiltration, “line jumping”); complements scanners and policy proxies. |
 | **[MCP Audit (VS Code extension)][link_github_com_agentity_com_mcp_audit_extension]** ([Visual Studio Marketplace][link_marketplace_visualstudio_com_agentity_mcp_audit_extension]) | IDE-side audit logging — Intercepts and logs Copilot/MCP tool calls with optional SIEM/syslog forwarders; governance and troubleshooting, not a substitute for server-side controls. |
 | **[MCP-Defender][link_github_com_mcp_defender_mcp_defender]** | Desktop proxy — Intercepts MCP traffic from supported clients, signature-style checks, user allow/block prompts; review AGPL terms and update channel before fleet rollout. |
+| **[HOL Guard][link_hol_org_guard]** | Local pre-execution approval — Free, open-source (Apache-2.0) control layer on the user's own machine: checks shell commands, secret reads, MCP tool calls and package installs against policy before they run, pauses risky ones for approve/block, and logs what ran. Local tool is free; Guard Cloud is an optional paid add-on. |
 | **[MCP-Dandan][link_github_com_82ch_mcp_dandan]** | Desktop monitoring — Real-time observation of MCP sessions with Electron UI; tune noise vs. signal for SOC handoff. |
 | **[Pipelock][link_github_com_luckypipewrench_pipelock]** | Runtime MCP/HTTP proxy — Scans tool descriptions, call arguments, and responses on every message; DLP-style credential leak patterns and egress inspection; Apache 2.0. |
 | **[shield (AperionAI)][link_github_com_aperionai_shield]** | Local guardrail proxy — TOFU tool-catalog pinning and rug-pull detection; wraps stdio or Streamable HTTP upstream servers. |
@@ -245,6 +246,7 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_lazymac2x_mcpwatch]: https://github.com/lazymac2x/mcpwatch
 [link_github_com_makalin_securemcp]: https://github.com/makalin/SecureMCP
 [link_github_com_mcp_defender_mcp_defender]: https://github.com/MCP-Defender/MCP-Defender
+[link_hol_org_guard]: https://hol.org/guard
 [link_github_com_slowmist_mcp_security_checklist]: https://github.com/slowmist/MCP-Security-Checklist
 [link_github_com_tencent_ai_infra_guard]: https://github.com/Tencent/AI-Infra-Guard
 [link_github_com_trailofbits_mcp_context_protector]: https://github.com/trailofbits/mcp-context-protector
