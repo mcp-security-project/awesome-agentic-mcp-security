@@ -2,6 +2,8 @@
 
 | Date (known / approx.) | Title - Author / Org | Academic Paper / Blog / Whitepaper | Summary |
 | --- | --- | --- | --- |
+| 2026-11-09 | [Top MCP Security Resources — November 2026][link_adversa_ai_blog_top_mcp_security_resources_november_2026] - Adversa AI | Blog | November briefing on three disclosure classes: `@modelcontextprotocol/server-everything` wildcard CORS plus an unauthenticated `get-env` tool, shared TypeScript SDK transports that mix client messages, and FastMCP OAuth wrappers that send a client secret to an attacker-chosen authorization server. |
+| 2026-11-08 | [Tracing MCP Security Vulnerabilities: Constructing and Analyzing an MCP Security Vulnerability Dataset][link_arxiv_org_abs_2611_11104] - Xu He, Sagar Patel, Shu Wang - arXiv / IEEE SPW 2026 | Academic Paper | Curated CVE snapshot: 24 validated MCP vulnerabilities from 119 records through February 2026; 87.5% are Critical or High, and injection plus path traversal account for 66.7%. |
 | 2026-11-04 | [Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains][link_arxiv_org_abs_2611_06585] - Yichiet Aun et al. - arXiv | Academic Paper | A signed MCP tool still leaks data to a policy-allowed destination, and MCPGuard-Dynamic misses it; germline execution forks each call from a data-free copy and reports no unauthorized disclosure across 153 attack runs. |
 | 2026-11-02 | [When Neither Side Confirms: Destructive Tool Approval Across MCP Servers and Hosts][link_arxiv_org_abs_2611_02527] - Junwei Yao et al. - arXiv | Academic Paper | Source audit of destructive-tool approval: an estimated 90% of destructive tools in a 1,000-repo registry sample lack server-side confirmation, 32 of 41 hosts have no default approval step, and injected deletions succeed in 479 of 960 SDK runs. |
 | 2026-11-02 | [MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study][link_arxiv_org_abs_2611_03555] - Farooq Shaikh, Biagio Montaruli - arXiv / AISec 2026 | Academic Paper | Real-execution measurement with mcpvenom: 9,720 cells across 12 frameworks, 18 models, and 45 scenarios (22.9% ASR); resistance is model-level, and a code audit finds no intentional framework defense. |
@@ -42,6 +44,7 @@
 | 2026-05 | [A First Measurement Study on Authentication Security in Real-World Remote MCP Servers][link_arxiv_org_abs_2605_22333] - Huijun Zhou, Xiaohan Zhang, Haozhe Zhang, Haoyang Zhang, Mi Zhang, Min Yang - arXiv | Academic Paper | Measures 7,973 live servers: 40.55% expose tools without authentication; analysis of 119 OAuth-enabled servers finds 325 flaws and widespread unsafe dynamic registration. |
 | 2026-04-22 | [Securing MCP: A Control Plane for Agent Tool Execution][link_developer_microsoft_com_blog_securing_mcp_a_control_plane_for_agent_to] - Microsoft | Blog | Frames MCP security as a control-plane problem for agent tool execution, useful for enterprise architects designing centralized policy and governance. |
 | 2026-04-21 | [Command Injection via Anthropic’s MCP SDK][link_docs_litellm_ai_blog_mcp_stdio_command_injection_april_2026] - LiteLLM | Blog | Maintainer-side writeup on authenticated remote command execution in MCP server creation functionality, referencing OX’s advisory. |
+| 2026-04-18 | [Governed MCP: Kernel-Level Tool Governance for AI Agents via Logit-Based Safety Primitives][link_arxiv_org_abs_2604_16870] - Daeyeon Son - arXiv | Academic Paper | Kernel-resident MCP gateway: a six-layer pipeline (schema, trust tier, rate limit, injection pre-filter, logit gate, policy match) with a Blake3 audit chain; dropping the logit layer cuts F1 from 0.773 to 0.327 on a 101-prompt benchmark. |
 | 2026-04-15 | [The Architectural Flaw at the Core of Anthropic’s MCP][link_ox_security_blog_the_mother_of_all_ai_supply_chains_critical_systemic_] - OX Security | Blog | Research disclosure arguing that MCP STDIO configuration patterns can enable arbitrary command execution across affected ecosystems. |
 | 2026-04-15 | [The Mother of All AI Supply Chains: Technical Deep Dive][link_ox_security_blog_the_mother_of_all_ai_supply_chains_technical_deep_div] - OX Security | Blog | Technical detail on MCP STDIO command execution and how framework integrations can inherit command-execution behavior. |
 | 2026-04-14 | [Secure AI agent access patterns to AWS resources using Model Context Protocol][link_aws_amazon_com_blog_security_secure_ai_agent_access_mcp] - AWS Security Blog | Blog | Three IAM principles for deterministic agent controls: least privilege, config-bound permissions, and differentiating MCP vs direct API access via context keys. |
@@ -207,6 +210,7 @@
 | 2014-11 | [OpenID Connect Discovery 1.0][link_openid_net_specs_openid_connect_discovery_1_0_html] - OpenID Foundation | Specification | OpenID Provider metadata and discovery (issuer + `.well-known`); overlaps OAuth AS metadata when IdP and AS combine. **MCP:** optional path when OIDC discovery is available for AS metadata. |
 | n/a | [MCP Security Best Practices][link_modelcontextprotocol_io_docs_tutorials_security_security_best_practice] - Model Context Protocol | Guidance | Official guidance on confused deputy, token passthrough, SSRF, session hijacking, local server compromise, scope minimization. **For this project:** baseline attacks, mitigations, common mistakes, checklist items. |
 | n/a | [OWASP MCP Top 10][link_owasp_org_www_project_mcp_top_10] - OWASP | Guidance | Community risk taxonomy for MCP-enabled systems. **For this project:** neutral naming layer across blogs, papers, labs, CVEs, and tools. |
+| n/a | [MCP Security Taxonomy][link_github_owasp_mcp_taxonomy] - OWASP MCP Taxonomy | Guidance | Glossary and v0.1 taxonomy for MCP hosts, clients, servers, and tools, with CVE tagging and crosswalks to existing risk lists. **For this project:** naming layer next to the OWASP MCP Top 10. |
 | n/a | [CSA MCP Security Resource Center and AI Controls Matrix][link_labs_cloudsecurityalliance_org_mcp] - Cloud Security Alliance | Resource Hub | Open industry hub indexing MCP security resources, server/client risk views, baseline work, and AI workload control mappings. |
 | n/a | [MCP Server Top 10 Security Risks][link_modelcontextprotocol_security_io_top10_server] - MCP Security Working Group (CSA-linked) | Guidance | Top 10 risk list for server implementations-use for server-side review checklists and mapping scanner findings. |
 | n/a | [MCP Client Top 10 Security Risks][link_modelcontextprotocol_security_io_top10_client] - MCP Security Working Group (CSA-linked) | Guidance | Top 10 risk list for MCP clients, including malicious servers and trust-boundary issues-useful for IDE/host teams evaluating tool metadata and server identity handling. |
@@ -219,6 +223,7 @@
 [link_acm_org_doi_mcp_scanner]: https://dl.acm.org/doi/10.1145/3786160.3788471
 [link_acm_org_doi_3796519]: https://dl.acm.org/doi/10.1145/3796519
 [link_abuango_me_blog_threat_modeling_mcp]: https://abuango.me/blog/threat-modeling-the-model-context-protocol/
+[link_adversa_ai_blog_top_mcp_security_resources_november_2026]: https://adversa.ai/blog/top-mcp-security-resources-november-2026/
 [link_aembit_io_blog_mcp_oauth_2_1_pkce_and_the_future_of_ai_authorization]: https://aembit.io/blog/mcp-oauth-2-1-pkce-and-the-future-of-ai-authorization/
 [link_anthropic_com_news_model_context_protocol]: https://www.anthropic.com/news/model-context-protocol
 [link_arxiv_org_abs_2503_23278]: https://arxiv.org/abs/2503.23278
@@ -251,6 +256,7 @@
 [link_arxiv_org_abs_2603_22489]: https://arxiv.org/abs/2603.22489
 [link_arxiv_org_abs_2604_05969]: https://arxiv.org/abs/2604.05969
 [link_arxiv_org_abs_2604_07551]: https://arxiv.org/abs/2604.07551
+[link_arxiv_org_abs_2604_16870]: https://arxiv.org/abs/2604.16870
 [link_arxiv_org_abs_2605_22333]: https://arxiv.org/abs/2605.22333
 [link_arxiv_org_abs_2606_04769]: https://arxiv.org/abs/2606.04769
 [link_arxiv_org_abs_2607_05744]: https://arxiv.org/abs/2607.05744
@@ -265,6 +271,7 @@
 [link_arxiv_org_abs_2611_02611]: https://arxiv.org/abs/2611.02611
 [link_arxiv_org_abs_2611_03555]: https://arxiv.org/abs/2611.03555
 [link_arxiv_org_abs_2611_06585]: https://arxiv.org/abs/2611.06585
+[link_arxiv_org_abs_2611_11104]: https://arxiv.org/abs/2611.11104
 [link_arxiv_org_html_2508_13220v3]: https://arxiv.org/html/2508.13220v3
 [link_arxiv_org_html_2608_00150v1]: https://arxiv.org/html/2608.00150v1
 [link_aws_amazon_com_blog_security_iam_managed_mcp_servers]: https://aws.amazon.com/blogs/security/understanding-iam-for-managed-aws-mcp-servers/
@@ -311,6 +318,7 @@
 [link_genai_owasp_org_resource_cheatsheet_a_practical_guide_for_securely_usi]: https://genai.owasp.org/resource/cheatsheet-a-practical-guide-for-securely-using-third-party-mcp-servers-1-0/
 [link_genai_owasp_org_resource_owasp_top_10_for_agentic_applications_for_202]: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
 [link_github_com_cosai_oasis_ws4_secure_design_agentic_systems_blob_main_mod]: https://github.com/cosai-oasis/ws4-secure-design-agentic-systems/blob/main/model-context-protocol-security.md
+[link_github_owasp_mcp_taxonomy]: https://github.com/OWASP/MCP-Taxonomy/blob/main/MCP-SECURITY-TAXONOMY-COMPLETE.md
 [link_invariantlabs_ai_blog_introducing_mcp_scan]: https://invariantlabs.ai/blog/introducing-mcp-scan
 [link_invariantlabs_ai_blog_mcp_github_vulnerability]: https://invariantlabs.ai/blog/mcp-github-vulnerability
 [link_invariantlabs_ai_blog_mcp_security_notification_tool_poisoning_attacks]: https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks

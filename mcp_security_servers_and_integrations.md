@@ -39,6 +39,9 @@ For MCP-aware scanners, gateways, and hardening utilities that do not wrap a ven
 | [shaikh-shahid/veracode-mcp-server][link_shaikh_shahid_veracode_mcp] | [Veracode][link_veracode] Pipeline Scan + Fix via Veracode CLI | Commercial Veracode credentials; Fix region limits per vendor; not an official Veracode MCP server | ![](https://badgen.net/github/last-commit/shaikh-shahid/veracode-mcp-server) |
 | [jamiesonio/defectdojo-mcp][link_jamiesonio_defectdojo_mcp] | Experimental bridge to [DefectDojo][link_defectdojo] findings, products, and engagements | API token inherits that user's permissions; treat finding text as untrusted content | ![](https://badgen.net/github/last-commit/jamiesonio/defectdojo-mcp) |
 | [awslabs/mcp][link_awslabs_security_agent_mcp] (Security Agent) | Official AWS Security Agent MCP for code scans, diff scans, threat-model review, and pentest orchestration | Same monorepo as [Security Hub][link_awslabs_mcp_security_hub]; pin a release with the CVE-2026-87913 S3 bucket-ownership fix (≥ 0.2.0, see [mcp_cve.md](mcp_cve.md)); **authorized testing only** | ![](https://badgen.net/github/last-commit/awslabs/mcp) |
+| [ry-ops/eagle-scout][link_ryops_eagle_scout] | Community [Docker Scout][link_docker_scout] MCP for image CVEs, SBOMs, policy, and attestations | Mounts the Docker socket; distinct from the official [DHI MCP][link_docker_dhi_mcp]; review before giving an agent host Docker access | ![](https://badgen.net/github/last-commit/ry-ops/eagle-scout) |
+| [secprog/dependency-track-mcp][link_secprog_dependency_track_mcp] | Community MCP for [OWASP Dependency-Track][link_dependency_track] projects, components, findings, and metrics | API token inherits that user's Dependency-Track rights; author describes it as vibe-coded—review before production | ![](https://badgen.net/github/last-commit/secprog/dependency-track-mcp) |
+| [greenbone-hive/openvas-mcp][link_greenbone_hive_openvas_mcp] | [Greenbone][link_greenbone] Vulnerability Management MCP for targets, tasks, reports, and compliance | README attributes it to Greenbone AG; repo is `greenbone-hive`, not `github.com/greenbone`; use `GVM_READ_ONLY` until scan launch is approved; **authorized targets only** | ![](https://badgen.net/github/last-commit/greenbone-hive/openvas-mcp) |
 
 ### Commercial and vendor platforms
 
@@ -63,6 +66,9 @@ For MCP-aware scanners, gateways, and hardening utilities that do not wrap a ven
 | [Chainguard MCP servers][link_chainguard_mcp] | Live image SBOMs, Wolfi packages, upstream EOL data, and read-only platform API | OAuth per endpoint (`cgr.dev`, `apk.cgr.dev`, `versions.cgr.dev`, console API); each token sees only what that account can read | Vendor docs |
 | [ZeroPath MCP][link_zeropath_mcp_server] | Query and triage ZeroPath findings, scans, rules, and patches | Hosted OAuth at `https://zeropath.com/mcp`, or local stdio with an API token | ![](https://badgen.net/github/last-commit/ZeroPathAI/zeropath-mcp-server) |
 | [ProjectDiscovery Neo MCP][link_projectdiscovery_neo_mcp] | Hosted Neo assessments (recon, code review, CVE triage, pentest) at `https://mcp.projectdiscovery.io/mcp` | `X-Api-Key` carries account permissions; **authorized targets only**; distinct from community [nuclei-mcp][link_addcontent_nuclei_mcp] | Vendor-hosted |
+| [Docker Hardened Images MCP][link_docker_dhi_mcp] | Official remote DHI catalog MCP (`https://dhi.io/mcp`) for image metadata, SBOMs, CVEs, and attestations | Catalog and CVE tools are public; mirror create/remove needs a Docker Hub PAT with org owner access—do not pass the token as a tool argument | Vendor-hosted |
+| [Sonatype MCP][link_sonatype_mcp] | Hosted dependency-intelligence MCP (`https://mcp.guide.sonatype.com/mcp`) for versions, vulnerabilities, licenses, and remediation | Bearer API token; commercial Sonatype data—scope which package coordinates the agent sends | Vendor-hosted |
+| [GitHub secret scanning MCP][link_github_secret_scanning_mcp] | Secret scanning and push-protection checks through the official GitHub remote MCP | Enable the `secret_protection` toolset plus `run_secret_scanning` on `https://api.githubcopilot.com/mcp/`; requires GitHub Secret Protection on the repo; local GitHub MCP builds do not expose these tools | Vendor docs |
 
 ---
 
@@ -232,6 +238,7 @@ For MCP-aware scanners, gateways, and hardening utilities that do not wrap a ven
 | [tarhou/tenable-mcp-server][link_tarhou_tenable_mcp_server] | Community MCP for Tenable Vulnerability Management and Tenable One | Commercial Tenable credentials; not Tenable official; distinct from [Tenable.sc][link_tenable_sc_mcp] and hosted [Tenable Hexa AI][link_tenable_hexa_mcp]; gate scan launch and stop | ![](https://badgen.net/github/last-commit/tarhou/tenable-mcp-server) |
 | [ReverseThrottle/cortex-mcp][link_reversethrottle_cortex_mcp] | Community MCP for Cortex XSIAM/XDR cases, endpoints, vulnerabilities, and XQL | Not the official [Cortex MCP server][link_paloalto_cortex_mcp]; API keys are highly privileged; endpoint isolate/unisolate needs change control | ![](https://badgen.net/github/last-commit/ReverseThrottle/cortex-mcp) |
 | [socfortress/velociraptor-mcp-server][link_socfortress_velociraptor_mcp] | [Velociraptor][link_velociraptor] artifacts, VQL, hunts, and client lookup via MCP | DFIR API keys can collect from endpoints; HTTP mode requires `MCP_AUTH_TOKEN`; gate hunts and active collection | ![](https://badgen.net/github/last-commit/socfortress/velociraptor-mcp-server) |
+| [CiscoDevNet/xdr-mcp-community][link_cisco_xdr_mcp] | Community Cisco XDR MCP for incidents, investigations, response actions, and threat intel | Cisco DevNet community project, not a Cisco-supported product; XDR client credentials are highly privileged—gate response actions | ![](https://badgen.net/github/last-commit/CiscoDevNet/xdr-mcp-community) |
 
 ### Commercial and vendor platforms
 
@@ -478,3 +485,13 @@ These projects often combine **identity, scoring, payments (for example x402)**,
 [link_zscaler_mcp_server]: https://github.com/zscaler/zscaler-mcp-server
 [link_zscaler_mcp_server_docs]: https://zscaler-mcp-server.readthedocs.io/en/latest/guides/configuration.html
 [link_zxzinn_opencti_mcp]: https://github.com/zxzinn/opencti-mcp
+[link_cisco_xdr_mcp]: https://github.com/CiscoDevNet/xdr-mcp-community
+[link_dependency_track]: https://dependencytrack.org/
+[link_docker_dhi_mcp]: https://docs.docker.com/dhi/tools/mcp/
+[link_docker_scout]: https://docs.docker.com/scout/
+[link_github_secret_scanning_mcp]: https://docs.github.com/en/code-security/how-tos/use-ghas-with-ai-coding-agents/scan-for-secrets-with-github-mcp-server
+[link_greenbone]: https://www.greenbone.net/
+[link_greenbone_hive_openvas_mcp]: https://github.com/greenbone-hive/openvas-mcp
+[link_ryops_eagle_scout]: https://github.com/ry-ops/eagle-scout
+[link_secprog_dependency_track_mcp]: https://github.com/secprog/dependency-track-mcp
+[link_sonatype_mcp]: https://guide.sonatype.com/mcp

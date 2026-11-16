@@ -2,7 +2,7 @@
 
 Educational and research environments for MCP security testing. **Tables** summarize difficulty and defenses. Run all labs in isolated VMs or containers — never in production or on networks with real credentials.
 
-**Last Update**: 2026-11-10
+**Last Update**: 2026-11-16
 
 ## Contents
 
@@ -27,7 +27,7 @@ Educational and research environments for MCP security testing. **Tables** summa
 | --- | --- | --- | --- |
 | [MCPGoat][link_github_com_sabyasachidhal_mcpgoat] : SabyasachiDhal | Tools, resources, prompts, sampling, Streamable HTTP, victim-agent harness | 26 CTF challenges (78 flags): RCE, SSRF, SQLi, path traversal, tool poisoning, shadowing, rug pulls, indirect injection, sampling abuse | ![](https://badgen.net/github/last-commit/SabyasachiDhal/MCPGoat) |
 | [DVMCP / NovaTech (Kyze-Labs)][link_github_com_kyze_labs_damn_vulnerable_mcp_server] : Kyze-Labs | 6 departments, 28 tools, web UI, Docker | 38 challenges, 19 categories: prompt injection, tool poisoning, privilege escalation, exfiltration, confused deputy, SQLi, command injection, path traversal, supply chain, shadow tools, consent phishing | ![](https://badgen.net/github/last-commit/Kyze-Labs/damn-vulnerable-MCP-Server) |
-| [Damn Vulnerable MCP Server (DVMCP)][link_github_com_harishsg993010_damn_vulnerable_mcp_server] : harishsg993010 | Server, tools, prompts, resources, SSE, client config | 10 tiered challenges: prompt injection, tool poisoning, excessive permissions, rug pull, shadowing, indirect injection, token theft, RCE, remote access, multi-vector chains | ![](https://badgen.net/github/last-commit/harishsg993010/damn-vulnerable-MCP-server) |
+| [Damn Vulnerable MCP Server (DVMCP)][link_github_com_harishsg993010_damn_vulnerable_mcp_server] : harishsg993010 | Streamable HTTP servers, tools, prompts, resources, Docker on ports 9001–9015 | 15 challenges: the original 10 (prompt injection through multi-vector chains) plus JWT claim forgery, hidden identity override, workflow IDOR, marketplace plugin poisoning, and dependency confusion | ![](https://badgen.net/github/last-commit/harishsg993010/damn-vulnerable-MCP-server) |
 | [Vulnerable MCP Servers Lab][link_github_com_appsecco_vulnerable_mcp_servers_lab] : Appsecco | Local/remote servers, filesystem, HTTP/SSE, tool output, client config | Nine standalone servers — path traversal, unsandboxed exec, indirect/remote injection, eval RCE, malicious tools, typosquatting, outdated pkgs, secrets/PII, untrusted content | ![](https://badgen.net/github/last-commit/appsecco/vulnerable-mcp-servers-lab) |
 | [IntegSec VulnerableMCP][link_github_com_integsec_vulnerablemcp] : IntegSec | stdio, HTTP/SSE, HTTPS/SSE, WebSocket, WSS transports | 20+ vulns, 16+ CTF flags: path traversal, command injection, missing auth, cleartext transport, JSON-RPC flaws, tool poisoning, rug pulls, resource exhaustion | ![](https://badgen.net/github/last-commit/integsec/VulnerableMCP) |
 | [Vulnerable MCP Server (beejak)][link_github_com_beejak_vulnerable_mcp_server] : beejak | stdio, SSE, OAuth metadata, tools, agent chains | 18 CVE-mapped CTF flags: CVE-2025-6514 OAuth RCE, rug pull, shadowing, SSRF, deserialization, multi-vector chains; `show_fix` secure comparisons | ![](https://badgen.net/github/last-commit/beejak/Vulnerable-MCP-Server) |
@@ -65,6 +65,10 @@ Educational and research environments for MCP security testing. **Tables** summa
 | [Quarkus Secure AI Agent Workshop][link_github_com_wjglerum_quarkus_secure_ai_agent_workshop_javazone_2026] : wjglerum | Quarkus and LangChain4j assistant, Keycloak, Postgres, Ollama, one branch per fix | Vulnerable baseline, then prompt injection, unauthenticated MCP confused deputy, excessive agency, sensitive disclosure, and unbounded consumption | ![](https://badgen.net/github/last-commit/wjglerum/quarkus-secure-ai-agent-workshop-javazone-2026) |
 | [VulnAgent][link_github_com_s81207169_a11y_vulnagent] : s81207169-a11y | LLM chatbot, MCP server, autonomous agent, vibe-coded API, automated attack suite | Vulnerable and hardened twins; MCP pillar is tool-description poisoning plus an unrestricted file read | ![](https://badgen.net/github/last-commit/s81207169-a11y/Vulnagent) |
 | [MCP Sentinel Research][link_github_com_piyerx_mcp_sentinel_research] : piyerx | Malicious weather server, benign baseline, sanitizing gateway | Eight tool-poisoning vectors (exfiltration, prompt injection, instruction hijacking, and related metadata attacks) with a zero-trust description gateway | ![](https://badgen.net/github/last-commit/piyerx/MCP-Sentinel-Research) |
+| [mcp-range][link_github_com_ds8282_mcp_range] : ds8282 | stdio and loopback Streamable HTTP, Docker, planted canaries, paired `mcpscan` | Eight challenges with a patched twin: tool poisoning, rug pull, path traversal, SSRF, command injection, missing auth, prompt-injection to a tool call, secret exposure in a resource | ![](https://badgen.net/github/last-commit/ds8282/mcp-range) |
+| [Redfilade][link_github_com_redfilade_redfilade] : redfilade | Sealed containers, vulnerable and secure twins, egress trap, hostile client-test server | Phase 2 range: leaky errors, tool poisoning, path traversal, SSRF, secrets in tool output, command injection, SQL injection; L3 agent-in-the-loop and L4 client tests. Noncommercial or internal use. | ![](https://badgen.net/github/last-commit/redfilade/redfilade) |
+| [MCP Security Fixture][link_github_com_excession_labs_mcp_security_fixture] : Excession Labs | Local server, vulnerable and fixed modes, 16 tests | Tool-description poisoning, token passthrough to a downstream API, and a missing per-object authorization check | ![](https://badgen.net/github/last-commit/Excession-Labs/mcp-security-fixture) |
+| [Trust Boundary CTF][link_github_com_acseguin21_trust_boundary_ctf] : acseguin21 | Local Node server, browser console, DevTools-only flags | Three flags for a shared session object that still returns an admin token on later user tool calls. Instructor fix is in `SPOILERS.md`. | ![](https://badgen.net/github/last-commit/acseguin21/trust-boundary-ctf) |
 
 ---
 
@@ -98,6 +102,7 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [MCP Security Lab][link_github_com_anita_ani_mcp_security_lab] | 5 OWASP MCP Top 10 risks | Vulnerable server, secured implementation, and exploit for token exposure, command injection, broken auth, shadow servers, and context over-sharing. | ![](https://badgen.net/github/last-commit/Anita-ani/mcp-security-lab) |
 | [MCP Security Patterns][link_github_com_dnyandeobharambe_mcp_security_patterns] | All 10 OWASP MCP Top 10 categories | Runnable attack demos, defense implementations, and tests for every category plus a combined full-stack example. | ![](https://badgen.net/github/last-commit/dnyandeobharambe/mcp-security-patterns) |
 | [Hispalis MCP Lab][link_github_com_ezee_sg_mcp_security_lab] | All 10 OWASP MCP Top 10 categories | Fictional company with HR, finance, IT, and management servers in vulnerable and hardened Compose stacks, plus an ungoverned shadow server and per-category scenario notes. | ![](https://badgen.net/github/last-commit/ezee-sg/mcp-security-lab) |
+| [mcp-range][link_github_com_ds8282_mcp_range] | MCP01, MCP03, MCP05, MCP06, MCP07 and ASI01–ASI05 | Eight planted bugs with OWASP MCP and Agentic mappings. The bundled scanner is scored against that known set. | ![](https://badgen.net/github/last-commit/ds8282/mcp-range) |
 
 ---
 
@@ -121,6 +126,10 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [Quarkus Secure AI Agent Workshop][link_github_com_wjglerum_quarkus_secure_ai_agent_workshop_javazone_2026] | `main` is the vulnerable app; each later branch is one fix | Attack the conference assistant, then apply the reference diff for that step | ![](https://badgen.net/github/last-commit/wjglerum/quarkus-secure-ai-agent-workshop-javazone-2026) |
 | [VulnAgent][link_github_com_s81207169_a11y_vulnagent] | Vulnerable pillar and hardened twin, graded by `python -m vulnagent.attacks` | Prove MCP tool poisoning and the agent-layer follow-on attacks, then confirm the hardened twin blocks them | ![](https://badgen.net/github/last-commit/s81207169-a11y/Vulnagent) |
 | [agent-sec-lab][link_github_com_wstran118_agent_sec_lab] | Exploit directory and matching fix per scenario, with tests | Eight canary-secret scenarios, including an MCP-style rug pull stopped by tool pinning | ![](https://badgen.net/github/last-commit/wstran118/agent-sec-lab) |
+| [mcp-range][link_github_com_ds8282_mcp_range] | `dvmcp solve` versus `dvmcp --patched solve` | Eight exploits succeed on the vulnerable build and fail on the patched build. The scanner is also checked for false positives on the patch. | ![](https://badgen.net/github/last-commit/ds8282/mcp-range) |
+| [Redfilade][link_github_com_redfilade_redfilade] | Vulnerable twin versus secure twin in a sealed container | The range gate requires every vulnerable target to fall and every secure twin to hold. Run it only against the bundled targets or a server you own. | ![](https://badgen.net/github/last-commit/redfilade/redfilade) |
+| [MCP Security Fixture][link_github_com_excession_labs_mcp_security_fixture] | Vulnerable mode versus fixed mode, 16 tests | Same three flaws in both modes: hidden tool instructions, token passthrough, and missing object authorization. | ![](https://badgen.net/github/last-commit/Excession-Labs/mcp-security-fixture) |
+| [Trust Boundary CTF][link_github_com_acseguin21_trust_boundary_ctf] | Running console plus the instructor fix in `SPOILERS.md` | Confirm the session leak in the browser, then compare the annotated fix. | ![](https://badgen.net/github/last-commit/acseguin21/trust-boundary-ctf) |
 
 ---
 
@@ -150,6 +159,7 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [MCP Agent Security Lab (FCortez)][link_github_com_fcortezsecurity_mcp_security_lab] | Email injection against a local model | Repeated trials of indirect injection through email content, with a recipient allowlist as the measured defense. Fake data only. | ![](https://badgen.net/github/last-commit/FCortezSecurity/mcp-security-lab) |
 | [prompt-injection-lab][link_github_com_danush_aries_prompt_injection_lab] | Levels 01–08, offline auto-grader | Progress from system-prompt leaks through RAG and tool hijacking to level 08, a poisoned MCP server. Each level has a guardrail that must block the exploit. | ![](https://badgen.net/github/last-commit/Danush-Aries/prompt-injection-lab) |
 | [mcploitable][link_github_com_agilealligator_mcploitable] | ASI01 mail assistant | EchoLeak-class goal hijack: a planted email steers the agent into an image-URL exfiltration path. | ![](https://badgen.net/github/last-commit/agileAlligator/mcploitable) |
+| [mcp-range][link_github_com_ds8282_mcp_range] | Challenge c07 | Untrusted content is chained into a tool call. The patched build blocks the same challenge. | ![](https://badgen.net/github/last-commit/ds8282/mcp-range) |
 
 ---
 
@@ -184,6 +194,9 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [agent-sec-lab][link_github_com_wstran118_agent_sec_lab] | Scenario S4 rug pull | MCP-style tool mutation after trust; the fix pins the tool definition. Canary secrets only. | ![](https://badgen.net/github/last-commit/wstran118/agent-sec-lab) |
 | [MCP Agent Security Lab (FCortez)][link_github_com_fcortezsecurity_mcp_security_lab] | Tool-poisoning trials | A malicious tool leaks data through its own arguments; a data-flow check on arguments is the measured defense. | ![](https://badgen.net/github/last-commit/FCortezSecurity/mcp-security-lab) |
 | [mcploitable][link_github_com_agilealligator_mcploitable] | ASI04 plugin manager | A published plugin is adopted over the honest tool, then its output steers the agent into handing over workspace credentials. | ![](https://badgen.net/github/last-commit/agileAlligator/mcploitable) |
+| [mcp-range][link_github_com_ds8282_mcp_range] | Challenges c01 and c02 | Tool poisoning and a rug pull. Both are exploitable on the vulnerable build and blocked with `--patched`. | ![](https://badgen.net/github/last-commit/ds8282/mcp-range) |
+| [Redfilade][link_github_com_redfilade_redfilade] | `l1-tool-poisoning` | Hidden instructions in a tool description, checked inside the sealed cell. Attack only the bundled target. | ![](https://badgen.net/github/last-commit/redfilade/redfilade) |
+| [MCP Security Fixture][link_github_com_excession_labs_mcp_security_fixture] | Flaw 1 | A tool description steers a stub agent into reading a secret. Fixed mode removes the hidden instruction. | ![](https://badgen.net/github/last-commit/Excession-Labs/mcp-security-fixture) |
 
 ---
 
@@ -205,6 +218,8 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [MCP Security Lab (tal7aouy)][link_github_com_tal7aouy_mcp_security_lab] | Challenges 03–05, 07, and 09 | Path traversal, shell concatenation, `eval()`, fetch SSRF including `file://`, and `pickle.loads` on caller-controlled bytes. | ![](https://badgen.net/github/last-commit/tal7aouy/mcp-security-lab) |
 | [EnumByte MCP Security Lab][link_github_com_sentinelbyte_enumbyte_mcp_security_lab] | Path traversal, SSRF, command injection | Pytest asserts the vulnerable server is exploitable and the hardened server rejects the same calls. | ![](https://badgen.net/github/last-commit/SentinelByte/enumbyte-mcp-security-lab) |
 | [Vulnerable MCP Server (rahulsinghinfosec)][link_github_com_rahulsinghinfosec_damnvulnerablemcpserver] | Filesystem, SSRF, and SQL tools | `read_file` / `write_file`, `fetch_url` / `import_feed` / `check_webhook`, and `search_user` / `login_user` / `get_order`. | ![](https://badgen.net/github/last-commit/rahulsinghinfosec/damnvulnerablemcpserver) |
+| [mcp-range][link_github_com_ds8282_mcp_range] | Challenges c03–c05 | Path traversal, SSRF, and command injection, each with a patched twin. | ![](https://badgen.net/github/last-commit/ds8282/mcp-range) |
+| [Redfilade][link_github_com_redfilade_redfilade] | L2 battery | Path traversal, SSRF, command injection, and SQL injection against the vulnerable twin. The secure twin is the control. | ![](https://badgen.net/github/last-commit/redfilade/redfilade) |
 
 ---
 
@@ -225,6 +240,8 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [Hispalis MCP Lab][link_github_com_ezee_sg_mcp_security_lab] | `shadow-analytics` outside the Compose stacks | Ungoverned co-installed server next to the four departmental servers; hardened stack adds Wazuh and Grafana. | ![](https://badgen.net/github/last-commit/ezee-sg/mcp-security-lab) |
 | [Vulnerable MCP Server (rahulsinghinfosec)][link_github_com_rahulsinghinfosec_damnvulnerablemcpserver] | Unauthenticated tools and default credentials | `read_notes`, `list_users`, and `system_info` need no auth; `admin_panel` and sensitive logs use default credentials. | ![](https://badgen.net/github/last-commit/rahulsinghinfosec/damnvulnerablemcpserver) |
 | [VaultMCP][link_github_com_hardsoftsecurity_vulnerable_mcp_lab] | Streamable HTTP enumeration | Treat the server as directly callable JSON-RPC: list resources and tools before any model is attached. | ![](https://badgen.net/github/last-commit/hardsoftsecurity/vulnerable-mcp-lab) |
+| [Trust Boundary CTF][link_github_com_acseguin21_trust_boundary_ctf] | Shared session context | One process-wide context keeps an admin token after a later user tool call. The console still reports the session as healthy. | ![](https://badgen.net/github/last-commit/acseguin21/trust-boundary-ctf) |
+| [Redfilade][link_github_com_redfilade_redfilade] | `l1-leaky-errors` and `l2-secrets-in-output` | Error text and a status tool expose paths, stack traces, and environment secrets. Compare with the secure twin. | ![](https://badgen.net/github/last-commit/redfilade/redfilade) |
 
 ---
 
@@ -242,6 +259,7 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [DVMCP / NovaTech (Kyze-Labs)][link_github_com_kyze_labs_damn_vulnerable_mcp_server] | Compromised CI/CD (V15) | Supply-chain compromise patterns in fictional NovaTech deployment pipeline. | ![](https://badgen.net/github/last-commit/Kyze-Labs/damn-vulnerable-MCP-Server) |
 | [Damn Vulnerable AI Agent (DVAA)][link_github_com_opena2a_org_damn_vulnerable_ai_agent] | PluginBot supply chain | Tool registry poisoning and tampered plugin loading in agent ecosystem. | ![](https://badgen.net/github/last-commit/opena2a-org/damn-vulnerable-ai-agent) |
 | [mcploitable][link_github_com_agilealligator_mcploitable] | ASI04 plugin manager | A lookalike plugin is adopted over the honest weather tool, then its output steers credential theft. Practice plugin provenance and tool-output distrust. | ![](https://badgen.net/github/last-commit/agileAlligator/mcploitable) |
+| [Damn Vulnerable MCP Server (DVMCP)][link_github_com_harishsg993010_damn_vulnerable_mcp_server] | Challenges 14 and 15 | Marketplace plugin poisoning and dependency confusion on the Streamable HTTP range. | ![](https://badgen.net/github/last-commit/harishsg993010/damn-vulnerable-MCP-server) |
 
 ---
 
@@ -264,6 +282,10 @@ All nine servers live in [Vulnerable MCP Servers Lab][link_github_com_appsecco_v
 | [Vulnerable MCP Server (rahulsinghinfosec)][link_github_com_rahulsinghinfosec_damnvulnerablemcpserver] | Missing auth and default credentials | Open tools on stdio, Streamable HTTP, and SSE; admin and log tools accept default credentials. | ![](https://badgen.net/github/last-commit/rahulsinghinfosec/damnvulnerablemcpserver) |
 | [Quarkus Secure AI Agent Workshop][link_github_com_wjglerum_quarkus_secure_ai_agent_workshop_javazone_2026] | Step 02 token propagation | Unauthenticated MCP server with a confused-deputy flaw; the reference branch adds OIDC, forwarded caller tokens, and audit logging. | ![](https://badgen.net/github/last-commit/wjglerum/quarkus-secure-ai-agent-workshop-javazone-2026) |
 | [vuln-support-mcp][link_github_com_obotchris_vuln_support_mcp] | Least-privilege composite server | A server that exposes only ticket and knowledge-base tools breaks the private-data plus egress path; gateway filters redact PII, with one format left to leak past a naive rule. | ![](https://badgen.net/github/last-commit/obotchris/vuln-support-mcp) |
+| [Damn Vulnerable MCP Server (DVMCP)][link_github_com_harishsg993010_damn_vulnerable_mcp_server] | Challenges 11–13 | JWT claim forgery, an undocumented identity override, and privilege escalation through a workflow IDOR. | ![](https://badgen.net/github/last-commit/harishsg993010/damn-vulnerable-MCP-server) |
+| [mcp-range][link_github_com_ds8282_mcp_range] | Challenges c06 and c08 | Missing authentication on a sensitive tool, and a resource that returns a planted secret. Patched mode blocks both. | ![](https://badgen.net/github/last-commit/ds8282/mcp-range) |
+| [MCP Security Fixture][link_github_com_excession_labs_mcp_security_fixture] | Token passthrough and object auth | Vulnerable mode forwards the caller token to a downstream API and lets one user read another's invoice. Fixed mode uses a separate audience and an ownership check. | ![](https://badgen.net/github/last-commit/Excession-Labs/mcp-security-fixture) |
+| [Trust Boundary CTF][link_github_com_acseguin21_trust_boundary_ctf] | Session isolation | Local browser console where a later user tool call still carries the admin token loaded at startup. | ![](https://badgen.net/github/last-commit/acseguin21/trust-boundary-ctf) |
 
 ---
 
@@ -348,6 +370,10 @@ Use these to map CVEs and published incidents to hands-on labs above — not sta
 [link_github_com_vibecodingnights_offensive_security]: https://github.com/VibeCodingNights/offensive-security
 [link_github_com_wjglerum_quarkus_secure_ai_agent_workshop_javazone_2026]: https://github.com/wjglerum/quarkus-secure-ai-agent-workshop-javazone-2026
 [link_github_com_wstran118_agent_sec_lab]: https://github.com/wstran118/agent-sec-lab
+[link_github_com_acseguin21_trust_boundary_ctf]: https://github.com/acseguin21/trust-boundary-ctf
+[link_github_com_ds8282_mcp_range]: https://github.com/ds8282/mcp-range
+[link_github_com_excession_labs_mcp_security_fixture]: https://github.com/Excession-Labs/mcp-security-fixture
+[link_github_com_redfilade_redfilade]: https://github.com/redfilade/redfilade
 [link_vulnerablemcp_info]: https://vulnerablemcp.info/
 [link_vulnerablemcp_info_vuln_cursor_jira_mcp_zero_click_html]: https://vulnerablemcp.info/vuln/cursor-jira-mcp-zero-click.html
 [link_vulnerablemcp_info_vuln_github_mcp_exploit_html]: https://vulnerablemcp.info/vuln/github-mcp-exploit.html
